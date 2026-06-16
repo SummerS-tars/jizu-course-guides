@@ -17,7 +17,10 @@ description: >-
 - **上课节奏**：每周 **周一、周三（实验课）** 为主，部分周有周二加课
 - **课程总结文件命名**：`week<N>-周<X>-计组H.md`（如 `week1-周一-计组H.md`）
 - **课件体系**：12 章（计算机系统概述 → 数据表示 → 运算部件 → 指令系统 → CPU → ILP → 流水线 → 互连网络 → 存储系统 → 线程级并行 → MIPS32 → 向量体系结构）
-- **实验**：Lab1~Lab6（Verilog/MIPS/RISC-V 相关）
+- **实验**：Lab1~Lab6（26-Arch 五级流水 RISC-V CPU）；**期末与 Lab4–6 强相关**（MMU/TLB/异常）
+- **Lab 仓库（localServer）**：`/home/thesumst/Data2/development/ComputerOrganization/26-Arch`
+- **Lab Wiki**：`https://github.com/26-Arch/26-Arch/wiki/`（Lab-1 … Lab-6、实验准备、实验讲解、上板 等）
+- **个人报告**：`Doc/Lab{1..6}/report.md`（Lab1–6 已完成，待导入 NotebookLM）
 - **资料根目录**：`E:\★Document\1_Study\2_6_2026springTerm\2_计算机组成与体系结构H\`
 
 ## 何时启用
@@ -62,8 +65,12 @@ flowchart LR
 ## Phase 0：资料盘点
 
 1. 对齐本地 `2_计算机组成与体系结构H/` 与 NotebookLM source list
-2. 更新 `guides/计组课程-15周内容梳理.md` 进度
-3. 标注缺失周次
+2. **Lab 来源核对**（计组特有，期末前必做）：
+   - Wiki 10 页是否已 `source add`（见 `guides/计组课程-15周内容梳理.md` §7.1）
+   - `26-Arch/Doc/Lab{1..6}/report.md` 是否已导入
+   - 课件 `4_Lab/*.pdf` 与 Wiki 要求是否一致
+3. 更新 `guides/计组课程-15周内容梳理.md` 进度
+4. 标注缺失周次 / 缺失 Lab 来源
 
 ## Phase 1：采集
 
