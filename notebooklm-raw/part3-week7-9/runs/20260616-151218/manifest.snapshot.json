@@ -1,0 +1,68 @@
+{
+  "module": "part3-week7-9",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "Week 7-9：流水线 + ILP + 五一短周",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "笔记-week07-周",
+    "笔记-week08-周",
+    "笔记-week09-周",
+    "笔记-期中复习-计组H",
+    "课件06-指令级并行",
+    "课件07-指令流水线",
+    "课件12-MIPS32流水线处理器",
+    "报告-Lab1-朱文凯",
+    "报告-Lab2-朱文凯",
+    "报告-Lab3-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "L0-positioning",
+      "layer": "L0",
+      "priority": "critical",
+      "title": "Week7-9 与期中/期末边界",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅回答：Week 7-9 在计组(H)中解决什么核心问题？期中复习重点是什么？Week 8 提到的「前半学期不重点笔试」具体指哪些内容？\n\n依据：Week 7-9 记录、笔记-期中复习-计组H、Week 8 期末范围说明。\n要求：中文；标注来源。"
+    },
+    {
+      "id": "w7-pipeline-hazards",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "流水线原理与三类冒险",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：流水线时空图与加速比；结构/数据/控制三类冒险；转发（Forwarding）与阻塞（Stall）；分支预测入门。\n\n依据：Week 7 课程记录、课件07、报告-Lab1-朱文凯（转发/阻塞）。\n要求：中文；mermaid 流水线图；标注来源。"
+    },
+    {
+      "id": "w8-ilp-scheduling",
+      "layer": "L2",
+      "priority": "important",
+      "title": "ILP、记分牌与 Tomasulo",
+      "clear_conversation": true,
+      "prompt": "【单问·重要】请仅讲解：双发射限制；寄存器重命名消除 WAR/WAW；记分牌与 Tomasulo 算法、ROB、CDB 的基本思想。\n\n依据：Week 8 课程记录、课件06。\n要求：中文；直觉优先；标注来源；不要与期末后半重点混淆。"
+    },
+    {
+      "id": "w9-short-week",
+      "layer": "L1",
+      "priority": "normal",
+      "title": "Week9 短周内容",
+      "clear_conversation": true,
+      "prompt": "【单问·了解即可】请仅根据 Week 9 课程记录，概括五一前短周讲了什么、与前后周如何衔接。\n\n要求：中文；3-5 段；标注来源。"
+    },
+    {
+      "id": "lab-pipeline-crossref",
+      "layer": "L5",
+      "priority": "important",
+      "title": "Lab1-3 与流水线课堂对照",
+      "clear_conversation": true,
+      "prompt": "【单问·Lab对照】请仅说明：Lab1 的数据冒险处理（转发/阻塞）如何对应 Week 7 课堂内容？Lab3 的分支指令与流水线控制冒险有何关系？\n\n依据：报告-Lab1/3-朱文凯、Week 7 记录、Wiki-Lab1/3。\n要求：中文；标注来源。"
+    },
+    {
+      "id": "w79-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "易错点",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅列出 Week 7-9 最易混淆的 4-5 组概念（三类冒险、转发条件、记分牌/Tomasulo、静态/动态分支预测等）。\n\n要求：对比表；中文；标注来源。"
+    }
+  ]
+}

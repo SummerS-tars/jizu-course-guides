@@ -1,0 +1,67 @@
+{
+  "module": "part3-week7-9",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/part3-week7-9.json",
+  "run_dir": "notebooklm-raw/part3-week7-9/runs/20260616-151218",
+  "started_at": "2026-06-16T07:12:18.780614+00:00",
+  "finished_at": "2026-06-16T07:17:45.371976+00:00",
+  "batches_total": 6,
+  "batches_completed": 6,
+  "batches_ok": 6,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "L0-positioning",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 40.84,
+      "retry_count": 0,
+      "conversation_id": "bc2de261-324a-4746-8b4a-1308c5e28ae9"
+    },
+    {
+      "id": "w7-pipeline-hazards",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 51.5,
+      "retry_count": 0,
+      "conversation_id": "16e4b918-2cb9-41b7-bc29-d287a28e9527"
+    },
+    {
+      "id": "w8-ilp-scheduling",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 49.11,
+      "retry_count": 0,
+      "conversation_id": "991f051f-09d2-428f-9b60-d46bb28a5f2b"
+    },
+    {
+      "id": "w9-short-week",
+      "layer": "L1",
+      "status": "ok",
+      "elapsed_seconds": 43.27,
+      "retry_count": 0,
+      "conversation_id": "c9421113-f562-4ec6-8d5c-0cb229dc873b"
+    },
+    {
+      "id": "lab-pipeline-crossref",
+      "layer": "L5",
+      "status": "ok",
+      "elapsed_seconds": 47.24,
+      "retry_count": 0,
+      "conversation_id": "910af02b-9ccc-42a2-bbcd-e6772dcfde04"
+    },
+    {
+      "id": "w79-mistakes",
+      "layer": "L3",
+      "status": "ok",
+      "elapsed_seconds": 47.92,
+      "retry_count": 0,
+      "conversation_id": "2b69521d-9d3f-4321-9825-480ea3f3da63"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 326.59,
+  "total_retry_count": 0
+}

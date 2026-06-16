@@ -1,0 +1,47 @@
+[14:47:32] 模块: part3-week7-9 | 批次数: 6 | 输出: /home/thesumst/.cursor/worktrees/jizu__SSH__wsl_/q26h/notebooklm-raw/part3-week7-9/runs/20260616-144732
+[14:47:32] 同步认证…
+[14:47:32] 认证 OK
+[14:47:32] 选定 Notebook: e87c0462-b512-40df-8d6a-a0f5d4d30c81
+[14:47:35] --- batch 1/6: [L0] L0-positioning ---
+[14:47:35] 清空会话上下文 (notebooklm clear)
+[14:47:35] 提问 (128 字, nlm_timeout=120s)…
+[14:47:39] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S1224853835%3A1781592457628360&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxas0Yk0hkGqYI1xDG7cT-nGQY6V8b9BY8YR-nuUWECobg-HLUUCCWW9RQuCP8B65k4tY_t8w
+Run 'notebooklm login' to re-authenticate.
+[14:47:39] 失败 L0-positioning (3.2s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S1224853835%3A1781592457628360&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxas0Yk0hkGqYI1xDG7cT-nGQY6V8b9BY8YR-nuUWECobg-HLUUCCWW9RQuCP8B65k4tY_t8w
+Run 'notebooklm login' to re-authenticate.
+[14:47:39] --- batch 2/6: [L2] w7-pipeline-hazards ---
+[14:47:39] 清空会话上下文 (notebooklm clear)
+[14:47:39] 提问 (134 字, nlm_timeout=120s)…
+[14:47:42] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S2099303564%3A1781592460894363&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwWHDAYniz2u1UxmNCTM0uo_8Im4y_-2vEBo6kzw3XVdGKHbAia8eYKumxyJ3nOj_M9yAlZ
+Run 'notebooklm login' to re-authenticate.
+[14:47:42] 失败 w7-pipeline-hazards (3.0s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S2099303564%3A1781592460894363&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwWHDAYniz2u1UxmNCTM0uo_8Im4y_-2vEBo6kzw3XVdGKHbAia8eYKumxyJ3nOj_M9yAlZ
+Run 'notebooklm login' to re-authenticate.
+[14:47:42] --- batch 3/6: [L2] w8-ilp-scheduling ---
+[14:47:42] 清空会话上下文 (notebooklm clear)
+[14:47:42] 提问 (117 字, nlm_timeout=120s)…
+[14:47:45] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1660344333%3A1781592463951245&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxgubJ_R8zbj3Olu0ZWW3NyGTvS8fq9t_hFcSFZoG8baXm_U0eHiSHTlh547HcME_r_6kbe
+Run 'notebooklm login' to re-authenticate.
+[14:47:45] 失败 w8-ilp-scheduling (2.9s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1660344333%3A1781592463951245&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxgubJ_R8zbj3Olu0ZWW3NyGTvS8fq9t_hFcSFZoG8baXm_U0eHiSHTlh547HcME_r_6kbe
+Run 'notebooklm login' to re-authenticate.
+[14:47:45] --- batch 4/6: [L1] w9-short-week ---
+[14:47:45] 清空会话上下文 (notebooklm clear)
+[14:47:45] 提问 (66 字, nlm_timeout=120s)…
+[14:47:48] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1524572100%3A1781592467136432&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwCASweVL7uZrpRb5Vj8D7Y19Iye8fK-U22n0TPRYS-UWJpO0K27cWvPj1rHYeRcD_bpEm_tw
+Run 'notebooklm login' to re-authenticate.
+[14:47:48] 失败 w9-short-week (3.1s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1524572100%3A1781592467136432&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwCASweVL7uZrpRb5Vj8D7Y19Iye8fK-U22n0TPRYS-UWJpO0K27cWvPj1rHYeRcD_bpEm_tw
+Run 'notebooklm login' to re-authenticate.
+[14:47:48] --- batch 5/6: [L5] lab-pipeline-crossref ---
+[14:47:48] 清空会话上下文 (notebooklm clear)
+[14:47:48] 提问 (127 字, nlm_timeout=120s)…
+[14:47:51] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S1243206856%3A1781592470409583&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxJHOlT4wVtaZ3QzTSIEas0GkK2LeGzLSPEbj6MGmrihg_qxHZj7pkQzMdQvX8Na9vv4-aaoA
+Run 'notebooklm login' to re-authenticate.
+[14:47:51] 失败 lab-pipeline-crossref (3.1s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S1243206856%3A1781592470409583&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxJHOlT4wVtaZ3QzTSIEas0GkK2LeGzLSPEbj6MGmrihg_qxHZj7pkQzMdQvX8Na9vv4-aaoA
+Run 'notebooklm login' to re-authenticate.
+[14:47:51] --- batch 6/6: [L3] w79-mistakes ---
+[14:47:51] 清空会话上下文 (notebooklm clear)
+[14:47:51] 提问 (84 字, nlm_timeout=120s)…
+[14:47:54] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-2079562517%3A1781592473593320&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxf0L2WCVNo7qBvXv_i6V2gcozoFqKsM4Yr2ECYf-UFcrEikwjMQe8qAJl84IrwwpvGcQ55RA
+Run 'notebooklm login' to re-authenticate.
+[14:47:54] 失败 w79-mistakes (3.1s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-2079562517%3A1781592473593320&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxf0L2WCVNo7qBvXv_i6V2gcozoFqKsM4Yr2ECYf-UFcrEikwjMQe8qAJl84IrwwpvGcQ55RA
+Run 'notebooklm login' to re-authenticate.
+[14:47:54] 采集结束: status=failed | ok=0 skipped=0 failed=6/6 | 重试 0 次 | 耗时 22.46s | 待重跑: L0-positioning, w7-pipeline-hazards, w8-ilp-scheduling, w9-short-week, lab-pipeline-crossref, w79-mistakes
