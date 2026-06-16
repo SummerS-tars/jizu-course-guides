@@ -8,6 +8,8 @@ NotebookLM 原始采集数据目录（与学习指南 `guides/` 分离）。
 
 **工作流入口**：`.cursor/skills/jizu-course-notebooklm/SKILL.md`
 
+**NotebookLM 认证 SOP**：`~/service/openclaw/workspace/skills/notebooklm-integration/docs/auth-sop.md`
+
 **Part 划分**：`parts.md`
 
 ## 模块命名规范

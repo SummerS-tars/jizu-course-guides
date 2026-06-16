@@ -30,3 +30,10 @@ Phase 0（盘点）→ Phase 1（采集）→ Phase 1.5（知识图谱）→ Pha
 - 计组特有：多 mermaid 体系结构图、数值计算例（IEEE 754、Cache 映射、CPI）
 - 期末与 Lab 强相关：整合时交叉引用 Lab4–6（MMU/TLB/异常）及 `26-Arch` report
 - Phase 0 须确认 NotebookLM 已含 Lab Wiki 全页 + 个人 report（见课程梳理 §7）
+
+## NotebookLM 认证（Agent 必读）
+
+权威文档：`~/service/openclaw/workspace/skills/notebooklm-integration/docs/auth-sop.md`
+
+- Windows 登录 + WSL `sync-auth.py` 同步；**禁止** WSL 内 `notebooklm login`
+- 认证失效：告知用户 Windows 登录 → WSL `--force` 同步 → 再继续采集

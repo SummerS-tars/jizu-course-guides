@@ -2,10 +2,12 @@
 """
 NotebookLM 分层采集脚本 — 将对话原始内容落盘，运行轨迹可追踪。
 
+认证：WSL 仅 sync-auth（见 notebooklm-integration/docs/auth-sop.md），禁止 notebooklm login。
+
 用法（仓库根目录）:
-  python .cursor/skills/ai-course-notebooklm/scripts/nlm-collect.py notebooklm-raw/manifests/week3-4.json
-  python .cursor/skills/ai-course-notebooklm/scripts/nlm-collect.py ... --resume notebooklm-raw/<module>/runs/latest
-  python .cursor/skills/ai-course-notebooklm/scripts/nlm-collect.py merge-runs <src_run> <dst_run>
+  python .cursor/skills/jizu-course-notebooklm/scripts/nlm-collect.py notebooklm-raw/manifests/part4.json
+  python .cursor/skills/jizu-course-notebooklm/scripts/nlm-collect.py ... --resume notebooklm-raw/<module>/runs/latest
+  python .cursor/skills/jizu-course-notebooklm/scripts/nlm-collect.py merge-runs <src_run> <dst_run>
 
 输出目录:
   notebooklm-raw/<module>/runs/<timestamp>/
@@ -49,6 +51,12 @@ DEFAULT_PROXY = "http://127.0.0.1:7897"
 DEFAULT_NLM_HTTP_TIMEOUT = 120
 DEFAULT_RETRIES = 3
 DEFAULT_RETRY_BASE_DELAY = 15.0
+AUTH_SOP_HINT = (
+    "认证失败。勿在 WSL 运行 notebooklm login。\n"
+    "请用户在 Windows 运行桌面 notebooklm-login.ps1 或 fix_login_edge.py，\n"
+    "再在 WSL: python3 ~/service/openclaw/workspace/skills/notebooklm-integration/scripts/sync-auth.py --force\n"
+    "详见: ~/service/openclaw/workspace/skills/notebooklm-integration/docs/auth-sop.md"
+)
 
 
 def _ensure_notebooklm_import() -> None:
@@ -116,7 +124,7 @@ def ensure_auth(log_file: Path | None) -> None:
     r = run_cmd([sys.executable, str(SYNC_AUTH)], timeout=60)
     if r.returncode != 0:
         raise AskError(
-            f"sync-auth 失败:\n{r.stdout}\n{r.stderr}",
+            f"sync-auth 失败:\n{r.stdout}\n{r.stderr}\n\n{AUTH_SOP_HINT}",
             error_kind="auth",
             stdout=r.stdout,
             stderr=r.stderr,

@@ -1,5 +1,7 @@
 # Manifests 索引
 
+> **认证**：采集前需有效认证，见 `~/service/openclaw/workspace/skills/notebooklm-integration/docs/auth-sop.md`
+
 每个 JSON 对应 `parts.md` 中的一个 part。采集命令：
 
 ```bash

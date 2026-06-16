@@ -38,7 +38,7 @@ description: >-
 | NotebookLM | 单问单答，标注来源 |
 | `nlm-collect.py` | 认证、代理、采集、重试、落盘 |
 | Agent | manifest、通读 raw、知识图谱、叙事整合、追问回写 |
-| 用户 | Review、定稿、Windows 侧刷新认证 |
+| 用户 | Review、定稿、**Windows 侧 NotebookLM 登录**（见下方认证 SOP） |
 
 **原则**：Agent 以 raw 为素材，必须补：全景节、叙事衔接、易混对比、追问直观块。
 
@@ -156,7 +156,16 @@ notebooklm-raw/<module>/runs/latest → 最近 completed run
 
 ## 环境与排错
 
-见 `docs/troubleshooting.md`：认证（Windows→WSL sync-auth）、代理 `127.0.0.1:7897`、超时重试。
+**认证 SOP（权威）**：`~/service/openclaw/workspace/skills/notebooklm-integration/docs/auth-sop.md`
+
+| 侧 | 职责 |
+|----|------|
+| Windows | `fix_login_edge.py` 或桌面 `notebooklm-login.ps1` |
+| WSL | `sync-auth.py`（`--force` / `--check`）；`nlm-collect.py` 已内置 |
+
+**Agent 禁止**：`notebooklm login`、WSL 浏览器、从 WSL 调 Windows 登录、`sync-auth --refresh`。
+
+其他：代理 `127.0.0.1:7897`、短 UUID、超时 → `docs/troubleshooting.md`。
 
 ## 本 Skill 目录
 
@@ -180,3 +189,4 @@ notebooklm-raw/<module>/runs/latest → 最近 completed run
 - 只粘贴 NotebookLM 输出不做叙事串联
 - 一次 prompt 问整周内容
 - Agent 编造公式/电路图不标注来源
+- Agent 在 WSL 尝试 `notebooklm login` 或浏览器登录（见 auth-sop.md）
