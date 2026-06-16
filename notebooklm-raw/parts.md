@@ -164,6 +164,6 @@ notebooklm-raw/
 
 ## 下一步
 
-1. ~~按采集顺序完成 7 个 part 的 manifest 采集~~ ✅ 2026-06-16（39 batch 全部成功）
-2. **Phase 1.5**：各 part 通读 raw → `knowledge-graph.md`（建议从 Part 4 期末块开始）
-3. Phase 2–3：撰写学习指南
+1. ~~按采集顺序完成 7 个 part 的 manifest 采集~~ ✅ 2026-06-16（39 batch）
+2. ~~各 part 初版学习指南~~ ✅ 2026-06-16（`guides/计组-Week*-学习指南.md`）
+3. **Phase 4–5**：用户 Review 迭代 → 定稿（`checklist.md`）
