@@ -26,7 +26,7 @@ notebooklm-raw/
 
 ```json
 {
-  "notebookId": "e87c0462-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "notebookId": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
   "module": "week1-2",
   "description": "计组 Week 1-2: 计算机系统概述 + 数据表示",
   "created": "2026-06-16",

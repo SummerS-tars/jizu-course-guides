@@ -9,7 +9,7 @@ description: >-
 # 计组 × NotebookLM 学习 Skill
 
 > **课程**：计算机组成与体系结构（H）
-> **Notebook**：`e87c0462`（TODO: 确认完整 UUID；短前缀在 Python API 下会 RPC 失败）
+> **Notebook**：`e87c0462-b512-40df-8d6a-a0f5d4d30c81`
 > **仓库根**：含 `notebooklm-raw/` 与 `guides/` 的项目目录
 
 ## 课程特点（区别于 AI H）
