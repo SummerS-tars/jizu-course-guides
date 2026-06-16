@@ -1,0 +1,44 @@
+{
+  "module": "weekX-Y",
+  "notebook_id": "505bdb1c-0034-4e14-89df-0b14bf3fc723",
+  "description": "Week X-Y：<主题>（单问单答，每 batch 新对话）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "笔记-week0X-周五-AI",
+    "课件0N-*.pdf"
+  ],
+  "batches": [
+    {
+      "id": "L0-positioning",
+      "layer": "L0",
+      "priority": "critical",
+      "title": "模块在课程中的位置",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅回答：Week X 和 Week Y 在 AI(H) 课程中分别解决什么核心问题？与前后周如何衔接？\n\n依据：Week X/Y 课程记录、课件 NN。\n要求：中文；3-5 段；每点标注来源；不要展开具体公式。"
+    },
+    {
+      "id": "wX-topic-example",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "示例子主题",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：<一个具体问题>。\n\n依据：Week X 课程记录、课件 NN。\n要求：中文；符号表；标注来源；不要同时讲其他子主题。"
+    },
+    {
+      "id": "wXY-bridge",
+      "layer": "L4",
+      "priority": "important",
+      "title": "与前后周衔接",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅说明：Week X-Y 知识与 Week 1-(X-1) 及 Project 的衔接关系。\n\n要求：中文；标注来源。"
+    },
+    {
+      "id": "wXY-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "易混淆概念",
+      "clear_conversation": true,
+      "prompt": "【单问】请列出本模块最易混淆的 3-5 组概念，用对比表说明：为什么易混、正确理解、记忆技巧。\n\n依据：课程记录、课件。\n要求：中文；标注来源。"
+    }
+  ]
+}
