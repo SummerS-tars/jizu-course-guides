@@ -8,9 +8,13 @@ NotebookLM 原始采集数据目录（与学习指南 `guides/` 分离）。
 
 **工作流入口**：`.cursor/skills/jizu-course-notebooklm/SKILL.md`
 
+**Part 划分**：`parts.md`
+
 ## 模块命名规范
 
-按周次组织：`week1`、`week1-3`（跨周模块）、`midterm-review` 等。
+按 **part** 组织（见 `parts.md`）：`part1-week1-3`、`part4-week10-11` 等。
+
+也支持单周：`week1`、`midterm-review`。
 
 每个模块包含：
 ```

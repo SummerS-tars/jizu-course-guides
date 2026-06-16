@@ -1,0 +1,55 @@
+{
+  "module": "part7-week15",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "Week 15：I/O 系统 + 期末总复习",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "笔记-week15-周",
+    "课件11-向量体系结构",
+    "报告-Lab4-朱文凯",
+    "报告-Lab5-朱文凯",
+    "报告-Lab6-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "L0-final-scope",
+      "layer": "L0",
+      "priority": "critical",
+      "title": "期末考查范围与策略",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅根据 Week 15 期末复习课记录和全学期课件，说明：计组(H)期末开卷考的重点范围是什么？前半学期（流水线/ILP）与后半学期（虚存/Cache/一致性）的权重如何？推荐的复习策略是什么？\n\n依据：Week 15 课程记录、Week 8 期末范围说明、课纲。\n要求：中文；条目式；标注来源。"
+    },
+    {
+      "id": "w15-io-disk-raid",
+      "layer": "L2",
+      "priority": "important",
+      "title": "I/O 性能与磁盘/RAID",
+      "clear_conversation": true,
+      "prompt": "【单问·重要】请仅讲解：I/O 系统中吞吐率与响应时间的矛盾；磁盘访问时间（寻道+旋转延迟+传输）的组成；RAID 的基本思想与常见级别直觉。\n\n依据：Week 15 周一课程记录、课件11。\n要求：中文；可给访问时间数值例；标注来源。"
+    },
+    {
+      "id": "w15-review-backend",
+      "layer": "L4",
+      "priority": "critical",
+      "title": "后半学期知识串联",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅串联：Week 10（虚存）→ Week 11（TLB）→ Week 12（Cache）→ Week 13-14（一致性）的知识链条，说明每一步解决什么问题、如何衔接。\n\n依据：Week 10-15 课程记录、相关课件。\n要求：mermaid 流程图或条目；中文；标注来源。"
+    },
+    {
+      "id": "lab-final-crossref",
+      "layer": "L5",
+      "priority": "critical",
+      "title": "Lab4-6 与期末考点对照表",
+      "clear_conversation": true,
+      "prompt": "【单问·Lab对照·期末重点】请仅制作表格：Lab4、Lab5、Lab6 各实现了什么能力，分别对应期末哪些可能的考题类型（页表遍历、SATP、异常/中断、SFENCE.VMA 等）。结合 Wiki 要求与个人报告。\n\n依据：Wiki-Lab4/5/6、报告-Lab4/5/6-朱文凯、Week 15 复习课。\n要求：表格；中文；标注来源。"
+    },
+    {
+      "id": "w15-study-priority",
+      "layer": "L4",
+      "priority": "important",
+      "title": "期末复习优先级清单",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅给出：面向期末开卷考的全学期知识点复习优先级（极高/高/中/了解即可），按 Part 或周次组织，并注明每个极高优先级点应配合哪份 Lab 报告复习。\n\n要求：条目式；中文；标注来源。"
+    }
+  ]
+}

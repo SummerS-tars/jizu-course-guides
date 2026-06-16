@@ -1,0 +1,65 @@
+{
+  "module": "part4-week10-11",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "Week 10-11：虚拟存储 + SATP/TLB（期末重点，单问单答）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "笔记-week10-周",
+    "笔记-week11-周",
+    "课件09-层次结构存储系统",
+    "Wiki-Lab4",
+    "Wiki-Lab5",
+    "报告-Lab4-朱文凯",
+    "报告-Lab5-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "L0-positioning",
+      "layer": "L0",
+      "priority": "critical",
+      "title": "Week10-11 在课程与期末中的位置",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅回答：Week 10 和 Week 11 在计组(H)课程中分别解决什么核心问题？与 Week 9（ILP）及 Week 12（Cache）如何衔接？期末笔试为何重点考这部分？\n\n依据：Week 10/11 课程记录、课件09-层次结构存储系统。\n要求：中文；3-5 段；每点标注来源；不要展开页表位域细节。"
+    },
+    {
+      "id": "w10-virtual-memory",
+      "layer": "L1+L2",
+      "priority": "critical",
+      "title": "虚拟存储动机与基本概念",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：什么是虚拟存储？存储墙/功耗墙与虚拟内存的关系？按需分页、逻辑地址空间、页表的基本思想是什么？\n\n依据：Week 10 课程记录、课件09。\n要求：先直觉再术语；中文；标注来源；可用 mermaid 画地址空间层次。"
+    },
+    {
+      "id": "w10-sv39-page-table",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "Sv39 页表与地址转换",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：RISC-V Sv39 三级页表的结构、页表项（PTE）各标志位（V/R/W/X/U/A/D）含义、虚拟地址到物理地址的转换步骤。\n\n依据：Week 10/11 课程记录、课件09、Wiki-Lab5、报告-Lab5-朱文凯。\n要求：给出位域划分；举一个简化的地址转换数值例；中文；标注来源。"
+    },
+    {
+      "id": "w11-satp-tlb-sfence",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "SATP、TLB 与 SFENCE.VMA",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：SATP 寄存器在 Sv39 模式下的字段（Mode/ASID/PPN）、WARL 机制、TLB 的作用、SFENCE.VMA 的四种失效范围及 ASID 回收场景。\n\n依据：Week 11 课程记录、课件09、Wiki-Lab4、报告-Lab4-朱文凯。\n要求：中文；表格或条目；标注来源；不要讲 Cache 一致性。"
+    },
+    {
+      "id": "lab45-crossref",
+      "layer": "L5",
+      "priority": "critical",
+      "title": "Lab4-5 与课堂知识对照",
+      "clear_conversation": true,
+      "prompt": "【单问·Lab对照·期末重点】请仅对照：Lab4（CSR/SATP）和 Lab5（Sv39 MMU/MRET/ECALL）的 Wiki 要求与个人实验报告，分别对应 Week 10-11 课堂的哪些考点？实现中哪些细节最容易在期末开卷时被考到？\n\n依据：Wiki-Lab4/5、报告-Lab4/5-朱文凯、Week 10/11 记录。\n要求：对比表；中文；标注来源。"
+    },
+    {
+      "id": "w1011-mistakes-bridge",
+      "layer": "L3+L4",
+      "priority": "important",
+      "title": "易错点与前后衔接",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅完成两件事：\n1) 列出 Week 10-11 最易混淆的 4-5 组概念（虚址/物理址、页表/页框、TLB miss/页故障、SFENCE 范围等），用对比表说明；\n2) 说明本模块与 Lab6（异常/中断）及 Week 12（Cache）的衔接。\n\n要求：中文；标注来源。"
+    }
+  ]
+}

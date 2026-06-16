@@ -1,0 +1,61 @@
+{
+  "module": "part6-week13-14",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "Week 13-14：缓存一致性 + 分布式架构（期末重点）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "笔记-week13-周",
+    "笔记-week14-周",
+    "课件10-线程级并行"
+  ],
+  "batches": [
+    {
+      "id": "L0-positioning",
+      "layer": "L0",
+      "priority": "critical",
+      "title": "Week13-14 在课程与期末中的位置",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅回答：Week 13 和 Week 14 在计组(H)中解决什么核心问题？与 Week 12（Cache 组织）及 Week 15（I/O）如何衔接？期末为何重点考一致性？\n\n依据：Week 13/14 课程记录、课件10。\n要求：中文；3-5 段；标注来源。"
+    },
+    {
+      "id": "w13-coherence-problem",
+      "layer": "L1+L2",
+      "priority": "critical",
+      "title": "多核缓存一致性问题",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：多核系统中为什么会出现缓存一致性问题？共享总线架构的瓶颈是什么？\n\n依据：Week 13 课程记录、课件10。\n要求：直觉+例子；中文；标注来源；可用 mermaid 画双核共享变量场景。"
+    },
+    {
+      "id": "w13-directory-vs-snoop",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "目录法 vs 监听法",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅对比：目录法（Directory）和监听法（Snooping）的一致性协议原理、适用场景、优缺点。\n\n依据：Week 13/14 课程记录、课件10。\n要求：对比表；中文；标注来源。"
+    },
+    {
+      "id": "w13-write-update-invalidate",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "写更新 vs 写作废",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：写更新（Write Update）和写作废（Write Invalidate）两种写策略的原理、带宽开销、典型应用。\n\n依据：Week 13 课程记录、课件10。\n要求：中文；各举一个时序场景；标注来源。"
+    },
+    {
+      "id": "w14-mesi-numa",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "MESI 与分布式/NUMA",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：MESI 协议四种状态（M/E/S/I）的含义与转换直觉；分布式多核架构与 NUMA 的基本概念；目录式一致性在非总线互联中的优势。\n\n依据：Week 14 课程记录、课件10。\n要求：中文；MESI 可用状态图描述；标注来源。"
+    },
+    {
+      "id": "w1314-mistakes-bridge",
+      "layer": "L3+L4",
+      "priority": "important",
+      "title": "易错点与复习优先级",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅列出 Week 13-14 最易混淆的 4-5 组概念（目录/监听、写更新/写作废、MESI 状态、总线/分布式等），并给出期末复习优先级（极高/高/中）。\n\n要求：对比表+条目；中文；标注来源。"
+    }
+  ]
+}
