@@ -1,0 +1,59 @@
+{
+  "module": "part2-week4-6",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/part2-week4-6.json",
+  "run_dir": "notebooklm-raw/part2-week4-6/runs/20260616-151745",
+  "started_at": "2026-06-16T07:17:45.453089+00:00",
+  "finished_at": "2026-06-16T07:22:41.743606+00:00",
+  "batches_total": 5,
+  "batches_completed": 5,
+  "batches_ok": 5,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "L0-positioning",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 51.24,
+      "retry_count": 0,
+      "conversation_id": "abd9cd43-a5f4-40af-b788-44112e893961"
+    },
+    {
+      "id": "w4-integer-repr",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 50.1,
+      "retry_count": 0,
+      "conversation_id": "b7a69591-6e71-4e3e-bf27-4430a81ca21a"
+    },
+    {
+      "id": "w5-ieee754",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 68.03,
+      "retry_count": 1,
+      "conversation_id": "357ecde1-a71e-407c-a2de-ac810a64541b"
+    },
+    {
+      "id": "w6-multicycle-fsm",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 45.0,
+      "retry_count": 0,
+      "conversation_id": "76fa75a1-2d95-4ada-a7d7-fc1339efe19e"
+    },
+    {
+      "id": "w46-mistakes-bridge",
+      "layer": "L3+L4",
+      "status": "ok",
+      "elapsed_seconds": 43.79,
+      "retry_count": 0,
+      "conversation_id": "253f8bb9-45dd-4e50-a455-b200b770190a"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 296.29,
+  "total_retry_count": 1
+}
