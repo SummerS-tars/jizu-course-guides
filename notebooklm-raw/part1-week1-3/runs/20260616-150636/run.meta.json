@@ -1,0 +1,67 @@
+{
+  "module": "part1-week1-3",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/part1-week1-3.json",
+  "run_dir": "notebooklm-raw/part1-week1-3/runs/20260616-150636",
+  "started_at": "2026-06-16T07:06:36.827394+00:00",
+  "finished_at": "2026-06-16T07:12:18.684709+00:00",
+  "batches_total": 6,
+  "batches_completed": 6,
+  "batches_ok": 6,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "L0-positioning",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 48.45,
+      "retry_count": 0,
+      "conversation_id": "64a5646f-b099-4052-81df-7c73f501d750"
+    },
+    {
+      "id": "w1-von-neumann",
+      "layer": "L1+L2",
+      "status": "ok",
+      "elapsed_seconds": 43.42,
+      "retry_count": 0,
+      "conversation_id": "088e0244-1b75-4407-86d2-f66c934944a6"
+    },
+    {
+      "id": "w2-datapath-controls",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 45.13,
+      "retry_count": 0,
+      "conversation_id": "a38fb3ea-12ed-49f9-aaf8-793a9d2f7dfd"
+    },
+    {
+      "id": "w3-cisc-risc-isa",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 59.58,
+      "retry_count": 0,
+      "conversation_id": "fbec3e72-cec3-4684-963d-24369aad4ae7"
+    },
+    {
+      "id": "lab13-crossref",
+      "layer": "L5",
+      "status": "ok",
+      "elapsed_seconds": 48.46,
+      "retry_count": 0,
+      "conversation_id": "855c5708-8066-431c-9287-a6e5356df45a"
+    },
+    {
+      "id": "w13-mistakes-bridge",
+      "layer": "L3+L4",
+      "status": "ok",
+      "elapsed_seconds": 50.78,
+      "retry_count": 0,
+      "conversation_id": "ceb95560-ab5e-46cb-8b70-41cc215dcd8f"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 341.86,
+  "total_retry_count": 0
+}

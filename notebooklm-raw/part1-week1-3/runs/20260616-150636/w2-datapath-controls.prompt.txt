@@ -1,0 +1,4 @@
+【单问·核心】请仅讲解：单周期 CPU 数据通路各模块（PC、寄存器堆、ALU、存储器、控制单元）；RegWrite/ALUSrc/MemtoReg/Branch 等控制信号；Load 指令为何决定关键路径。
+
+依据：Week 2 课程记录、课件05、Wiki-Lab1、报告-Lab1-朱文凯。
+要求：中文；标注来源。

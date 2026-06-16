@@ -1,0 +1,4 @@
+【单问·核心】请仅对比：CISC（x86）与 RISC（RISC-V）的设计哲学；RISC-V 六种指令格式（R/I/S/B/U/J）及 Load/Store 架构。
+
+依据：Week 3 课程记录、课件04、Wiki-Lab2/3。
+要求：对比表；中文；标注来源。

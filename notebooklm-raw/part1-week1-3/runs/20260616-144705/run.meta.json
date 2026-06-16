@@ -1,0 +1,67 @@
+{
+  "module": "part1-week1-3",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/part1-week1-3.json",
+  "run_dir": "notebooklm-raw/part1-week1-3/runs/20260616-144705",
+  "started_at": "2026-06-16T06:47:05.477644+00:00",
+  "finished_at": "2026-06-16T06:47:32.410040+00:00",
+  "batches_total": 6,
+  "batches_completed": 0,
+  "batches_ok": 0,
+  "batches_skipped": 0,
+  "batches_failed": 6,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "L0-positioning",
+      "layer": "L0",
+      "status": "error",
+      "error_kind": "auth",
+      "error": "Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592432846337&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvyMvaj-5ji0oEKdC6w3FgLlBwLRfzhwQ-03rawsGICb5ydrdX64eMti1PiyLu5_quxXHM4aAQ\nRun 'notebooklm login' to re-authenticate.",
+      "elapsed_seconds": 3.89
+    },
+    {
+      "id": "w1-von-neumann",
+      "layer": "L1+L2",
+      "status": "error",
+      "error_kind": "auth",
+      "error": "Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1020760454%3A1781592436646720&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzLZEk-8pR3C5ZyI7-ep7Hzd0faG8pkuXjcVEkTvLVa0weL5GFFTW0CebV3eyKJUai54ieS3w\nRun 'notebooklm login' to re-authenticate.",
+      "elapsed_seconds": 2.96
+    },
+    {
+      "id": "w2-datapath-controls",
+      "layer": "L2",
+      "status": "error",
+      "error_kind": "auth",
+      "error": "Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592440555029&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvyFhp6pkWLftUPiBGs7jVnhPQUj8Rwk7Qlsv6Rs0UzsaMk067J_tNCUDIqMn2JEDiPnYyf4ng\nRun 'notebooklm login' to re-authenticate.",
+      "elapsed_seconds": 3.78
+    },
+    {
+      "id": "w3-cisc-risc-isa",
+      "layer": "L2",
+      "status": "error",
+      "error_kind": "auth",
+      "error": "Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1020760454%3A1781592444717040&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxerAyG_g2WCkSto9VKlk8oGXMttDv_691f9gx4Yk0cNJ-82Ptr7XxZLiTQMiOWhIUJd1oK\nRun 'notebooklm login' to re-authenticate.",
+      "elapsed_seconds": 4.05
+    },
+    {
+      "id": "lab13-crossref",
+      "layer": "L5",
+      "status": "error",
+      "error_kind": "auth",
+      "error": "Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S2099303564%3A1781592447922715&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwUf6zn4HMiv3UVcJzCWfVApJpIMrbkcmAVOUsgPA56yR7vc-AhlH-1Y2EnSbD02s84sHAU\nRun 'notebooklm login' to re-authenticate.",
+      "elapsed_seconds": 3.06
+    },
+    {
+      "id": "w13-mistakes-bridge",
+      "layer": "L3+L4",
+      "status": "error",
+      "error_kind": "auth",
+      "error": "Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-2079562517%3A1781592451085231&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzyge5pSbTTVexaYve3wBngOqewA53Yxq7ZN2r0liVYQRgE_cW_9eXJVxN_RFFvZwxt1qOU-w\nRun 'notebooklm login' to re-authenticate.",
+      "elapsed_seconds": 2.99
+    }
+  ],
+  "status": "failed",
+  "total_elapsed_seconds": 26.93,
+  "total_retry_count": 0
+}

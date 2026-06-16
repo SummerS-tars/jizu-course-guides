@@ -1,0 +1,71 @@
+{
+  "module": "part1-week1-3",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "Week 1-3：系统概述 + 数据通路 + ISA",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "笔记-Week01",
+    "笔记-Week02-1",
+    "笔记-Week02-2",
+    "笔记-week03-周",
+    "课件01-计算机系统概述",
+    "课件04-指令系统",
+    "课件05-中央处理器",
+    "Wiki-Lab1",
+    "Wiki-Lab2",
+    "Wiki-Lab3",
+    "报告-Lab1-朱文凯",
+    "报告-Lab2-朱文凯",
+    "报告-Lab3-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "L0-positioning",
+      "layer": "L0",
+      "priority": "critical",
+      "title": "Week1-3 项目驱动定位",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅回答：计组(H) Week 1-3 的核心教学目标是什么？xv6 CPU 项目如何驱动前三周的教学顺序？与后续 Week 4+ 回溯内容的关系？\n\n依据：Week 1-3 课程记录、课件01/04/05、Wiki-Home。\n要求：中文；3-5 段；标注来源。"
+    },
+    {
+      "id": "w1-von-neumann",
+      "layer": "L1+L2",
+      "priority": "critical",
+      "title": "冯·诺依曼与五级流水初探",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：冯·诺依曼架构五大部件、存储程序概念；取指-译码-执行-访存-写回五级流水各阶段做什么。\n\n依据：Week 1 课程记录、课件01。\n要求：中文；mermaid 数据通路草图；标注来源。"
+    },
+    {
+      "id": "w2-datapath-controls",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "单周期数据通路与控制信号",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：单周期 CPU 数据通路各模块（PC、寄存器堆、ALU、存储器、控制单元）；RegWrite/ALUSrc/MemtoReg/Branch 等控制信号；Load 指令为何决定关键路径。\n\n依据：Week 2 课程记录、课件05、Wiki-Lab1、报告-Lab1-朱文凯。\n要求：中文；标注来源。"
+    },
+    {
+      "id": "w3-cisc-risc-isa",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "CISC vs RISC 与 RISC-V 指令格式",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅对比：CISC（x86）与 RISC（RISC-V）的设计哲学；RISC-V 六种指令格式（R/I/S/B/U/J）及 Load/Store 架构。\n\n依据：Week 3 课程记录、课件04、Wiki-Lab2/3。\n要求：对比表；中文；标注来源。"
+    },
+    {
+      "id": "lab13-crossref",
+      "layer": "L5",
+      "priority": "important",
+      "title": "Lab1-3 与课堂对照",
+      "clear_conversation": true,
+      "prompt": "【单问·Lab对照】请仅对照：Lab1（五级流水+转发）、Lab2（Load/Store）、Lab3（分支跳转）的 Wiki 要求与 Week 1-3 课堂内容，说明各 Lab 验证了课堂哪些知识点。\n\n依据：Wiki-Lab1/2/3、报告-Lab1/2/3-朱文凯。\n要求：表格；中文；标注来源。"
+    },
+    {
+      "id": "w13-mistakes-bridge",
+      "layer": "L3+L4",
+      "priority": "important",
+      "title": "易错点与后续衔接",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅列出 Week 1-3 最易混淆的 4-5 组概念，并说明这些知识与 Week 4（数据表示回溯）及 Week 7（流水线）如何衔接。\n\n要求：对比表+条目；中文；标注来源。"
+    }
+  ]
+}

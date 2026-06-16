@@ -1,0 +1,47 @@
+[14:47:05] 模块: part1-week1-3 | 批次数: 6 | 输出: /home/thesumst/.cursor/worktrees/jizu__SSH__wsl_/q26h/notebooklm-raw/part1-week1-3/runs/20260616-144705
+[14:47:05] 同步认证…
+[14:47:05] 认证 OK
+[14:47:05] 选定 Notebook: e87c0462-b512-40df-8d6a-a0f5d4d30c81
+[14:47:10] --- batch 1/6: [L0] L0-positioning ---
+[14:47:10] 清空会话上下文 (notebooklm clear)
+[14:47:11] 提问 (136 字, nlm_timeout=120s)…
+[14:47:14] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592432846337&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvyMvaj-5ji0oEKdC6w3FgLlBwLRfzhwQ-03rawsGICb5ydrdX64eMti1PiyLu5_quxXHM4aAQ
+Run 'notebooklm login' to re-authenticate.
+[14:47:14] 失败 L0-positioning (3.9s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592432846337&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvyMvaj-5ji0oEKdC6w3FgLlBwLRfzhwQ-03rawsGICb5ydrdX64eMti1PiyLu5_quxXHM4aAQ
+Run 'notebooklm login' to re-authenticate.
+[14:47:14] --- batch 2/6: [L1+L2] w1-von-neumann ---
+[14:47:14] 清空会话上下文 (notebooklm clear)
+[14:47:15] 提问 (105 字, nlm_timeout=120s)…
+[14:47:17] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1020760454%3A1781592436646720&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzLZEk-8pR3C5ZyI7-ep7Hzd0faG8pkuXjcVEkTvLVa0weL5GFFTW0CebV3eyKJUai54ieS3w
+Run 'notebooklm login' to re-authenticate.
+[14:47:17] 失败 w1-von-neumann (3.0s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1020760454%3A1781592436646720&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzLZEk-8pR3C5ZyI7-ep7Hzd0faG8pkuXjcVEkTvLVa0weL5GFFTW0CebV3eyKJUai54ieS3w
+Run 'notebooklm login' to re-authenticate.
+[14:47:17] --- batch 3/6: [L2] w2-datapath-controls ---
+[14:47:17] 清空会话上下文 (notebooklm clear)
+[14:47:18] 提问 (160 字, nlm_timeout=120s)…
+[14:47:21] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592440555029&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvyFhp6pkWLftUPiBGs7jVnhPQUj8Rwk7Qlsv6Rs0UzsaMk067J_tNCUDIqMn2JEDiPnYyf4ng
+Run 'notebooklm login' to re-authenticate.
+[14:47:21] 失败 w2-datapath-controls (3.8s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592440555029&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvyFhp6pkWLftUPiBGs7jVnhPQUj8Rwk7Qlsv6Rs0UzsaMk067J_tNCUDIqMn2JEDiPnYyf4ng
+Run 'notebooklm login' to re-authenticate.
+[14:47:21] --- batch 4/6: [L2] w3-cisc-risc-isa ---
+[14:47:21] 清空会话上下文 (notebooklm clear)
+[14:47:22] 提问 (133 字, nlm_timeout=120s)…
+[14:47:26] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1020760454%3A1781592444717040&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxerAyG_g2WCkSto9VKlk8oGXMttDv_691f9gx4Yk0cNJ-82Ptr7XxZLiTQMiOWhIUJd1oK
+Run 'notebooklm login' to re-authenticate.
+[14:47:26] 失败 w3-cisc-risc-isa (4.1s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1020760454%3A1781592444717040&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxerAyG_g2WCkSto9VKlk8oGXMttDv_691f9gx4Yk0cNJ-82Ptr7XxZLiTQMiOWhIUJd1oK
+Run 'notebooklm login' to re-authenticate.
+[14:47:26] --- batch 5/6: [L5] lab13-crossref ---
+[14:47:26] 清空会话上下文 (notebooklm clear)
+[14:47:26] 提问 (150 字, nlm_timeout=120s)…
+[14:47:29] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S2099303564%3A1781592447922715&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwUf6zn4HMiv3UVcJzCWfVApJpIMrbkcmAVOUsgPA56yR7vc-AhlH-1Y2EnSbD02s84sHAU
+Run 'notebooklm login' to re-authenticate.
+[14:47:29] 失败 lab13-crossref (3.1s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S2099303564%3A1781592447922715&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwUf6zn4HMiv3UVcJzCWfVApJpIMrbkcmAVOUsgPA56yR7vc-AhlH-1Y2EnSbD02s84sHAU
+Run 'notebooklm login' to re-authenticate.
+[14:47:29] --- batch 6/6: [L3+L4] w13-mistakes-bridge ---
+[14:47:29] 清空会话上下文 (notebooklm clear)
+[14:47:29] 提问 (93 字, nlm_timeout=120s)…
+[14:47:32] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-2079562517%3A1781592451085231&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzyge5pSbTTVexaYve3wBngOqewA53Yxq7ZN2r0liVYQRgE_cW_9eXJVxN_RFFvZwxt1qOU-w
+Run 'notebooklm login' to re-authenticate.
+[14:47:32] 失败 w13-mistakes-bridge (3.0s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-2079562517%3A1781592451085231&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzyge5pSbTTVexaYve3wBngOqewA53Yxq7ZN2r0liVYQRgE_cW_9eXJVxN_RFFvZwxt1qOU-w
+Run 'notebooklm login' to re-authenticate.
+[14:47:32] 采集结束: status=failed | ok=0 skipped=0 failed=6/6 | 重试 0 次 | 耗时 26.93s | 待重跑: L0-positioning, w1-von-neumann, w2-datapath-controls, w3-cisc-risc-isa, lab13-crossref, w13-mistakes-bridge
