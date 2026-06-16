@@ -1,0 +1,33 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# --- Editor / OS ---
+.DS_Store
+*.swp
+*~
+
+# =============================================================================
+# notebooklm-raw 版本管理策略
+# =============================================================================
+#
+# 【纳入 git】整合与复现所需、体积小的文件：
+#   - manifests/*.json          采集计划
+#   - README.md, knowledge-graph.md, topics-map.md
+#   - runs/<ts>/*.prompt.txt    提问原文
+#   - runs/<ts>/*.answer.md     整合主素材（Agent 通读对象）
+#   - runs/<ts>/run.meta.json   批次状态与元数据
+#   - runs/<ts>/manifest.snapshot.json
+#   - runs/<ts>/run.log         采集日志（排错用，通常 <20KB）
+#
+# 【不纳入 git】
+#   - *.answer.json  体积约为 .answer.md 的 60 倍；answer 正文已落在 .md，
+#                    references/cited_text 为 NotebookLM 原始载荷，可随需重采
+# =============================================================================
+
+# Bulky: full NotebookLM JSON payloads (references + duplicate answer text)
+notebooklm-raw/**/*.answer.json
