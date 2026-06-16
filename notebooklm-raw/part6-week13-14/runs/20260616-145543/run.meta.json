@@ -1,0 +1,67 @@
+{
+  "module": "part6-week13-14",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/part6-week13-14.json",
+  "run_dir": "notebooklm-raw/part6-week13-14/runs/20260616-145543",
+  "started_at": "2026-06-16T06:55:43.194021+00:00",
+  "finished_at": "2026-06-16T07:01:20.574878+00:00",
+  "batches_total": 6,
+  "batches_completed": 6,
+  "batches_ok": 6,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "L0-positioning",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 45.79,
+      "retry_count": 0,
+      "conversation_id": "ad8cfd0c-5219-4dad-838d-e51ce1b40c25"
+    },
+    {
+      "id": "w13-coherence-problem",
+      "layer": "L1+L2",
+      "status": "ok",
+      "elapsed_seconds": 46.64,
+      "retry_count": 0,
+      "conversation_id": "57042fe6-0efb-4b46-80be-bd4b4ed8b41a"
+    },
+    {
+      "id": "w13-directory-vs-snoop",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 43.41,
+      "retry_count": 0,
+      "conversation_id": "3b945e7d-ac5b-46cd-bb84-10ab3a258374"
+    },
+    {
+      "id": "w13-write-update-invalidate",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 45.24,
+      "retry_count": 0,
+      "conversation_id": "42f4ac59-d74f-4736-80e7-480fe1038427"
+    },
+    {
+      "id": "w14-mesi-numa",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 58.32,
+      "retry_count": 0,
+      "conversation_id": "3de9a901-9b71-431a-aa8f-60ccc9578d08"
+    },
+    {
+      "id": "w1314-mistakes-bridge",
+      "layer": "L3+L4",
+      "status": "ok",
+      "elapsed_seconds": 51.72,
+      "retry_count": 0,
+      "conversation_id": "63ab51cb-b8a6-40ae-92a5-8a516e6e379f"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 337.38,
+  "total_retry_count": 0
+}

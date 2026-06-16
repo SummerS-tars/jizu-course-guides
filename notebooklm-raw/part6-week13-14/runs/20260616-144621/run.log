@@ -1,0 +1,47 @@
+[14:46:21] 模块: part6-week13-14 | 批次数: 6 | 输出: /home/thesumst/.cursor/worktrees/jizu__SSH__wsl_/q26h/notebooklm-raw/part6-week13-14/runs/20260616-144621
+[14:46:21] 同步认证…
+[14:46:21] 认证 OK
+[14:46:21] 选定 Notebook: e87c0462-b512-40df-8d6a-a0f5d4d30c81
+[14:46:26] --- batch 1/6: [L0] L0-positioning ---
+[14:46:26] 清空会话上下文 (notebooklm clear)
+[14:46:26] 提问 (136 字, nlm_timeout=120s)…
+[14:46:29] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S1428373677%3A1781592388609688&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxjcF1rDF-NQI_tLJOTzVJRVNw2eub3Qej8oEkRr4-5BfOpXhhkU3F7fWNFhRbt4W6r83ElWg
+Run 'notebooklm login' to re-authenticate.
+[14:46:29] 失败 L0-positioning (3.2s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S1428373677%3A1781592388609688&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxjcF1rDF-NQI_tLJOTzVJRVNw2eub3Qej8oEkRr4-5BfOpXhhkU3F7fWNFhRbt4W6r83ElWg
+Run 'notebooklm login' to re-authenticate.
+[14:46:29] --- batch 2/6: [L1+L2] w13-coherence-problem ---
+[14:46:29] 清空会话上下文 (notebooklm clear)
+[14:46:30] 提问 (106 字, nlm_timeout=120s)…
+[14:46:32] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1524572100%3A1781592391750330&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwqvIk11z2yZ-fgz_aCtYG3AHTvJcIzFXVQl-CgmCe5ngkha2ovCXTFD_DDuFmwLSIC9_KWuQ
+Run 'notebooklm login' to re-authenticate.
+[14:46:32] 失败 w13-coherence-problem (2.9s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1524572100%3A1781592391750330&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwqvIk11z2yZ-fgz_aCtYG3AHTvJcIzFXVQl-CgmCe5ngkha2ovCXTFD_DDuFmwLSIC9_KWuQ
+Run 'notebooklm login' to re-authenticate.
+[14:46:32] --- batch 3/6: [L2] w13-directory-vs-snoop ---
+[14:46:32] 清空会话上下文 (notebooklm clear)
+[14:46:33] 提问 (100 字, nlm_timeout=120s)…
+[14:46:36] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S472139163%3A1781592394866535&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwI31bqx1RQJ74PLkbrXAKKenMwju33rVJQzR4yqwJGScSNyf0DXxlkcYl7ecNSUrnz3HtH
+Run 'notebooklm login' to re-authenticate.
+[14:46:36] 失败 w13-directory-vs-snoop (3.1s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S472139163%3A1781592394866535&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwI31bqx1RQJ74PLkbrXAKKenMwju33rVJQzR4yqwJGScSNyf0DXxlkcYl7ecNSUrnz3HtH
+Run 'notebooklm login' to re-authenticate.
+[14:46:36] --- batch 4/6: [L2] w13-write-update-invalidate ---
+[14:46:36] 清空会话上下文 (notebooklm clear)
+[14:46:36] 提问 (114 字, nlm_timeout=120s)…
+[14:46:39] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1590048059%3A1781592398293239&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwMgSgfgSxJkkG1Eb9eU1XtFHbT_uzI9o6KpvdXhMutXqXRkhlfgjtwfvGwF4vmntV67ZLBLA
+Run 'notebooklm login' to re-authenticate.
+[14:46:39] 失败 w13-write-update-invalidate (3.4s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1590048059%3A1781592398293239&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwMgSgfgSxJkkG1Eb9eU1XtFHbT_uzI9o6KpvdXhMutXqXRkhlfgjtwfvGwF4vmntV67ZLBLA
+Run 'notebooklm login' to re-authenticate.
+[14:46:39] --- batch 5/6: [L2] w14-mesi-numa ---
+[14:46:39] 清空会话上下文 (notebooklm clear)
+[14:46:39] 提问 (126 字, nlm_timeout=120s)…
+[14:46:42] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592401679874&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzBx7Pxyj5db83zERrTBIEJ-33Ov4yzLQ5FvgswZk1MoEbXMoaKrKwZ0vZFywG58SrArJriQg
+Run 'notebooklm login' to re-authenticate.
+[14:46:42] 失败 w14-mesi-numa (3.0s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592401679874&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzBx7Pxyj5db83zERrTBIEJ-33Ov4yzLQ5FvgswZk1MoEbXMoaKrKwZ0vZFywG58SrArJriQg
+Run 'notebooklm login' to re-authenticate.
+[14:46:42] --- batch 6/6: [L3+L4] w1314-mistakes-bridge ---
+[14:46:42] 清空会话上下文 (notebooklm clear)
+[14:46:43] 提问 (104 字, nlm_timeout=120s)…
+[14:46:46] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1020760454%3A1781592404815961&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvztb1qGxsVTfQGMbcYK9zDAEZVhyBgoVAo3FicgrU0PY-iYbJkNGuNzOBWztiwjvNmOjeUl
+Run 'notebooklm login' to re-authenticate.
+[14:46:46] 失败 w1314-mistakes-bridge (3.1s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1020760454%3A1781592404815961&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvztb1qGxsVTfQGMbcYK9zDAEZVhyBgoVAo3FicgrU0PY-iYbJkNGuNzOBWztiwjvNmOjeUl
+Run 'notebooklm login' to re-authenticate.
+[14:46:46] 采集结束: status=failed | ok=0 skipped=0 failed=6/6 | 重试 0 次 | 耗时 24.94s | 待重跑: L0-positioning, w13-coherence-problem, w13-directory-vs-snoop, w13-write-update-invalidate, w14-mesi-numa, w1314-mistakes-bridge
