@@ -1,0 +1,59 @@
+{
+  "module": "part5-week12",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/part5-week12.json",
+  "run_dir": "notebooklm-raw/part5-week12/runs/20260616-152241",
+  "started_at": "2026-06-16T07:22:41.826382+00:00",
+  "finished_at": "2026-06-16T07:27:49.155395+00:00",
+  "batches_total": 5,
+  "batches_completed": 5,
+  "batches_ok": 5,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "L0-positioning",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 54.9,
+      "retry_count": 0,
+      "conversation_id": "8b8186eb-00ca-403f-b6fb-edb601b9eb68"
+    },
+    {
+      "id": "w12-cache-org",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 54.19,
+      "retry_count": 0,
+      "conversation_id": "162fe63a-124d-4667-adc7-efe93dad48a4"
+    },
+    {
+      "id": "w12-write-policy",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 47.39,
+      "retry_count": 0,
+      "conversation_id": "ce5cc059-259a-4270-b7a1-b2c6958caf55"
+    },
+    {
+      "id": "lab6-crossref",
+      "layer": "L5",
+      "status": "ok",
+      "elapsed_seconds": 47.01,
+      "retry_count": 0,
+      "conversation_id": "8653174c-5983-4a80-80c5-b00397396a35"
+    },
+    {
+      "id": "w12-mistakes-bridge",
+      "layer": "L3+L4",
+      "status": "ok",
+      "elapsed_seconds": 65.97,
+      "retry_count": 1,
+      "conversation_id": "29d07bc8-645f-4e6a-830a-222b95001d25"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 307.33,
+  "total_retry_count": 1
+}

@@ -1,0 +1,55 @@
+{
+  "module": "part5-week12",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "Week 12：多核与 Cache 组织（期末重点）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "笔记-week12-周",
+    "课件09-层次结构存储系统",
+    "课件08-互连网络",
+    "Wiki-Lab6",
+    "报告-Lab6-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "L0-positioning",
+      "layer": "L0",
+      "priority": "critical",
+      "title": "Week12 在存储层次中的位置",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅回答：Week 12 在虚存（Week 10-11）与一致性（Week 13-14）之间起什么作用？多核与 Cache 组织为何是期末重点？\n\n依据：Week 12 课程记录、课件09。\n要求：中文；3-5 段；标注来源。"
+    },
+    {
+      "id": "w12-cache-org",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "Cache 组织与映射",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：直接映射、组相联、全相联 Cache 的原理与地址划分；给一个具体的 Cache 映射计算数值例。\n\n依据：Week 12 课程记录、课件09。\n要求：中文；手算例；标注来源。"
+    },
+    {
+      "id": "w12-write-policy",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "写策略与多核简介",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：写直达 vs 写回；多核处理器基本架构；Cache 在存储层次中的位置。\n\n依据：Week 12 课程记录、课件09、课件08。\n要求：中文；标注来源。"
+    },
+    {
+      "id": "lab6-crossref",
+      "layer": "L5",
+      "priority": "critical",
+      "title": "Lab6 与 Week12 对照",
+      "clear_conversation": true,
+      "prompt": "【单问·Lab对照·期末重点】请仅对照：Lab6（中断/异常/页错误）与 Week 12 课堂内容的关系；报告中哪些实现细节可能在期末考到？\n\n依据：Wiki-Lab6、报告-Lab6-朱文凯、Week 12 记录。\n要求：表格；中文；标注来源。"
+    },
+    {
+      "id": "w12-mistakes-bridge",
+      "layer": "L3+L4",
+      "priority": "important",
+      "title": "易错点与衔接",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅列出 Week 12 最易混淆的 3-4 组概念，并说明与 Week 11（TLB）和 Week 13（一致性）的衔接。\n\n要求：对比表；中文；标注来源。"
+    }
+  ]
+}
