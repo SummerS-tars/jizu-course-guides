@@ -1,0 +1,59 @@
+{
+  "module": "part7-week15",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/part7-week15.json",
+  "run_dir": "notebooklm-raw/part7-week15/runs/20260616-144646",
+  "started_at": "2026-06-16T06:46:46.298251+00:00",
+  "finished_at": "2026-06-16T06:47:05.388630+00:00",
+  "batches_total": 5,
+  "batches_completed": 0,
+  "batches_ok": 0,
+  "batches_skipped": 0,
+  "batches_failed": 5,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "L0-final-scope",
+      "layer": "L0",
+      "status": "error",
+      "error_kind": "auth",
+      "error": "Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592411411554&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzdIVNmpLBdDwPFC8QOSvpQyZ1idADrlMELGJeQMG9p8BKen9kUNNfKFpphP198Fqm_SokcFA\nRun 'notebooklm login' to re-authenticate.",
+      "elapsed_seconds": 3.17
+    },
+    {
+      "id": "w15-io-disk-raid",
+      "layer": "L2",
+      "status": "error",
+      "error_kind": "auth",
+      "error": "Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S1224853835%3A1781592414557038&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxV1KGI0kJRC7NaoZMnZY84HDaS_GOifWj6ylM6IHDlKFlh6K52wfvgTAN1LnHpwxeBVhfynw\nRun 'notebooklm login' to re-authenticate.",
+      "elapsed_seconds": 3.07
+    },
+    {
+      "id": "w15-review-backend",
+      "layer": "L4",
+      "status": "error",
+      "error_kind": "auth",
+      "error": "Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-2079562517%3A1781592417756389&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxKTlgcS_qvxXysUbRUO5bYvqEqgxOcccLGepwufsJNrs7z3ara4m14v7VLwYwNan6hK22dtQ\nRun 'notebooklm login' to re-authenticate.",
+      "elapsed_seconds": 2.97
+    },
+    {
+      "id": "lab-final-crossref",
+      "layer": "L5",
+      "status": "error",
+      "error_kind": "auth",
+      "error": "Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1524572100%3A1781592420864678&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwKbo-tWAdeuC1s209YK98QFbGwWmnxzuw3ZRvxDeGEgUCdBSdFnPgn3T4Xejuti_Cz1EvF\nRun 'notebooklm login' to re-authenticate.",
+      "elapsed_seconds": 2.97
+    },
+    {
+      "id": "w15-study-priority",
+      "layer": "L4",
+      "status": "error",
+      "error_kind": "auth",
+      "error": "Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592424002550&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzSrvtqIjshqn2fb4OZ_WRqLLcJ-qLfR5R5BzMKSxolNA-HpXwDLTXdFr_zGw6tvTPV1pqbnQ\nRun 'notebooklm login' to re-authenticate.",
+      "elapsed_seconds": 3.09
+    }
+  ],
+  "status": "failed",
+  "total_elapsed_seconds": 19.09,
+  "total_retry_count": 0
+}

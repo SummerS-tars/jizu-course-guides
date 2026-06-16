@@ -1,0 +1,40 @@
+[14:46:46] 模块: part7-week15 | 批次数: 5 | 输出: /home/thesumst/.cursor/worktrees/jizu__SSH__wsl_/q26h/notebooklm-raw/part7-week15/runs/20260616-144646
+[14:46:46] 同步认证…
+[14:46:46] 认证 OK
+[14:46:46] 选定 Notebook: e87c0462-b512-40df-8d6a-a0f5d4d30c81
+[14:46:49] --- batch 1/5: [L0] L0-final-scope ---
+[14:46:49] 清空会话上下文 (notebooklm clear)
+[14:46:49] 提问 (153 字, nlm_timeout=120s)…
+[14:46:52] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592411411554&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzdIVNmpLBdDwPFC8QOSvpQyZ1idADrlMELGJeQMG9p8BKen9kUNNfKFpphP198Fqm_SokcFA
+Run 'notebooklm login' to re-authenticate.
+[14:46:52] 失败 L0-final-scope (3.2s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592411411554&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzdIVNmpLBdDwPFC8QOSvpQyZ1idADrlMELGJeQMG9p8BKen9kUNNfKFpphP198Fqm_SokcFA
+Run 'notebooklm login' to re-authenticate.
+[14:46:52] --- batch 2/5: [L2] w15-io-disk-raid ---
+[14:46:52] 清空会话上下文 (notebooklm clear)
+[14:46:52] 提问 (118 字, nlm_timeout=120s)…
+[14:46:55] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S1224853835%3A1781592414557038&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxV1KGI0kJRC7NaoZMnZY84HDaS_GOifWj6ylM6IHDlKFlh6K52wfvgTAN1LnHpwxeBVhfynw
+Run 'notebooklm login' to re-authenticate.
+[14:46:55] 失败 w15-io-disk-raid (3.1s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S1224853835%3A1781592414557038&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxV1KGI0kJRC7NaoZMnZY84HDaS_GOifWj6ylM6IHDlKFlh6K52wfvgTAN1LnHpwxeBVhfynw
+Run 'notebooklm login' to re-authenticate.
+[14:46:55] --- batch 3/5: [L4] w15-review-backend ---
+[14:46:55] 清空会话上下文 (notebooklm clear)
+[14:46:56] 提问 (146 字, nlm_timeout=120s)…
+[14:46:59] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-2079562517%3A1781592417756389&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxKTlgcS_qvxXysUbRUO5bYvqEqgxOcccLGepwufsJNrs7z3ara4m14v7VLwYwNan6hK22dtQ
+Run 'notebooklm login' to re-authenticate.
+[14:46:59] 失败 w15-review-backend (3.0s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-2079562517%3A1781592417756389&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvxKTlgcS_qvxXysUbRUO5bYvqEqgxOcccLGepwufsJNrs7z3ara4m14v7VLwYwNan6hK22dtQ
+Run 'notebooklm login' to re-authenticate.
+[14:46:59] --- batch 4/5: [L5] lab-final-crossref ---
+[14:46:59] 清空会话上下文 (notebooklm clear)
+[14:46:59] 提问 (170 字, nlm_timeout=120s)…
+[14:47:02] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1524572100%3A1781592420864678&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwKbo-tWAdeuC1s209YK98QFbGwWmnxzuw3ZRvxDeGEgUCdBSdFnPgn3T4Xejuti_Cz1EvF
+Run 'notebooklm login' to re-authenticate.
+[14:47:02] 失败 lab-final-crossref (3.0s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S-1524572100%3A1781592420864678&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvwKbo-tWAdeuC1s209YK98QFbGwWmnxzuw3ZRvxDeGEgUCdBSdFnPgn3T4Xejuti_Cz1EvF
+Run 'notebooklm login' to re-authenticate.
+[14:47:02] --- batch 5/5: [L4] w15-study-priority ---
+[14:47:02] 清空会话上下文 (notebooklm clear)
+[14:47:02] 提问 (98 字, nlm_timeout=120s)…
+[14:47:05] 尝试 1 失败 [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592424002550&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzSrvtqIjshqn2fb4OZ_WRqLLcJ-qLfR5R5BzMKSxolNA-HpXwDLTXdFr_zGw6tvTPV1pqbnQ
+Run 'notebooklm login' to re-authenticate.
+[14:47:05] 失败 w15-study-priority (3.1s) [auth]: Authentication expired or invalid. Redirected to: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&dsh=S422789270%3A1781592424002550&followup=https%3A%2F%2Fnotebooklm.google.com%2Flogin%3Fcontinue%3Dhttps%3A%2F%2Fnotebooklm.google.com%2F&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=AcDsRvzSrvtqIjshqn2fb4OZ_WRqLLcJ-qLfR5R5BzMKSxolNA-HpXwDLTXdFr_zGw6tvTPV1pqbnQ
+Run 'notebooklm login' to re-authenticate.
+[14:47:05] 采集结束: status=failed | ok=0 skipped=0 failed=5/5 | 重试 0 次 | 耗时 19.09s | 待重跑: L0-final-scope, w15-io-disk-raid, w15-review-backend, lab-final-crossref, w15-study-priority

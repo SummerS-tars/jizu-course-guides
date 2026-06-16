@@ -1,0 +1,59 @@
+{
+  "module": "part7-week15",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/part7-week15.json",
+  "run_dir": "notebooklm-raw/part7-week15/runs/20260616-150120",
+  "started_at": "2026-06-16T07:01:20.659204+00:00",
+  "finished_at": "2026-06-16T07:06:36.734342+00:00",
+  "batches_total": 5,
+  "batches_completed": 5,
+  "batches_ok": 5,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "L0-final-scope",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 71.17,
+      "retry_count": 1,
+      "conversation_id": "94ba6601-f86a-4c98-8d68-bee3550be6af"
+    },
+    {
+      "id": "w15-io-disk-raid",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 48.34,
+      "retry_count": 0,
+      "conversation_id": "fee4b2c5-dabd-402c-af2c-90697a888352"
+    },
+    {
+      "id": "w15-review-backend",
+      "layer": "L4",
+      "status": "ok",
+      "elapsed_seconds": 66.4,
+      "retry_count": 1,
+      "conversation_id": "5f620b9d-acc1-40ab-b750-40f49a8caee4"
+    },
+    {
+      "id": "lab-final-crossref",
+      "layer": "L5",
+      "status": "ok",
+      "elapsed_seconds": 42.13,
+      "retry_count": 0,
+      "conversation_id": "964e70c3-3e98-438b-85be-f3ff7d6551d4"
+    },
+    {
+      "id": "w15-study-priority",
+      "layer": "L4",
+      "status": "ok",
+      "elapsed_seconds": 50.13,
+      "retry_count": 0,
+      "conversation_id": "90fbafde-42e6-492c-ba66-2155ae2dc255"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 316.07,
+  "total_retry_count": 2
+}
