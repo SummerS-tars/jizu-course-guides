@@ -1,0 +1,4 @@
+【单问·核心】请仅讲解：SATP 寄存器在 Sv39 模式下的字段（Mode/ASID/PPN）、WARL 机制、TLB 的作用、SFENCE.VMA 的四种失效范围及 ASID 回收场景。
+
+依据：Week 11 课程记录、课件09、Wiki-Lab4、报告-Lab4-朱文凯。
+要求：中文；表格或条目；标注来源；不要讲 Cache 一致性。

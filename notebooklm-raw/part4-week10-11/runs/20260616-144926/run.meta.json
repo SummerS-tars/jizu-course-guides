@@ -1,0 +1,67 @@
+{
+  "module": "part4-week10-11",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/part4-week10-11.json",
+  "run_dir": "notebooklm-raw/part4-week10-11/runs/20260616-144926",
+  "started_at": "2026-06-16T06:49:26.918242+00:00",
+  "finished_at": "2026-06-16T06:55:43.090932+00:00",
+  "batches_total": 6,
+  "batches_completed": 6,
+  "batches_ok": 6,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "L0-positioning",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 48.05,
+      "retry_count": 0,
+      "conversation_id": "91e3c9f6-c1ab-41d1-9dd1-735971975e1c"
+    },
+    {
+      "id": "w10-virtual-memory",
+      "layer": "L1+L2",
+      "status": "ok",
+      "elapsed_seconds": 54.52,
+      "retry_count": 0,
+      "conversation_id": "73c6a7ab-a6a1-4236-b561-01e64862563e"
+    },
+    {
+      "id": "w10-sv39-page-table",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 59.76,
+      "retry_count": 0,
+      "conversation_id": "270c3fad-c2ad-4eff-86fb-97c6ca1a2ee4"
+    },
+    {
+      "id": "w11-satp-tlb-sfence",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 49.42,
+      "retry_count": 0,
+      "conversation_id": "8c87bef6-b864-4309-ab22-500067f4582f"
+    },
+    {
+      "id": "lab45-crossref",
+      "layer": "L5",
+      "status": "ok",
+      "elapsed_seconds": 57.6,
+      "retry_count": 0,
+      "conversation_id": "f6032366-0036-4a53-89e9-aefd5ddc66b1"
+    },
+    {
+      "id": "w1011-mistakes-bridge",
+      "layer": "L3+L4",
+      "status": "ok",
+      "elapsed_seconds": 60.58,
+      "retry_count": 0,
+      "conversation_id": "4a7be748-c973-4d77-a191-31ea01587184"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 376.17,
+  "total_retry_count": 0
+}
