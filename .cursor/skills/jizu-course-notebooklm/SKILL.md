@@ -62,6 +62,33 @@ flowchart LR
     P2 --> P4[Phase 4-5 迭代定稿]
 ```
 
+## 课件指南双轨（周次轨 + 课件轨）
+
+与周次 part 流水线**并行**，按 **12 章课件 PDF** 原序梳理，服务期末开卷与「课件有、课堂未讲」审计。
+
+| 轨道 | 产出 | 主线 |
+|------|------|------|
+| **周次轨**（上文六阶段） | `guides/计组-Week*-学习指南.md` | FiCS 课堂记录 + Lab |
+| **课件轨**（本段） | `guides/计组-课件{NN}-学习指南.md` | 课件 slide 顺序 |
+
+**索引与进度**：`guides/计组-课件梳理索引.md`
+
+```
+Phase 0     资料盘点（`3_课件/` ↔ NotebookLM source，见 kejian/README.md）
+Phase 0.5   discovery → manifests/kejian-discovery.json（12×L0 结构）
+Phase 1     按 Part 深采 → manifests/kejian{NN}-deep.json
+Phase 1.5   通读 raw → notebooklm-raw/kejian/structure-map.md
+Phase 2–3   整合 → guides/计组-课件{NN}-学习指南.md
+Phase 4–5   Review → docs/checklist.md「课件指南定稿」
+```
+
+```bash
+# L0 结构发现（课件轨第一步）
+python $NLM notebooklm-raw/manifests/kejian-discovery.json --delay 8
+```
+
+**整合规范**：`docs/integration-guide.md` §课件指南整合规范。试点骨架：`guides/计组-课件05-学习指南.md`。
+
 ## Phase 0：资料盘点
 
 1. 对齐本地 `2_计算机组成与体系结构H/` 与 NotebookLM source list
