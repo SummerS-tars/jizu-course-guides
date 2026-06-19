@@ -1,0 +1,51 @@
+{
+  "module": "kejian07b",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/kejian07b-deep.json",
+  "run_dir": "notebooklm-raw/kejian07b/runs/20260619-221235",
+  "started_at": "2026-06-19T14:12:35.697671+00:00",
+  "finished_at": "2026-06-19T14:27:15.802387+00:00",
+  "batches_total": 4,
+  "batches_completed": 0,
+  "batches_ok": 0,
+  "batches_skipped": 0,
+  "batches_failed": 4,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "kejian07b-part1-physical",
+      "layer": "L1",
+      "status": "error",
+      "error_kind": "unknown",
+      "error": "",
+      "elapsed_seconds": 217.72
+    },
+    {
+      "id": "kejian07b-part2-cache",
+      "layer": "L2+L3",
+      "status": "error",
+      "error_kind": "unknown",
+      "error": "",
+      "elapsed_seconds": 217.48
+    },
+    {
+      "id": "kejian07b-part3-sv39",
+      "layer": "L2+L3",
+      "status": "error",
+      "error_kind": "unknown",
+      "error": "",
+      "elapsed_seconds": 217.44
+    },
+    {
+      "id": "kejian07b-mistakes",
+      "layer": "L3",
+      "status": "error",
+      "error_kind": "unknown",
+      "error": "",
+      "elapsed_seconds": 217.39
+    }
+  ],
+  "status": "failed",
+  "total_elapsed_seconds": 880.1,
+  "total_retry_count": 0
+}

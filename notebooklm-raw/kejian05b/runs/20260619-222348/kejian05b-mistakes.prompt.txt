@@ -1,0 +1,9 @@
+【单问】列出 **课件 5b 指令级并行** 最易混淆的 5 组概念，用对比表说明：
+
+- RAW vs WAR vs WAW
+- 记分牌 vs Tomasulo
+- 保留站 Qj/Qk vs Vj/Vk
+- 乱序执行 vs 顺序提交
+- 结构冒险 vs CDB 竞争
+
+要求：中文；标注来源（课件5b / Week8-9 / Week16 复习）。

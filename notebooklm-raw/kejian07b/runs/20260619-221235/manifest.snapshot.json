@@ -1,0 +1,50 @@
+{
+  "module": "kejian07b",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件7b 层次结构存储系统 知识点深采（Cache + Sv39/TLB，Lab4-6）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件09-层次结构存储系统",
+    "7_层次结构存储系统.pdf",
+    "笔记-week10-周一-计组H",
+    "笔记-week11-周一-计组H",
+    "笔记-week12-周一-计组H",
+    "报告-Lab4-朱文凯",
+    "报告-Lab5-朱文凯",
+    "报告-Lab6-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "kejian07b-part1-physical",
+      "layer": "L1",
+      "priority": "important",
+      "title": "Part1 存储物理与主存接口",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 7b 层次结构存储系统**（PDF：`7_层次结构存储系统.pdf`，NotebookLM `课件09-层次结构存储系统`）**Part 1：存储物理与接口层**，讲解：\n\n1. 存储元 (Cell)、编址单位、存储阵列组织\n2. 主存与 CPU 的连接；Load/Store 指令在总线上的数据流动（「装入」「存储」流程）\n\n要求：中文；类比帮助理解；标注来源（课件7b / Week10 记录）；不要展开 Cache 与虚存。"
+    },
+    {
+      "id": "kejian07b-part2-cache",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "Part2 Cache 映射与 AMAT",
+      "clear_conversation": true,
+      "prompt": "【单问·核心·期末重点】请根据 **课件 7b** **Part 2：缓存加速层**，讲解：\n\n1. 时间/空间局部性原理与 Cache 工作原理\n2. 直接映射、组相联、全相联：Tag/Index/Offset 拆分规则\n3. **AMAT** 公式与手算：给定命中率、命中/缺失代价，计算平均访存时间\n4. 给一个**完整数值例**：32KB 四路组相联、64B 块、给定虚拟/物理地址，拆 Tag/Index/Offset 并判断命中与否\n\n要求：中文；逐步手算；关键公式标注来源（课件7b / 唐朔飞第4章 / P&H第5章）；对应 Lab4 Cache 状态机背景。"
+    },
+    {
+      "id": "kejian07b-part3-sv39",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "Part3 Sv39 SATP TLB 地址转换",
+      "clear_conversation": true,
+      "prompt": "【单问·期末核心·Lab5-6】请根据 **课件 7b** **Part 3：特权与地址转换层**，讲解：\n\n1. 虚拟地址空间与 **Sv39** 地址格式（VPN[2:0]、页内偏移）\n2. **PTE** 各位含义：V/R/W/X、A/D、U 等\n3. **satp** 寄存器字段（MODE、ASID、PPN）与 WARL 机制\n4. **TLB** 原理、TLB Hit/Miss、页表遍历（三级页表物理地址拼接）\n5. **完整地址转换数值例**：给定 Sv39 虚拟地址与 satp，逐步算出各级 PTE 物理地址与最终物理地址\n\n要求：中文；逐步手算；标注来源（课件7b / Week11 记录 / Lab5 报告）；对应 Lab4 CSR、Lab5 MMU、Lab6 异常。"
+    },
+    {
+      "id": "kejian07b-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "课件7b易错点",
+      "clear_conversation": true,
+      "prompt": "【单问】列出 **课件 7b 层次结构存储系统** 最易混淆的 5 组概念，用对比表说明：\n\n- 物理地址 vs 虚拟地址 vs 逻辑地址\n- Cache 缺失类型（Compulsory/Capacity/Conflict）\n- TLB Miss vs Page Fault\n- PTE 的 R/W/X 与 U 位组合含义\n- satp.MODE 与页表级数\n\n要求：中文；每行说明易混原因与正确理解；标注来源（课件7b / Week10-12 / Lab4-6）。"
+    }
+  ]
+}

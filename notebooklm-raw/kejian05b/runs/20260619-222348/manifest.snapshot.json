@@ -1,0 +1,63 @@
+{
+  "module": "kejian05b",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件5b 指令级并行 知识点深采（Tomasulo、ROB，期末必考）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件06-指令级并行",
+    "5_指令级并行.pdf",
+    "笔记-week08-周一-计组H",
+    "笔记-week09-周一-计组H",
+    "笔记-week16-周三-计组H"
+  ],
+  "batches": [
+    {
+      "id": "kejian05b-partA-ilp",
+      "layer": "L1",
+      "priority": "important",
+      "title": "PartA ILP 基础与冒险分类",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 5b 指令级并行**（PDF：`5_指令级并行.pdf`，NotebookLM `课件06-指令级并行`）**Part A：ILP 基础**，讲解：\n\n1. ILP 定义、理想 CPI 与实际 CPI 关系\n2. 数据相关 RAW/WAR/WAW、名称相关、控制相关及对应冒险\n3. 结构冒险简介\n\n要求：中文；类比；标注来源（课件5b / Week8 记录）；不要展开 Tomasulo。"
+    },
+    {
+      "id": "kejian05b-partB-static",
+      "layer": "L2",
+      "priority": "important",
+      "title": "PartB 静态调度与循环展开",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 5b** **Part B：静态调度**，讲解：\n\n1. 编译器指令调度基本思想\n2. 循环展开 (Loop Unrolling) 如何暴露 ILP\n3. 静态寄存器重命名消除 WAR/WAW\n\n要求：中文；给一个简单循环展开前后对比例；标注来源（课件5b）。"
+    },
+    {
+      "id": "kejian05b-partC-tomasulo",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "PartC Tomasulo 保留站 CDB",
+      "clear_conversation": true,
+      "prompt": "【单问·期末必考】请根据 **课件 5b** **Part C：动态调度（Tomasulo）**，讲解：\n\n1. Tomasulo 算法动机：动态寄存器换名\n2. 保留站 7 字段（Busy/Op/Vj/Vk/Qj/Qk/A）含义\n3. CDB 广播机制、结构冲突（保留站满）、CDB 竞争仲裁\n4. **完整时序表数值例**：给定 4-6 条含 Load/ALU 的指令序列与功能部件延迟，逐步填写发射/执行/写回周期，更新保留站与寄存器状态表\n\n要求：中文；逐步填表；标注来源（课件5b / Week8-9 / Week16 复习）；对应期末「保留站状态分析」题型。"
+    },
+    {
+      "id": "kejian05b-partD-rob",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "PartD ROB 推测与精确异常",
+      "clear_conversation": true,
+      "prompt": "【单问·期末必考】请根据 **课件 5b** **Part D：推测执行与 ROB**，讲解：\n\n1. 重排序缓冲区 (ROB) 结构与作用\n2. 乱序执行、**顺序提交 (In-order Commit)** 如何保证精确异常\n3. 推测执行与分支误预测时的回滚\n4. **数值例**：给定带分支的指令序列，展示 ROB 条目状态从分配→执行→提交的变化\n\n要求：中文；ROB 条目字段表；标注来源（课件5b / Week9 / Week16 复习）。"
+    },
+    {
+      "id": "kejian05b-partE-superscalar",
+      "layer": "L2",
+      "priority": "important",
+      "title": "PartE 超标量多发射",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 5b** **Part E：高级并行技术**，讲解：\n\n1. 超标量 (Superscalar) 与多发射概念\n2. 静态调度 vs 动态调度在多发射下的对比\n3. VLIW 简介；课件末尾 ARM Cortex-A8 / Intel Core i7 案例要点\n\n要求：中文；标注来源（课件5b）；标明期末非首要但有助于理解。"
+    },
+    {
+      "id": "kejian05b-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "课件5b易错点",
+      "clear_conversation": true,
+      "prompt": "【单问】列出 **课件 5b 指令级并行** 最易混淆的 5 组概念，用对比表说明：\n\n- RAW vs WAR vs WAW\n- 记分牌 vs Tomasulo\n- 保留站 Qj/Qk vs Vj/Vk\n- 乱序执行 vs 顺序提交\n- 结构冒险 vs CDB 竞争\n\n要求：中文；标注来源（课件5b / Week8-9 / Week16 复习）。"
+    }
+  ]
+}

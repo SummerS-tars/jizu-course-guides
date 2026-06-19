@@ -1,0 +1,9 @@
+【单问】列出 **课件 7b 层次结构存储系统** 最易混淆的 5 组概念，用对比表说明：
+
+- 物理地址 vs 虚拟地址 vs 逻辑地址
+- Cache 缺失类型（Compulsory/Capacity/Conflict）
+- TLB Miss vs Page Fault
+- PTE 的 R/W/X 与 U 位组合含义
+- satp.MODE 与页表级数
+
+要求：中文；每行说明易混原因与正确理解；标注来源（课件7b / Week10-12 / Lab4-6）。

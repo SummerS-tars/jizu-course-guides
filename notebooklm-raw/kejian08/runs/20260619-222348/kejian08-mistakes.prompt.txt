@@ -1,0 +1,9 @@
+【单问】列出 **课件 08 线程级并行** 最易混淆的 5 组概念，用对比表说明：
+
+- Coherence vs Consistency
+- MESI 的 E vs S 状态
+- 伪共享 vs 真共享缺失
+- SC vs 弱一致性
+- LL/SC 与 CAS 失败语义
+
+要求：中文；标注来源（课件08 / Week13-14 / Week16 复习）。

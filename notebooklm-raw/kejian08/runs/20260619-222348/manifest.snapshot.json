@@ -1,0 +1,55 @@
+{
+  "module": "kejian08",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件08 线程级并行 知识点深采（MESI、连贯性、Fence）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件10-线程级并行",
+    "8_线程级并行.pdf",
+    "笔记-week13-周一-计组H",
+    "笔记-week14-周一-计组H",
+    "笔记-week16-周三-计组H"
+  ],
+  "batches": [
+    {
+      "id": "kejian08-partA-parallel",
+      "layer": "L1",
+      "priority": "important",
+      "title": "PartA 并行分类与存储模型",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 08 线程级并行**（PDF：`8_线程级并行.pdf`，NotebookLM `课件10-线程级并行`）**Part A：并行体系结构基础**，讲解：\n\n1. Flynn 分类（SISD/SIMD/MISD/MIMD）与 TLP 概念\n2. 共享存储 vs 非共享存储多处理机模型\n3. **一致性 (Coherence)** 与 **连贯性 (Consistency)** 的定义区别（双维度）\n\n要求：中文；类比；标注来源（课件08 / Week13 记录）；不要展开 MESI 状态机细节。"
+    },
+    {
+      "id": "kejian08-partB-mesi",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "PartB MESI 缓存一致性",
+      "clear_conversation": true,
+      "prompt": "【单问·期末核心】请根据 **课件 08** **Part B：高速缓存一致性**，讲解：\n\n1. 一致性定义、写串行化；监听法 (Snoopy) vs 目录法 (Directory)\n2. MSI → MESI → MOESI 演进动机（Exclusive/Owned 状态意义）\n3. **MESI 四状态**含义与状态迁移条件\n4. **完整数值例**：给定多核对同一 Cache 行的读写序列，逐步模拟各核 Cache 行状态变化与总线事务\n5. 真共享缺失 vs **伪共享 (False Sharing)** 诊断与避免\n\n要求：中文；状态迁移表/图；逐步模拟；标注来源（课件08 / Week13 / Week16 复习）。"
+    },
+    {
+      "id": "kejian08-partC-consistency",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "PartC 连贯性与内存屏障",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请根据 **课件 08** **Part C：存储连贯性模型**，讲解：\n\n1. **顺序一致性 (SC)** 定义与直觉\n2. 弱一致性/放松模型：为何需要重排序\n3. **内存屏障 / Fence** 指令：在获取锁/释放锁前后应插入何种屏障、为何\n4. RISC-V `fence` 与 `SFENCE.VMA` 的使用场景（与 Lab5-6 虚存刷新关联）\n\n要求：中文；给出 2 个多核乱序执行反例；标注来源（课件08 / Week14 记录）。"
+    },
+    {
+      "id": "kejian08-partD-sync",
+      "layer": "L2",
+      "priority": "important",
+      "title": "PartD 同步与原子操作",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 08** **Part D：同步与原子操作**，讲解：\n\n1. 互斥实现、Test&Set、原子读-改-写（Swap/Fetch&Add）\n2. 非阻塞同步：**LL/SC**（课件 MIPS 例）与 RISC-V **LR/SC**、AMO 指令\n3. 自旋锁软件实现与 Fence 配合要点\n\n要求：中文；标注来源（课件08 / Week14）；补充 RISC-V 原子指令与课件 MIPS 例的对照。"
+    },
+    {
+      "id": "kejian08-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "课件08易错点",
+      "clear_conversation": true,
+      "prompt": "【单问】列出 **课件 08 线程级并行** 最易混淆的 5 组概念，用对比表说明：\n\n- Coherence vs Consistency\n- MESI 的 E vs S 状态\n- 伪共享 vs 真共享缺失\n- SC vs 弱一致性\n- LL/SC 与 CAS 失败语义\n\n要求：中文；标注来源（课件08 / Week13-14 / Week16 复习）。"
+    }
+  ]
+}

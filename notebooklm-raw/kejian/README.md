@@ -15,16 +15,31 @@ kejian/runs/<ts>/*.answer.md
         ↓ Agent 通读
 kejian/structure-map.md          ← 汇总 12 章 Part 边界与覆盖索引
         ↓ 按 Part 编写
-manifests/kejian{NN}-deep.json (L1+, 待生成)
+manifests/kejian{NN}-deep.json (L1+, 按 Part 深采)
         ↓
 guides/计组-课件{NN}-学习指南.md
+```
+
+**已生成 deep manifest**（2026-06-19）：
+
+| Manifest | 课件 | batch 数 | 采集状态 |
+|----------|------|----------|----------|
+| `manifests/kejian07b-deep.json` | 7b 层次结构存储系统 | 4 | ✅ `kejian07b/runs/latest` |
+| `manifests/kejian08-deep.json` | 08 线程级并行 | 5 | ✅ `kejian08/runs/latest` |
+| `manifests/kejian05b-deep.json` | 5b 指令级并行 | 6 | ✅ `kejian05b/runs/latest` |
+| `manifests/kejian05-deep.json` | 05 中央处理器 | 5 | 待采集 |
+
+```bash
+# L1+ 深采示例（P0 优先）
+python $NLM notebooklm-raw/manifests/kejian07b-deep.json --delay 8 --nlm-timeout 180
+python $NLM notebooklm-raw/manifests/kejian08-deep.json --delay 8 --nlm-timeout 180 --resume notebooklm-raw/kejian08/runs/latest
 ```
 
 | 阶段 | 产出 | 说明 |
 |------|------|------|
 | **discovery** | `kejian/runs/<ts>/kejian*-structure.answer.md` | 仅结构：Part/Slide/重要度/课堂覆盖/讲解不足 |
-| **structure-map** | `kejian/structure-map.md` | discovery 完成后由 Agent 汇总 |
-| **deep** | `kejian/runs/<ts>/` + `kejian{NN}-deep.json` | 按 Part 单问深采（待 structure-map） |
+| **structure-map** | `kejian/structure-map.md` | discovery 汇总（12/12 ✅） |
+| **deep** | `kejian{NN}/runs/<ts>/` + `kejian{NN}-deep.json` | 按 Part 单问深采 |
 | **整合** | `guides/计组-课件{NN}-学习指南.md` | 见 `docs/integration-guide.md` §课件指南整合规范 |
 
 ---
@@ -80,10 +95,15 @@ python $NLM notebooklm-raw/manifests/kejian-discovery.json \
 ```
 notebooklm-raw/kejian/
 ├── README.md                 ← 本文件
-├── structure-map.md          ← discovery 后产出（待）
+├── structure-map.md          ← discovery 汇总（12/12 ✅）
 └── runs/
-    └── <timestamp>/
-        ├── run.meta.json
-        ├── kejian01-structure.answer.md
-        └── …
+    └── 20260619-215358/        ← discovery run（latest）
+```
+
+**深采 run**（独立 module 目录）：
+
+```
+notebooklm-raw/kejian07b/runs/latest/   ← 4/4 ✅ → guides/计组-课件07b-学习指南.md
+notebooklm-raw/kejian08/runs/latest/    ← 5/5 ✅
+notebooklm-raw/kejian05b/runs/latest/   ← 6/6 ✅
 ```

@@ -1,0 +1,67 @@
+{
+  "module": "kejian05b",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/kejian05b-deep.json",
+  "run_dir": "notebooklm-raw/kejian05b/runs/20260619-222348",
+  "started_at": "2026-06-19T14:23:48.604901+00:00",
+  "finished_at": "2026-06-19T14:30:45.388951+00:00",
+  "batches_total": 6,
+  "batches_completed": 6,
+  "batches_ok": 6,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "kejian05b-partA-ilp",
+      "layer": "L1",
+      "status": "ok",
+      "elapsed_seconds": 47.26,
+      "retry_count": 0,
+      "conversation_id": "dc754af6-2270-479f-b028-adf62b4da79a"
+    },
+    {
+      "id": "kejian05b-partB-static",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 42.49,
+      "retry_count": 0,
+      "conversation_id": "89f8892a-03d1-4a5c-a848-fdb783b37155"
+    },
+    {
+      "id": "kejian05b-partC-tomasulo",
+      "layer": "L2+L3",
+      "status": "ok",
+      "elapsed_seconds": 91.13,
+      "retry_count": 1,
+      "conversation_id": "2a0dd06f-4b7a-40e7-96a4-fa5ee5f374aa"
+    },
+    {
+      "id": "kejian05b-partD-rob",
+      "layer": "L2+L3",
+      "status": "ok",
+      "elapsed_seconds": 95.03,
+      "retry_count": 2,
+      "conversation_id": "6e48edc6-b3c0-4133-8e06-d53d262702e7"
+    },
+    {
+      "id": "kejian05b-partE-superscalar",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 44.36,
+      "retry_count": 0,
+      "conversation_id": "a62df9ea-ffbf-4e5f-bdbd-7af3d2a734f7"
+    },
+    {
+      "id": "kejian05b-mistakes",
+      "layer": "L3",
+      "status": "ok",
+      "elapsed_seconds": 42.09,
+      "retry_count": 0,
+      "conversation_id": "9b868572-0a71-4ac9-b49b-ad43aa9ba131"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 5.75,
+  "total_retry_count": 0
+}
