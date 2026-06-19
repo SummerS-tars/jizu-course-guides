@@ -1,0 +1,120 @@
+{
+  "module": "kejian",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "12 章课件内部结构发现（L0，按课件顺序，单问单答）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件01-计算机系统概述",
+    "课件02-数据的机器级表示",
+    "课件03-运算方法和运算部件",
+    "课件04-指令系统",
+    "课件05-中央处理器",
+    "课件06-指令级并行",
+    "课件07-指令流水线",
+    "课件08-互连网络",
+    "课件09-层次结构存储系统",
+    "课件10-线程级并行",
+    "课件11-向量体系结构",
+    "课件12-MIPS32",
+    "笔记-week01-周一-计组H … 笔记-week16-周三-计组H",
+    "报告-Lab1-朱文凯 … 报告-Lab6-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "kejian01-structure",
+      "layer": "L0",
+      "priority": "important",
+      "title": "课件01 计算机系统概述 内部结构",
+      "clear_conversation": true,
+      "prompt": "请仅根据 **课件 01 计算机系统概述**（PDF：`1_计算机系统概述.pdf`），完成课件内部结构梳理。**不要展开讲解知识点本身**。\n\n1. **按课件原始顺序**列出主要章节/板块（若能识别 slide 页码或标题请注明）\n2. 将上述内容按**知识点维度**合并为若干 Part（Part A/B/C…），说明每个 Part 涵盖哪些 slide/章节\n3. 标注每个 Part：重要程度（期末核心/重要/了解）、是否以图为主需文字补充\n4. **课堂授课对照**：对照 Week 1–16 课程记录（`weekN-周X-计组H.md`），哪些 Part 在课堂上深入讲过、哪些仅提及或未讲（注明 Week 编号）\n5. 列出课件关键**术语**及唐朔飞/P&H 对应教材章§（若可推断）\n6. 指出课件中**讲解不足**、复习时需额外补充解释的部分\n\n要求：中文；条目式；每点标注来源（课件01 / Week N 记录）；信息不足处说明。"
+    },
+    {
+      "id": "kejian02-structure",
+      "layer": "L0",
+      "priority": "important",
+      "title": "课件02 数据的机器级表示 内部结构",
+      "clear_conversation": true,
+      "prompt": "请仅根据 **课件 02 数据的机器级表示**（PDF：`2_数据的机器级表示.pdf`），完成课件内部结构梳理。**不要展开讲解知识点本身**。\n\n1. 按课件原始顺序列出主要章节/板块（slide 页码或标题）\n2. 按知识点维度合并为 Part A/B/C…（整数表示、浮点 IEEE 754、特殊值等），说明各 Part 涵盖范围\n3. 各 Part：重要程度（IEEE 754 是否期末重点）、是否图多需补充\n4. 课堂对照：Week 4–5 哪些 Part 深入讲过；与 Week 1–3「先通路后回溯」的授课顺序关系\n5. 关键术语及唐朔飞第 2 章 / P&H 第 3 章对应节\n6. 讲解不足需补充处（手算例、NaN/Inf 等）\n\n要求：中文；条目式；标注来源（课件02 / Week N 记录）。"
+    },
+    {
+      "id": "kejian03-structure",
+      "layer": "L0",
+      "priority": "normal",
+      "title": "课件03 运算方法和运算部件 内部结构",
+      "clear_conversation": true,
+      "prompt": "请仅根据 **课件 03 运算方法和运算部件**（PDF：`3_运算方法和运算部件.pdf`），完成课件内部结构梳理。**不要展开讲解知识点本身**。\n\n1. 按课件原始顺序列出章节/板块（slide 页码或标题）\n2. 按知识点维度分 Part（加减法、乘法、除法、ALU 设计等）\n3. 各 Part 重要程度、图多需补充处\n4. 课堂对照：Week 4–5 是否作为 ALU 背景讲过；Lab1 数据通路是否引用\n5. 关键术语及教材章§对照\n6. 讲解不足需补充处\n\n要求：中文；条目式；标注来源（课件03 / Week N 记录 / Lab1 报告）。"
+    },
+    {
+      "id": "kejian04-structure",
+      "layer": "L0",
+      "priority": "important",
+      "title": "课件04 指令系统 内部结构",
+      "clear_conversation": true,
+      "prompt": "请仅根据 **课件 04 指令系统**（PDF：`4_指令系统.pdf`），完成课件内部结构梳理。**不要展开讲解知识点本身**。\n\n1. 按课件原始顺序列出章节/板块（CISC vs RISC、RISC-V 六种格式、寻址方式等）\n2. 按知识点维度分 Part，说明各 Part 涵盖 slide 范围\n3. 各 Part 重要程度、与 Lab2–3 的关联点\n4. 课堂对照：Week 3 哪些 Part 深入讲过\n5. 关键术语及唐朔飞第 4 章 / P&H 第 2 章对应节\n6. 讲解不足需补充处\n\n要求：中文；条目式；标注来源（课件04 / Week 3 记录）。"
+    },
+    {
+      "id": "kejian05-structure",
+      "layer": "L0",
+      "priority": "important",
+      "title": "课件05 中央处理器 内部结构",
+      "clear_conversation": true,
+      "prompt": "请仅根据 **课件 05 中央处理器**（PDF：`5_中央处理器.pdf`），完成课件内部结构梳理。**不要展开讲解知识点本身**。\n\n1. 按课件原始顺序列出章节/板块（单周期数据通路、控制信号、多周期 FSM 等）\n2. 按知识点维度分 Part，说明各 Part 涵盖 slide 范围\n3. 各 Part 重要程度、与 Lab1 转发/阻塞的关联\n4. 课堂对照：Week 2（单周期）、Week 6（多周期）分别覆盖哪些 Part\n5. 关键术语及唐朔飞第 5 章 / P&H 第 4 章对应节\n6. 讲解不足需补充处（数据通路图、控制真值表等）\n\n要求：中文；条目式；标注来源（课件05 / Week 2/6 记录 / Lab1 报告）。"
+    },
+    {
+      "id": "kejian05b-structure",
+      "layer": "L0",
+      "priority": "critical",
+      "title": "课件5b 指令级并行 内部结构",
+      "clear_conversation": true,
+      "prompt": "请仅根据 **课件 5b 指令级并行**（PDF：`5_指令级并行.pdf`，NotebookLM 可能为 `课件06-指令级并行`），完成课件内部结构梳理。**不要展开讲解知识点本身**。\n\n1. 按课件原始顺序列出章节/板块（ILP、记分牌、Tomasulo、超标量、乱序等）\n2. 按知识点维度分 Part，说明各 Part 涵盖范围\n3. 各 Part 重要程度（**Tomasulo/保留站是否期末必考**标注）\n4. 课堂对照：Week 8–9、Week 16 复习课哪些 Part 深入讲过\n5. 关键术语及教材对应节\n6. 讲解不足需补充处（时序表、保留站字段等）\n\n要求：中文；条目式；标注来源（课件5b / Week 8/9/16 记录）。"
+    },
+    {
+      "id": "kejian06-structure",
+      "layer": "L0",
+      "priority": "important",
+      "title": "课件06 指令流水线 内部结构",
+      "clear_conversation": true,
+      "prompt": "请仅根据 **课件 06 指令流水线**（PDF：`6_指令流水线.pdf`，NotebookLM 可能为 `课件07-指令流水线`），完成课件内部结构梳理。**不要展开讲解知识点本身**。\n\n1. 按课件原始顺序列出章节/板块（五级流水、三类冒险、转发、阻塞、分支预测等）\n2. 按知识点维度分 Part，说明各 Part 涵盖 slide 范围\n3. 各 Part 重要程度、与 Lab1–3 的关联\n4. 课堂对照：Week 7–8 哪些 Part 深入讲过\n5. 关键术语及唐朔飞第 6 章 / P&H 第 4 章流水线节\n6. 讲解不足需补充处（流水线时空图等）\n\n要求：中文；条目式；标注来源（课件06 / Week 7/8 记录 / Lab1–3 报告）。"
+    },
+    {
+      "id": "kejian07a-structure",
+      "layer": "L0",
+      "priority": "normal",
+      "title": "课件7a 互连网络 内部结构",
+      "clear_conversation": true,
+      "prompt": "请仅根据 **课件 7a 互连网络**（PDF：`7_互连网络.pdf`，NotebookLM 可能为 `课件08-互连网络`），完成课件内部结构梳理。**不要展开讲解知识点本身**。\n\n1. 按课件原始顺序列出章节/板块（拓扑、节点度、直径、对剖带宽、延迟等）\n2. 按知识点维度分 Part\n3. 各 Part 重要程度（期末复习 Week 16 是否涉及）\n4. 课堂对照：是否在 Week 12/16 等记录中讲过；若仅课件备查请标明\n5. 关键术语及教材对应节\n6. 讲解不足需补充处\n\n要求：中文；条目式；标注来源（课件7a / Week N 记录）。"
+    },
+    {
+      "id": "kejian07b-structure",
+      "layer": "L0",
+      "priority": "critical",
+      "title": "课件7b 层次结构存储系统 内部结构",
+      "clear_conversation": true,
+      "prompt": "请仅根据 **课件 7b 层次结构存储系统**（PDF：`7_层次结构存储系统.pdf`，NotebookLM 可能为 `课件09-层次结构存储系统`），完成课件内部结构梳理。**不要展开讲解知识点本身**。\n\n1. 按课件原始顺序列出章节/板块（Cache 组织、虚存、页表、TLB、AMAT 等）\n2. 按知识点维度分 Part，说明各 Part 涵盖范围\n3. 各 Part 重要程度（**Sv39/SATP/TLB 是否期末核心**标注）\n4. 课堂对照：Week 10–12 哪些 Part 深入讲过；与 Lab4–6 的对应关系\n5. 关键术语及唐朔飞第 7 章 / P&H 第 5 章对应节\n6. 讲解不足需补充处（页表遍历、Cache 映射手算等）\n\n要求：中文；条目式；标注来源（课件7b / Week 10–12 记录 / Lab4–6 报告）。"
+    },
+    {
+      "id": "kejian08-structure",
+      "layer": "L0",
+      "priority": "critical",
+      "title": "课件08 线程级并行 内部结构",
+      "clear_conversation": true,
+      "prompt": "请仅根据 **课件 08 线程级并行**（PDF：`8_线程级并行.pdf`，NotebookLM 可能为 `课件10-线程级并行`），完成课件内部结构梳理。**不要展开讲解知识点本身**。\n\n1. 按课件原始顺序列出章节/板块（多核、一致性、目录法/监听法、MESI、Fence 等）\n2. 按知识点维度分 Part\n3. 各 Part 重要程度（**MESI/一致性 vs 连贯性是否期末核心**）\n4. 课堂对照：Week 13–14、Week 16 复习哪些 Part 深入讲过\n5. 关键术语及唐朔飞第 8 章 / P&H 第 6 章对应节\n6. 讲解不足需补充处（状态迁移表、自旋锁 Fence 等）\n\n要求：中文；条目式；标注来源（课件08 / Week 13–14/16 记录）。"
+    },
+    {
+      "id": "kejian09-structure",
+      "layer": "L0",
+      "priority": "normal",
+      "title": "课件09 MIPS32流水线处理器 内部结构",
+      "clear_conversation": true,
+      "prompt": "请仅根据 **课件 09 MIPS32流水线处理器**（PDF：`9_MIPS32流水线处理器.pdf`，NotebookLM 可能为 `课件12-MIPS32`），完成课件内部结构梳理。**不要展开讲解知识点本身**。\n\n1. 按课件原始顺序列出章节/板块\n2. 按知识点维度分 Part（与 RISC-V 五级流水的对照点）\n3. 各 Part 重要程度、是否期末重点\n4. 课堂对照：Week 7–9 是否深入讲过；与 Lab 项目的关系\n5. 关键术语\n6. 讲解不足需补充处\n\n要求：中文；条目式；标注来源（课件09 / Week N 记录）。"
+    },
+    {
+      "id": "kejian10-structure",
+      "layer": "L0",
+      "priority": "normal",
+      "title": "课件10 向量体系结构 内部结构",
+      "clear_conversation": true,
+      "prompt": "请仅根据 **课件 10 向量体系结构**（PDF：`10_向量体系结构.pdf`，NotebookLM 可能为 `课件11-向量体系结构`），完成课件内部结构梳理。**不要展开讲解知识点本身**。\n\n1. 按课件原始顺序列出章节/板块（SIMD、向量处理器、GPU 等）\n2. 按知识点维度分 Part\n3. 各 Part 重要程度（期末复习 Week 15–16 是否涉及）\n4. 课堂对照：Week 15 I/O/复习课哪些 Part 讲过\n5. 关键术语及教材对应节\n6. 讲解不足需补充处\n\n要求：中文；条目式；标注来源（课件10 / Week 15–16 记录）。"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "module": "kejian",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/kejian-discovery.json",
+  "run_dir": "notebooklm-raw/kejian/runs/20260619-215358",
+  "started_at": "2026-06-19T13:53:58.753092+00:00",
+  "finished_at": "2026-06-19T14:06:52.334128+00:00",
+  "batches_total": 12,
+  "batches_completed": 12,
+  "batches_ok": 12,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "kejian01-structure",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 71.3,
+      "retry_count": 0,
+      "conversation_id": "ea64fd86-8f66-488c-b749-d38faf8083f8"
+    },
+    {
+      "id": "kejian02-structure",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 47.47,
+      "retry_count": 0,
+      "conversation_id": "0c6754f3-0cd5-4a5c-bd86-05ec61ba2c0c"
+    },
+    {
+      "id": "kejian03-structure",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 57.0,
+      "retry_count": 0,
+      "conversation_id": "5a983dad-7d07-4a69-8599-9cf82788302a"
+    },
+    {
+      "id": "kejian04-structure",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 61.5,
+      "retry_count": 0,
+      "conversation_id": "e4cb7382-d802-4b60-b52f-ede9b32ddd44"
+    },
+    {
+      "id": "kejian05-structure",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 66.88,
+      "retry_count": 0,
+      "conversation_id": "d7d30f26-b5f8-464e-bd46-60b16706fa30"
+    },
+    {
+      "id": "kejian05b-structure",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 45.68,
+      "retry_count": 0,
+      "conversation_id": "d523e416-b256-4c4d-9877-23fb2a14dbb6"
+    },
+    {
+      "id": "kejian06-structure",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 75.81,
+      "retry_count": 0,
+      "conversation_id": "5a2e30ae-15e8-4414-8470-ad53a65a3abf"
+    },
+    {
+      "id": "kejian07a-structure",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 54.13,
+      "retry_count": 0,
+      "conversation_id": "9d389c1f-a778-4e7c-bece-bd4a572ecc7e"
+    },
+    {
+      "id": "kejian07b-structure",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 46.88,
+      "retry_count": 0,
+      "conversation_id": "9b2fe36f-21f3-411d-82f9-4fa07c786828"
+    },
+    {
+      "id": "kejian08-structure",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 53.5,
+      "retry_count": 0,
+      "conversation_id": "da4d73f1-4f4f-46a3-9f61-5340d1cbedef"
+    },
+    {
+      "id": "kejian09-structure",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 45.29,
+      "retry_count": 0,
+      "conversation_id": "c89680d8-c04e-4dcd-80d9-523278588984"
+    },
+    {
+      "id": "kejian10-structure",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 56.89,
+      "retry_count": 0,
+      "conversation_id": "604cb9fd-3c7e-4911-bbea-5c1ac085decb"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 773.58,
+  "total_retry_count": 0
+}
