@@ -1,0 +1,55 @@
+{
+  "module": "kejian03",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件03 运算方法和运算部件 知识点深采（ALU、乘除、浮点运算）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件03-运算方法和运算部件",
+    "3_运算方法和运算部件.pdf",
+    "笔记-week04-周一-计组H",
+    "笔记-week05-周一-计组H",
+    "报告-Lab1-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "kejian03-part1-alu",
+      "layer": "L2",
+      "priority": "important",
+      "title": "Part1 ALU 架构",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 03 运算方法和运算部件**（PDF：`3_运算方法和运算部件.pdf`，NotebookLM `课件03-运算方法和运算部件`）**Part 1：ALU 架构设计**，讲解：\n\n1. 1-bit ALU、串行/并行 n 位 ALU 结构\n2. ALUop 控制与功能选择\n3. 与 Lab1 EX 阶段 ALU 的对照点\n\n要求：中文；结构说明；标注来源（课件03 / Lab1 报告）。"
+    },
+    {
+      "id": "kejian03-part2-addflags",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "Part2 加减与标志位",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请根据 **课件 03** **Part 2：定点加减法**，讲解：\n\n1. 补码加减、求负规则\n2. 标志位 OF/SF/ZF/CF 产生条件\n3. **数值例**：给定两个 8 位补码，做加减并判断各标志位\n\n要求：中文；逐步手算；标注来源（课件03 / Week4-5 记录）。"
+    },
+    {
+      "id": "kejian03-part3-muldiv",
+      "layer": "L2",
+      "priority": "important",
+      "title": "Part3 Booth 乘法与除法",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 03** **Part 3：乘除法运算**，讲解：\n\n1. Booth 补码乘法算法步骤\n2. 恢复余数除法流程\n3. **数值例**：4 位补码 Booth 乘法或恢复余数除法一步推演\n\n要求：中文；逐步填表；标注来源（课件03 / Week5 记录）。"
+    },
+    {
+      "id": "kejian03-part4-floatop",
+      "layer": "L2",
+      "priority": "important",
+      "title": "Part4 浮点运算舍入",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 03** **Part 4：浮点运算**，讲解：\n\n1. 尾数/阶码对齐、规格化\n2. 舍入模式（就近偶数等）\n3. 并行进位加速简介\n\n要求：中文；标注来源（课件03 / 唐朔飞第6章 / P&H第3章）。"
+    },
+    {
+      "id": "kejian03-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "课件03易错点",
+      "clear_conversation": true,
+      "prompt": "【单问】列出 **课件 03** 最易混淆的 5 组概念，用对比表说明：\n\n- OF vs CF 溢出判断\n- Booth vs 阵列乘法\n- 恢复余数 vs 不恢复余数\n- 串行 vs 并行 ALU\n- 浮点对阶 vs 定点对齐\n\n要求：中文；标注来源（课件03 / Week4-5）。"
+    }
+  ]
+}

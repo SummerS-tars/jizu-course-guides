@@ -1,0 +1,56 @@
+{
+  "module": "kejian09",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件09 MIPS32流水线处理器 知识点深采（对照 RISC-V Lab1-3）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件12-MIPS32",
+    "9_MIPS32流水线处理器.pdf",
+    "笔记-week07-周一-计组H",
+    "笔记-week08-周一-计组H",
+    "报告-Lab1-朱文凯",
+    "报告-Lab3-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "kejian09-part1-fivestage",
+      "layer": "L2",
+      "priority": "important",
+      "title": "Part1 五级流水结构",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 09 MIPS32流水线处理器**（PDF：`9_MIPS32流水线处理器.pdf`，NotebookLM `课件12-MIPS32`）**Part 1：五级流水结构**，讲解：\n\n1. 单周期 vs 流水线时序对比\n2. IF/ID/EX/MEM/WB 阶段与 RISC-V Lab1 对照\n3. 多条指令重叠执行的时空图\n\n要求：中文；标注来源（课件09 / Week7-8 / Lab1 报告）。"
+    },
+    {
+      "id": "kejian09-part2-memflow",
+      "layer": "L2",
+      "priority": "important",
+      "title": "Part2 lw/sw 数据流",
+      "clear_conversation": true,
+      "prompt": "【单问·Lab2】请根据 **课件 09** **Part 2：访存指令数据流**，讲解 `lw`/`sw` 在五级 MIPS 流水线中的数据通路与总线接入；与 RISC-V Lab2 差异点。\n\n要求：中文；标注来源（课件09 / Lab2 报告）。"
+    },
+    {
+      "id": "kejian09-part3-flush",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "Part3 分支 Flush",
+      "clear_conversation": true,
+      "prompt": "【单问·期末重点·Lab3】请根据 **课件 09** **Part 3：控制冒险与 Flush**（课件09-37），讲解：\n\n1. `beq` 分支导致 PC 重定向时的 Flush 操作\n2. **数值例**：给定含分支的指令序列，逐步展示 Flush 前后流水线状态\n3. 与 RISC-V Lab3 分支实现对照\n\n要求：中文；逐步填表；标注来源（课件09 / Week12 / Lab3 报告）。"
+    },
+    {
+      "id": "kejian09-part4-prediction",
+      "layer": "L2",
+      "priority": "optional",
+      "title": "Part4 分支预测",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 09** **Part 4：分支预测与优化**，讲解静态/动态分支预测基本概念及对 CPI 的影响；标明 Bonus/进阶内容。\n\n要求：中文；标注来源（课件09 / Week12 记录）。"
+    },
+    {
+      "id": "kejian09-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "课件09易错点",
+      "clear_conversation": true,
+      "prompt": "【单问】列出 **课件 09 MIPS32 流水线** 最易混淆的 5 组概念，用对比表说明：\n\n- MIPS vs RISC-V 五级阶段命名\n- Flush vs Stall\n- 控制冒险 vs 数据冒险\n- 单周期 vs 流水线 CPI\n- 分支预测命中 vs 误预测惩罚\n\n要求：中文；标注来源（课件09 / Week7-9 / Lab1-3）。"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "module": "kejian02",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/kejian02-deep.json",
+  "run_dir": "notebooklm-raw/kejian02/runs/20260619-233942",
+  "started_at": "2026-06-19T15:39:42.215818+00:00",
+  "finished_at": "2026-06-19T15:45:17.574477+00:00",
+  "batches_total": 6,
+  "batches_completed": 6,
+  "batches_ok": 6,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "kejian02-partA-fixed",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 50.24,
+      "retry_count": 0,
+      "conversation_id": "6bfc0eef-ed5a-4efb-8a87-beb3b24684ad"
+    },
+    {
+      "id": "kejian02-partB-ieee754",
+      "layer": "L2+L3",
+      "status": "ok",
+      "elapsed_seconds": 48.04,
+      "retry_count": 0,
+      "conversation_id": "8d081bca-15ec-4fec-8043-b3d5a6bcec1d"
+    },
+    {
+      "id": "kejian02-partC-special",
+      "layer": "L2+L3",
+      "status": "ok",
+      "elapsed_seconds": 52.97,
+      "retry_count": 0,
+      "conversation_id": "361d1119-f46e-42e0-bfc9-7a6e8d453189"
+    },
+    {
+      "id": "kejian02-partD-ai-formats",
+      "layer": "L1",
+      "status": "ok",
+      "elapsed_seconds": 42.66,
+      "retry_count": 0,
+      "conversation_id": "28f8653e-2e60-44ec-862d-57a64329697f"
+    },
+    {
+      "id": "kejian02-partE-endian",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 44.26,
+      "retry_count": 0,
+      "conversation_id": "91ca5ac5-24d7-42e0-bcdc-a03f388c85c9"
+    },
+    {
+      "id": "kejian02-mistakes",
+      "layer": "L3",
+      "status": "ok",
+      "elapsed_seconds": 53.22,
+      "retry_count": 0,
+      "conversation_id": "2d73cd6e-e0a5-4955-8ef2-b18aaac0f0e3"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 335.36,
+  "total_retry_count": 0
+}

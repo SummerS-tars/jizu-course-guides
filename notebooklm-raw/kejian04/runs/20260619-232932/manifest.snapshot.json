@@ -1,0 +1,55 @@
+{
+  "module": "kejian04",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件04 指令系统 知识点深采（RISC-V ISA、寻址、Lab2-3）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件04-指令系统",
+    "4_指令系统.pdf",
+    "笔记-week03-周一-计组H",
+    "报告-Lab2-朱文凯",
+    "报告-Lab3-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "kejian04-partA-isa",
+      "layer": "L1",
+      "priority": "important",
+      "title": "PartA ISA 设计哲学",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 04 指令系统**（PDF：`4_指令系统.pdf`，NotebookLM `课件04-指令系统`）**Part A：ISA 理论基础**（Slide 1–7），讲解：\n\n1. 指令系统定义与软硬件界面地位\n2. 设计目标：并行性、OS 支持、编译器友好\n3. CISC vs RISC 权衡\n\n要求：中文；标注来源（课件04 / Week3 记录 / 唐朔飞第7章 / P&H第2章）。"
+    },
+    {
+      "id": "kejian04-partB-riscv",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "PartB RISC-V 六种格式",
+      "clear_conversation": true,
+      "prompt": "【单问·极重要·Lab2-3】请根据 **课件 04** **Part B：RISC-V 指令集**（Slide 9），讲解：\n\n1. RV32I 子集、寄存器 ABI 约定（x0–x31）\n2. **R/I/S/B/U/J 六种格式**位域与典型指令\n3. **数值例**：给定 RISC-V 汇编，写出 32 位机器码（或反解）\n\n要求：中文；位域表；标注来源（课件04 / Week3 / Lab2-3 报告）。"
+    },
+    {
+      "id": "kejian04-partC-loadstore",
+      "layer": "L2",
+      "priority": "important",
+      "title": "PartC Load-Store 与 MIPS",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 04** **Part C：指令风格与 MIPS**（Slide 8, 10–11），讲解：\n\n1. Load/Store 型结构特征\n2. MIPS 指令格式与 RISC-V 对照\n3. 目标文件链接、机器级表示要点\n\n要求：中文；标注来源（课件04 / Week3 记录）。"
+    },
+    {
+      "id": "kejian04-partD-addressing",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "PartD 寻址方式与编码",
+      "clear_conversation": true,
+      "prompt": "【单问·重要·Lab2-3】请根据 **课件 04** **Part D：寻址方式**（Slide 6, 10–11），讲解：\n\n1. 立即数、寄存器、基址+偏移、PC 相对等寻址方式\n2. 定长 vs 扩展操作码编码\n3. **数值例**：`lw`/`sw` 偏移寻址与 `beq` PC 相对寻址地址计算\n\n要求：中文；逐步手算；标注来源（课件04 / Lab2-3 报告）。"
+    },
+    {
+      "id": "kejian04-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "课件04易错点",
+      "clear_conversation": true,
+      "prompt": "【单问】列出 **课件 04 指令系统** 最易混淆的 5 组概念，用对比表说明：\n\n- R/I/S/B/U/J 格式适用指令\n- ABI 寄存器名 vs 硬件编号\n- 立即数寻址 vs PC 相对寻址\n- CISC vs RISC\n- ISA vs ABI\n\n要求：中文；标注来源（课件04 / Week3 / Lab2-3）。"
+    }
+  ]
+}

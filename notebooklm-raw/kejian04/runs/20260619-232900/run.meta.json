@@ -1,0 +1,17 @@
+{
+  "module": "kejian04",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/kejian04-deep.json",
+  "run_dir": "notebooklm-raw/kejian04/runs/20260619-232900",
+  "started_at": "2026-06-19T15:29:00.429139+00:00",
+  "finished_at": "2026-06-19T15:29:03.207325+00:00",
+  "batches_total": 5,
+  "batches_completed": 0,
+  "batches_ok": 0,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 5,
+  "batches": [],
+  "status": "failed",
+  "error": "sync-auth 失败:\n[WARN] 认证已失效（token fetch 失败）\n[OK] 已同步: /home/thesumst/.notebooklm/storage_state.json\n\n请在 Windows 重新登录（用户手动，Agent 勿从 WSL 触发）：\n  桌面: C:\\Users\\Sum\\Desktop\\notebooklm-login.ps1\n  或 PowerShell:\n    cd E:\\_WSL\\Cowork\\notebooklm-py_Prepare\n    .\\venv\\Scripts\\Activate.ps1\n    python fix_login_edge.py\n\n登录完成后在 WSL 运行: python3 scripts/sync-auth.py --force\n详见: ~/service/openclaw/workspace/skills/notebooklm-integration/docs/auth-sop.md\n\n\n\n认证失败。勿在 WSL 运行 notebooklm login。\n请用户在 Windows 运行桌面 notebooklm-login.ps1 或 fix_login_edge.py，\n再在 WSL: python3 ~/service/openclaw/workspace/skills/notebooklm-integration/scripts/sync-auth.py --force\n详见: ~/service/openclaw/workspace/skills/notebooklm-integration/docs/auth-sop.md"
+}

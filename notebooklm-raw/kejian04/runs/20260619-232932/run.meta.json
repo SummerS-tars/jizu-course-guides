@@ -1,0 +1,59 @@
+{
+  "module": "kejian04",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/kejian04-deep.json",
+  "run_dir": "notebooklm-raw/kejian04/runs/20260619-232932",
+  "started_at": "2026-06-19T15:29:32.092027+00:00",
+  "finished_at": "2026-06-19T15:34:09.561139+00:00",
+  "batches_total": 5,
+  "batches_completed": 5,
+  "batches_ok": 5,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "kejian04-partA-isa",
+      "layer": "L1",
+      "status": "ok",
+      "elapsed_seconds": 50.11,
+      "retry_count": 0,
+      "conversation_id": "2862003e-8ff8-4c87-a07b-192c240bc72a"
+    },
+    {
+      "id": "kejian04-partB-riscv",
+      "layer": "L2+L3",
+      "status": "ok",
+      "elapsed_seconds": 47.81,
+      "retry_count": 0,
+      "conversation_id": "8453fd4f-5584-4b0f-abd6-476faa28772e"
+    },
+    {
+      "id": "kejian04-partC-loadstore",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 42.44,
+      "retry_count": 0,
+      "conversation_id": "ac6fbe3f-574a-4d7a-9997-eff99e7968ed"
+    },
+    {
+      "id": "kejian04-partD-addressing",
+      "layer": "L2+L3",
+      "status": "ok",
+      "elapsed_seconds": 49.68,
+      "retry_count": 0,
+      "conversation_id": "033a6bfc-ace2-40e6-bbe4-2b6e18469549"
+    },
+    {
+      "id": "kejian04-mistakes",
+      "layer": "L3",
+      "status": "ok",
+      "elapsed_seconds": 50.46,
+      "retry_count": 0,
+      "conversation_id": "1aec9f89-8d94-4b7f-a7fe-72b6a182b236"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 277.47,
+  "total_retry_count": 0
+}

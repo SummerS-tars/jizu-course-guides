@@ -1,0 +1,59 @@
+{
+  "module": "kejian09",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/kejian09-deep.json",
+  "run_dir": "notebooklm-raw/kejian09/runs/20260619-235423",
+  "started_at": "2026-06-19T15:54:23.560431+00:00",
+  "finished_at": "2026-06-19T15:59:02.526540+00:00",
+  "batches_total": 5,
+  "batches_completed": 5,
+  "batches_ok": 5,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "kejian09-part1-fivestage",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 45.92,
+      "retry_count": 0,
+      "conversation_id": "f22c77ae-314e-4440-ade0-15192259bd77"
+    },
+    {
+      "id": "kejian09-part2-memflow",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 45.45,
+      "retry_count": 0,
+      "conversation_id": "cef602a8-e193-400d-8831-dc18655d7451"
+    },
+    {
+      "id": "kejian09-part3-flush",
+      "layer": "L2+L3",
+      "status": "ok",
+      "elapsed_seconds": 49.85,
+      "retry_count": 0,
+      "conversation_id": "6b6954aa-6a91-43bd-99d2-3612598474d1"
+    },
+    {
+      "id": "kejian09-part4-prediction",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 53.78,
+      "retry_count": 0,
+      "conversation_id": "167b7a2f-a796-44d7-a840-0f6a6f154d26"
+    },
+    {
+      "id": "kejian09-mistakes",
+      "layer": "L3",
+      "status": "ok",
+      "elapsed_seconds": 47.02,
+      "retry_count": 0,
+      "conversation_id": "afa2691f-2b5c-4c6e-921b-893d28f8981f"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 278.97,
+  "total_retry_count": 0
+}

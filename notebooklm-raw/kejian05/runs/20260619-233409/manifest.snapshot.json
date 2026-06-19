@@ -1,0 +1,55 @@
+{
+  "module": "kejian05",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件05 中央处理器 知识点深采（单周期/多周期 CPU，Lab1）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件05-中央处理器",
+    "5_中央处理器.pdf",
+    "笔记-week02-周一-计组H",
+    "笔记-week06-周一-计组H",
+    "报告-Lab1-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "kejian05-partA-datapath",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "PartA 单周期数据通路",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请根据 **课件 05 中央处理器**（PDF：`5_中央处理器.pdf`，NotebookLM `课件05-中央处理器`）**Part A：单周期数据通路**（约 Slide 1–15），讲解：\n\n1. CPU 功能与指令执行步骤（取指→译码→执行→访存→写回）\n2. 数据通路组成：组合/时序逻辑元件、ALU、寄存器堆、存储器接口\n3. R 型、Load/Store、分支三类指令在单周期通路上的数据流（以课件 MIPS 子集为例，注明 RISC-V Lab1 对照点）\n\n要求：中文；建议用文字描述通路图；标注来源（课件05 / Week2 记录 / Lab1 报告）。"
+    },
+    {
+      "id": "kejian05-partB-control",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "PartB 单周期控制器",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 05** **Part B：单周期控制逻辑**（约 Slide 16–25），讲解：\n\n1. 主控制单元产生的关键控制信号（RegWrite、MemRead、MemWrite、MemToReg、ALUSrc、Branch 等）\n2. 不同指令类型下各控制信号的取值规律（真值表思路）\n3. ALU 局部控制与主控制的配合\n\n要求：中文；控制信号表；标注来源（课件05 / Week2）；补充课件未完整列出的信号组合。"
+    },
+    {
+      "id": "kejian05-partC-multicycle",
+      "layer": "L2",
+      "priority": "important",
+      "title": "PartC 多周期 FSM",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 05** **Part C：多周期设计与 FSM**（约 Slide 26–40），讲解：\n\n1. 单周期 CPU 的局限性（时钟周期由最慢指令决定）\n2. 多周期：指令阶段划分、共享功能部件\n3. 有限状态机 (FSM) 状态转换图：各类指令的状态序列\n\n要求：中文；FSM 状态迁移说明；标注来源（课件05 / Week6 记录）。"
+    },
+    {
+      "id": "kejian05-partD-micro-exception",
+      "layer": "L2",
+      "priority": "important",
+      "title": "PartD 微程序与异常",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 05** **Part D：微程序控制器与异常/中断**（约 Slide 41+），讲解：\n\n1. 硬连线控制 vs 微程序控制\n2. 微指令格式与下址确定方式\n3. 异常/中断概念、硬件检测与处理流程（为 Lab5/6 特权态铺垫）\n\n要求：中文；标注来源（课件05 / 唐朔飞第5章 / P&H第4章）。"
+    },
+    {
+      "id": "kejian05-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "课件05易错点",
+      "clear_conversation": true,
+      "prompt": "【单问】列出 **课件 05 中央处理器** 最易混淆的 5 组概念，用对比表说明：\n\n- 单周期 vs 多周期 vs 流水线\n- 组合逻辑 vs 时序逻辑在通路中的角色\n- 硬连线 vs 微程序控制\n- 异常 vs 中断\n- 数据通路 vs 控制器\n\n要求：中文；标注来源（课件05 / Week2/6 / Lab1）。"
+    }
+  ]
+}

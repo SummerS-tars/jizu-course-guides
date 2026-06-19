@@ -1,0 +1,59 @@
+{
+  "module": "kejian03",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/kejian03-deep.json",
+  "run_dir": "notebooklm-raw/kejian03/runs/20260619-234517",
+  "started_at": "2026-06-19T15:45:17.718117+00:00",
+  "finished_at": "2026-06-19T15:49:41.378597+00:00",
+  "batches_total": 5,
+  "batches_completed": 5,
+  "batches_ok": 5,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "kejian03-part1-alu",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 41.5,
+      "retry_count": 0,
+      "conversation_id": "9962d59e-d0dc-458b-b3ea-7a08eaeeca44"
+    },
+    {
+      "id": "kejian03-part2-addflags",
+      "layer": "L2+L3",
+      "status": "ok",
+      "elapsed_seconds": 48.14,
+      "retry_count": 0,
+      "conversation_id": "c3e89a4e-ac66-4f93-9359-a0304af59132"
+    },
+    {
+      "id": "kejian03-part3-muldiv",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 47.18,
+      "retry_count": 0,
+      "conversation_id": "842dfda4-bf65-481d-9407-e62aa7a7da9f"
+    },
+    {
+      "id": "kejian03-part4-floatop",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 42.88,
+      "retry_count": 0,
+      "conversation_id": "ac44627b-f365-4d89-9854-07928ac0126b"
+    },
+    {
+      "id": "kejian03-mistakes",
+      "layer": "L3",
+      "status": "ok",
+      "elapsed_seconds": 48.11,
+      "retry_count": 0,
+      "conversation_id": "4ea48073-1fa2-41ca-8c24-ad6d5cf3d4ac"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 263.66,
+  "total_retry_count": 0
+}

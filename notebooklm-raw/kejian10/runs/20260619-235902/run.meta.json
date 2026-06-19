@@ -1,0 +1,67 @@
+{
+  "module": "kejian10",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/kejian10-deep.json",
+  "run_dir": "notebooklm-raw/kejian10/runs/20260619-235902",
+  "started_at": "2026-06-19T15:59:02.644493+00:00",
+  "finished_at": "2026-06-19T16:04:29.446661+00:00",
+  "batches_total": 6,
+  "batches_completed": 6,
+  "batches_ok": 6,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "kejian10-part1-dlp",
+      "layer": "L1",
+      "status": "ok",
+      "elapsed_seconds": 41.8,
+      "retry_count": 0,
+      "conversation_id": "101d896c-a053-423a-ae10-96ab60293824"
+    },
+    {
+      "id": "kejian10-part2-hardware",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 45.71,
+      "retry_count": 0,
+      "conversation_id": "786e37c8-5173-46f8-a484-aaed4f10658e"
+    },
+    {
+      "id": "kejian10-part3-memory",
+      "layer": "L2",
+      "status": "ok",
+      "elapsed_seconds": 52.23,
+      "retry_count": 0,
+      "conversation_id": "6a8ef785-7816-4aed-b0e1-3c5069bce6fd"
+    },
+    {
+      "id": "kejian10-part4-convoy",
+      "layer": "L2+L3",
+      "status": "ok",
+      "elapsed_seconds": 43.12,
+      "retry_count": 0,
+      "conversation_id": "068353c3-83f8-492a-8dbf-9b71024a15cf"
+    },
+    {
+      "id": "kejian10-part5-gpu",
+      "layer": "L1",
+      "status": "ok",
+      "elapsed_seconds": 44.81,
+      "retry_count": 0,
+      "conversation_id": "aa52e659-cdac-45a8-b0fa-bf0c9579bd94"
+    },
+    {
+      "id": "kejian10-mistakes",
+      "layer": "L3",
+      "status": "ok",
+      "elapsed_seconds": 45.93,
+      "retry_count": 0,
+      "conversation_id": "75a17a9a-6d42-4e27-85b7-f33e3ee89742"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 326.8,
+  "total_retry_count": 0
+}

@@ -1,0 +1,9 @@
+【单问】列出 **课件 10 向量体系结构** 最易混淆的 5 组概念，用对比表说明：
+
+- ILP vs DLP
+- SIMD vs SIMT
+- Stride vs 连续访存
+- Chime vs CPI
+- Strip-mining vs 向量长度 VL
+
+要求：中文；标注来源（课件10 / Week15-16 复习）。

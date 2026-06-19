@@ -53,7 +53,7 @@
       "conversation_id": "2bc32423-1218-4821-be27-971091d03f37"
     }
   ],
-  "status": "running",
+  "status": "completed",
   "total_elapsed_seconds": 296.51,
   "total_retry_count": 1
 }

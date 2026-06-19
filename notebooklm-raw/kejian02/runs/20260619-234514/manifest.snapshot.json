@@ -1,0 +1,62 @@
+{
+  "module": "kejian02",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件02 数据的机器级表示 知识点深采（定点、IEEE754、端序）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件02-数据的机器级表示",
+    "2_数据的机器级表示.pdf",
+    "笔记-week04-周一-计组H",
+    "笔记-week05-周一-计组H"
+  ],
+  "batches": [
+    {
+      "id": "kejian02-partA-fixed",
+      "layer": "L2",
+      "priority": "important",
+      "title": "PartA 定点编码",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 02 数据的机器级表示**（PDF：`2_数据的机器级表示.pdf`，NotebookLM `课件02-数据的机器级表示`）**Part A：定点编码**，讲解：\n\n1. 进制转换、原码/反码/补码/移码\n2. C 语言整数类型与位宽\n3. **数值例**：给定十进制整数，写出 8/32 位补码\n\n要求：中文；逐步手算；标注来源（课件02 / Week4 记录 / 唐朔飞第6章 / P&H第3章）。"
+    },
+    {
+      "id": "kejian02-partB-ieee754",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "PartB IEEE754 浮点",
+      "clear_conversation": true,
+      "prompt": "【单问·期末绝对重点】请根据 **课件 02** **Part B：IEEE 754 浮点体系**，讲解：\n\n1. 浮点规格化、阶码偏置 (Bias)、单/双精度位域\n2. **完整数值例**：十进制 ↔ IEEE 754 单精度互转（含小数）\n3. 精度分布不均匀性直觉\n\n要求：中文；逐步手算每一位；标注来源（课件02 / Week5 记录）。"
+    },
+    {
+      "id": "kejian02-partC-special",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "PartC 特殊值与 Denorm",
+      "clear_conversation": true,
+      "prompt": "【单问·期末绝对重点】请根据 **课件 02** **Part C：特殊值与异常**，讲解：\n\n1. ±0、±∞、NaN（SNaN/QNaN）、非规格化数编码规则\n2. 特殊值运算规则（如 NaN 传播、∞+有限数）\n3. **数值例**：判断两个 IEEE 754 单精度浮点运算结果\n\n要求：中文；对比表；标注来源（课件02 / Week5 记录）。"
+    },
+    {
+      "id": "kejian02-partD-ai-formats",
+      "layer": "L1",
+      "priority": "optional",
+      "title": "PartD AI 低精度格式",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 02** **Part D：现代低精度格式**（BFLOAT16、FP8、1-bit LLM 等），讲解动机与与 IEEE 754 的关系；标明期末非首要。\n\n要求：中文；标注来源（课件02 / Week5 记录）。"
+    },
+    {
+      "id": "kejian02-partE-endian",
+      "layer": "L2",
+      "priority": "important",
+      "title": "PartE 端序对齐校验",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 02** **Part E：非数值表示与存储**，讲解：\n\n1. ASCII/汉字编码要点\n2. **大端/小端**内存布局与数值例\n3. 边界对齐、奇偶校验/BCD 码\n\n要求：中文；内存字节图示；标注来源（课件02 / Week4 记录）。"
+    },
+    {
+      "id": "kejian02-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "课件02易错点",
+      "clear_conversation": true,
+      "prompt": "【单问】列出 **课件 02** 最易混淆的 5 组概念，用对比表说明：\n\n- 原码 vs 补码 vs 移码\n- 规格化 vs 非规格化数\n- SNaN vs QNaN\n- 大端 vs 小端\n- 单精度 vs 双精度位域\n\n要求：中文；标注来源（课件02 / Week4-5 / Week16 复习）。"
+    }
+  ]
+}

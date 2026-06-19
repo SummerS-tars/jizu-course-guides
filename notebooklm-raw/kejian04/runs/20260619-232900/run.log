@@ -1,0 +1,22 @@
+[23:29:00] 模块: kejian04 | 批次数: 5 | 输出: /home/thesumst/development/jizu/notebooklm-raw/kejian04/runs/20260619-232900
+[23:29:00] 同步认证…
+[23:29:03] 运行中止: sync-auth 失败:
+[WARN] 认证已失效（token fetch 失败）
+[OK] 已同步: /home/thesumst/.notebooklm/storage_state.json
+
+请在 Windows 重新登录（用户手动，Agent 勿从 WSL 触发）：
+  桌面: C:\Users\Sum\Desktop\notebooklm-login.ps1
+  或 PowerShell:
+    cd E:\_WSL\Cowork\notebooklm-py_Prepare
+    .\venv\Scripts\Activate.ps1
+    python fix_login_edge.py
+
+登录完成后在 WSL 运行: python3 scripts/sync-auth.py --force
+详见: ~/service/openclaw/workspace/skills/notebooklm-integration/docs/auth-sop.md
+
+
+
+认证失败。勿在 WSL 运行 notebooklm login。
+请用户在 Windows 运行桌面 notebooklm-login.ps1 或 fix_login_edge.py，
+再在 WSL: python3 ~/service/openclaw/workspace/skills/notebooklm-integration/scripts/sync-auth.py --force
+详见: ~/service/openclaw/workspace/skills/notebooklm-integration/docs/auth-sop.md
