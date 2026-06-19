@@ -1,0 +1,46 @@
+{
+  "module": "kejian07a",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件7a 互连网络 知识点深采（拓扑参数、互连函数）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件08-互连网络",
+    "7_互连网络.pdf",
+    "笔记-week14-周一-计组H",
+    "笔记-week16-周三-计组H"
+  ],
+  "batches": [
+    {
+      "id": "kejian07a-part1-params",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "Part1 分类与特性参数",
+      "clear_conversation": true,
+      "prompt": "【单问·期末计算重点】请根据 **课件 7a 互连网络**（PDF：`7_互连网络.pdf`，NotebookLM `课件08-互连网络`）**Part 1：基础分类与评价准则**，讲解：\n\n1. 定时（同步/异步）、交换（电路/分组）、控制（集中/分散）方式\n2. **网络规模、结点度、直径、对剖带宽、平均延迟**定义\n3. **数值例**：给定 Mesh/环网拓扑，计算结点度、直径、对剖带宽、均匀流量下平均延迟\n\n要求：中文；逐步手算；标注来源（课件7a / Week14 / Week16 复习）。"
+    },
+    {
+      "id": "kejian07a-part2-functions",
+      "layer": "L2",
+      "priority": "important",
+      "title": "Part2 互连函数",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 7a** **Part 2：互连函数**，讲解：\n\n1. Cube、Shuffle、Butterfly、反位序、PM2I 函数定义\n2. **数值例**：给定 3 位二进制源地址，计算 Shuffle 与 Butterfly 映射结果\n\n要求：中文；逐步手算；标注来源（课件7a / Week14 记录）。"
+    },
+    {
+      "id": "kejian07a-part3-topology",
+      "layer": "L2",
+      "priority": "important",
+      "title": "Part3 静态动态拓扑",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 7a** **Part 3：互连网络结构**，讲解：\n\n1. 静态网络：线性阵列、环、Mesh/Torus、超立方体、胖树\n2. 动态网络：总线、MIN、Omega、Crossbar\n3. Crossbar 无阻塞 vs Omega 阻塞直觉\n\n要求：中文；拓扑对比表；标注来源（课件7a / Week14 记录）。"
+    },
+    {
+      "id": "kejian07a-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "课件7a易错点",
+      "clear_conversation": true,
+      "prompt": "【单问】列出 **课件 7a 互连网络** 最易混淆的 5 组概念，用对比表说明：\n\n- 网络直径 vs 平均延迟\n- 对剖带宽 vs 链路带宽\n- 静态 vs 动态互连\n- Mesh vs Torus\n- Omega 阻塞 vs Crossbar 无阻塞\n\n要求：中文；标注来源（课件7a / Week14 / Week16 复习）。"
+    }
+  ]
+}

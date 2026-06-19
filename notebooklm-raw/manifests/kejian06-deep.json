@@ -1,0 +1,65 @@
+{
+  "module": "kejian06",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件06 指令流水线 知识点深采（五级流水、冒险、Lab1-3）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件07-指令流水线",
+    "6_指令流水线.pdf",
+    "笔记-week07-周一-计组H",
+    "笔记-week08-周一-计组H",
+    "报告-Lab1-朱文凯",
+    "报告-Lab2-朱文凯",
+    "报告-Lab3-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "kejian06-partA-basics",
+      "layer": "L1",
+      "priority": "important",
+      "title": "PartA 流水线基础",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 06 指令流水线**（PDF：`6_指令流水线.pdf`，NotebookLM `课件07-指令流水线`）**Part A：流水线基础**（Slide 1–6），讲解：\n\n1. 流水线概念、吞吐率与加速比\n2. 理想 CPI vs 实际 CPI、流水线性能公式\n3. 洗衣服类比与时空图直觉\n\n要求：中文；标注来源（课件06 / Week7 记录）。"
+    },
+    {
+      "id": "kejian06-partB-datapath",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "PartB 五级数据通路",
+      "clear_conversation": true,
+      "prompt": "【单问·极高·Lab1-2】请根据 **课件 06** **Part B：五级流水线实现**（Slide 7–19），讲解：\n\n1. IF/ID/EX/MEM/WB 各阶段功能与段间寄存器\n2. 控制信号在流水线中的传递\n3. 一条 `lw` 或 `add` 在五级中的数据流\n\n要求：中文；对照 Lab1-2 实现；标注来源（课件06 / Week7-8 / Lab1-2 报告）。"
+    },
+    {
+      "id": "kejian06-partC-datahazard",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "PartC 数据冒险转发阻塞",
+      "clear_conversation": true,
+      "prompt": "【单问·极高·Lab1】请根据 **课件 06** **Part C：数据冒险**（Slide 20–22），讲解：\n\n1. RAW/WAR/WAW 与 Load-Use 冒险\n2. **转发 (Forwarding)** 检测条件与旁路路径\n3. **阻塞 (Stall)** 与气泡插入\n4. **数值例**：给定 4–6 条指令序列，画流水线时空图并标注转发/阻塞周期\n\n要求：中文；逐步填表；标注来源（课件06 / Week8 / Lab1 报告）。"
+    },
+    {
+      "id": "kejian06-partD-controlhazard",
+      "layer": "L2",
+      "priority": "important",
+      "title": "PartD 控制冒险与 Flush",
+      "clear_conversation": true,
+      "prompt": "【单问·Lab3】请根据 **课件 06** **Part D：控制冒险**（Slide 23），讲解：\n\n1. 分支延迟槽 vs 流水线冲刷 (Flush)\n2. `beq`/`jal` 导致 PC 重定向时的 Flush 策略\n3. 与 Lab3 分支实现的对应\n\n要求：中文；标注来源（课件06 / Week7-8 / Lab3 报告）。"
+    },
+    {
+      "id": "kejian06-partE-advanced",
+      "layer": "L1",
+      "priority": "optional",
+      "title": "PartE 超流水与多发射",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 06** **Part E：高级流水线技术**（Slide 24–25），简介超流水线、静态/动态多发射；标明与课件 5b Tomasulo 的衔接、期末非 Lab 基础要求。\n\n要求：中文；标注来源（课件06 / Week8-9）。"
+    },
+    {
+      "id": "kejian06-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "课件06易错点",
+      "clear_conversation": true,
+      "prompt": "【单问】列出 **课件 06 指令流水线** 最易混淆的 5 组概念，用对比表说明：\n\n- 结构冒险 vs 数据冒险 vs 控制冒险\n- 转发 vs 阻塞\n- Flush vs Stall\n- 吞吐率 vs 加速比\n- 段间寄存器 vs 通用寄存器\n\n要求：中文；标注来源（课件06 / Week7-8 / Lab1-3）。"
+    }
+  ]
+}

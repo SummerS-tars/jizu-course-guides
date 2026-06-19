@@ -2,45 +2,53 @@
 
 > **用途**：按 **12 章课件 PDF** 顺序梳理（双轨工作流的课件轨），与周次 part 采集（`part1-week1-3` 等）并行。  
 > **索引**：`guides/计组-课件梳理索引.md`  
-> **Manifest**：`notebooklm-raw/manifests/kejian-discovery.json`（L0 结构发现）
+> **进度**：12/12 deep manifest ✅；deep 采集 3/12 完成（07b、05b、08）；其余待 NotebookLM API 恢复后续跑
 
 ---
 
 ## 流水线
 
 ```
-kejian-discovery.json (L0, 12 batch)
-        ↓ nlm-collect.py
-kejian/runs/<ts>/*.answer.md
-        ↓ Agent 通读
-kejian/structure-map.md          ← 汇总 12 章 Part 边界与覆盖索引
-        ↓ 按 Part 编写
-manifests/kejian{NN}-deep.json (L1+, 按 Part 深采)
+kejian-discovery.json (L0, 12 batch)  ✅
+        ↓
+kejian/runs/latest/*-structure.answer.md
+        ↓
+kejian/structure-map.md               ✅
+        ↓
+manifests/kejian{NN}-deep.json (12)    ✅
+        ↓ nlm-collect.py --delay 8
+kejian{NN}/runs/<ts>/*.answer.md
         ↓
 guides/计组-课件{NN}-学习指南.md
 ```
 
-**已生成 deep manifest**（2026-06-19）：
-
-| Manifest | 课件 | batch 数 | 采集状态 |
-|----------|------|----------|----------|
-| `manifests/kejian07b-deep.json` | 7b 层次结构存储系统 | 4 | ✅ `kejian07b/runs/latest` |
-| `manifests/kejian08-deep.json` | 08 线程级并行 | 5 | ✅ `kejian08/runs/latest` |
-| `manifests/kejian05b-deep.json` | 5b 指令级并行 | 6 | ✅ `kejian05b/runs/latest` |
-| `manifests/kejian05-deep.json` | 05 中央处理器 | 5 | 待采集 |
-
-```bash
-# L1+ 深采示例（P0 优先）
-python $NLM notebooklm-raw/manifests/kejian07b-deep.json --delay 8 --nlm-timeout 180
-python $NLM notebooklm-raw/manifests/kejian08-deep.json --delay 8 --nlm-timeout 180 --resume notebooklm-raw/kejian08/runs/latest
-```
-
 | 阶段 | 产出 | 说明 |
 |------|------|------|
-| **discovery** | `kejian/runs/<ts>/kejian*-structure.answer.md` | 仅结构：Part/Slide/重要度/课堂覆盖/讲解不足 |
-| **structure-map** | `kejian/structure-map.md` | discovery 汇总（12/12 ✅） |
-| **deep** | `kejian{NN}/runs/<ts>/` + `kejian{NN}-deep.json` | 按 Part 单问深采 |
-| **整合** | `guides/计组-课件{NN}-学习指南.md` | 见 `docs/integration-guide.md` §课件指南整合规范 |
+| **discovery** | `kejian/runs/20260619-215358/` | 12/12 L0 结构 ✅ |
+| **structure-map** | `kejian/structure-map.md` | Part 边界汇总 ✅ |
+| **deep** | `manifests/kejian{NN}-deep.json` | 12 份 manifest ✅ |
+| **整合** | `guides/计组-课件{NN}-学习指南.md` | 见索引 §五 |
+
+---
+
+## Deep Manifest 清单（12/12）
+
+| 编号 | Manifest | 模块目录 | batches |
+|------|----------|----------|---------|
+| 01 | `manifests/kejian01-deep.json` | `kejian01/` | 6 |
+| 02 | `manifests/kejian02-deep.json` | `kejian02/` | 6 |
+| 03 | `manifests/kejian03-deep.json` | `kejian03/` | 5 |
+| 04 | `manifests/kejian04-deep.json` | `kejian04/` | 5 |
+| 05 | `manifests/kejian05-deep.json` | `kejian05/` | 5 |
+| 5b | `manifests/kejian05b-deep.json` | `kejian05b/` | 6 |
+| 06 | `manifests/kejian06-deep.json` | `kejian06/` | 6 |
+| 7a | `manifests/kejian07a-deep.json` | `kejian07a/` | 4 |
+| 7b | `manifests/kejian07b-deep.json` | `kejian07b/` | 4 |
+| 08 | `manifests/kejian08-deep.json` | `kejian08/` | 5 |
+| 09 | `manifests/kejian09-deep.json` | `kejian09/` | 5 |
+| 10 | `manifests/kejian10-deep.json` | `kejian10/` | 6 |
+
+**Notebook ID**：`e87c0462-b512-40df-8d6a-a0f5d4d30c81`
 
 ---
 
@@ -49,23 +57,50 @@ python $NLM notebooklm-raw/manifests/kejian08-deep.json --delay 8 --nlm-timeout 
 在仓库根目录执行（采集前确认 NotebookLM 认证，见 auth-sop.md）：
 
 ```bash
-NLM=.cursor/skills/jizu-course-notebooklm/scripts/nlm-collect.py
+NLM=python3 .cursor/skills/jizu-course-notebooklm/scripts/nlm-collect.py
 
-# 预览 12 个 batch
-python $NLM notebooklm-raw/manifests/kejian-discovery.json --dry-run
+# L0 结构发现（已完成）
+python3 $NLM notebooklm-raw/manifests/kejian-discovery.json --delay 8
 
-# L0：12 份课件结构发现（Phase 0.5，先跑这个）
-python $NLM notebooklm-raw/manifests/kejian-discovery.json --delay 8
+# 单章 deep
+python3 $NLM notebooklm-raw/manifests/kejian07b-deep.json --delay 8
 
-# 续跑 / 单 batch 补采
-python $NLM notebooklm-raw/manifests/kejian-discovery.json \
-  --resume notebooklm-raw/kejian/runs/latest
+# 续跑失败 run
+python3 $NLM notebooklm-raw/manifests/kejian01-deep.json \
+  --resume notebooklm-raw/kejian01/runs/20260619-223616 --delay 8
 
-python $NLM notebooklm-raw/manifests/kejian-discovery.json \
-  --only kejian05-structure --resume notebooklm-raw/kejian/runs/latest
+# 仅补采单个 batch
+python3 $NLM notebooklm-raw/manifests/kejian01-deep.json \
+  --only kejian01-partA-intro \
+  --resume notebooklm-raw/kejian01/runs/20260619-223616 --delay 8
 ```
 
-**Notebook ID**：`e87c0462-b512-40df-8d6a-a0f5d4d30c81`
+### 建议采集顺序（全 12 章）
+
+```
+01 → 04 → 05 → 06 → 02 → 03 → 05b → 07b → 07a → 08 → 09 → 10
+```
+
+或使用批量脚本（跳过已有 `*-mistakes.answer.md` 的章）：
+
+```bash
+bash notebooklm-raw/kejian/run-all-deep.sh      # 首次全量（含续跑 05b/08）
+bash notebooklm-raw/kejian/run-remaining-deep.sh  # 仅未完成的 9 章
+```
+
+> **注**：`nlm-collect` 不支持 meta-manifest 合并执行；以上 shell 脚本顺序调用 12 个 JSON。
+
+---
+
+## Deep 采集状态（2026-06-19）
+
+| 章 | Run 路径 | 状态 |
+|----|----------|------|
+| 07b | `kejian07b/runs/20260619-221235/` | ✅ 4/4 |
+| 05b | `kejian05b/runs/20260619-222348/` | ✅ 6/6 |
+| 08 | `kejian08/runs/20260619-222348/` | ✅ 5/5 |
+| 01 | `kejian01/runs/20260619-223616/` | ❌ 0/6（API unknown 超时，待 `--resume`） |
+| 02–06, 07a, 09, 10 | — | 待采 |
 
 ---
 
@@ -90,20 +125,15 @@ python $NLM notebooklm-raw/manifests/kejian-discovery.json \
 
 ---
 
-## 目录结构（预期）
+## 目录结构
 
 ```
 notebooklm-raw/kejian/
 ├── README.md                 ← 本文件
-├── structure-map.md          ← discovery 汇总（12/12 ✅）
+├── structure-map.md          ← discovery 汇总 ✅
+├── run-all-deep.sh           ← 12 章顺序采集
+├── run-remaining-deep.sh     ← 跳过已完成章
+├── deep-collection.log       ← 采集日志
 └── runs/
-    └── 20260619-215358/        ← discovery run（latest）
-```
-
-**深采 run**（独立 module 目录）：
-
-```
-notebooklm-raw/kejian07b/runs/latest/   ← 4/4 ✅ → guides/计组-课件07b-学习指南.md
-notebooklm-raw/kejian08/runs/latest/    ← 5/5 ✅
-notebooklm-raw/kejian05b/runs/latest/   ← 6/6 ✅
+    └── 20260619-215358/      ← discovery（latest → 此目录）
 ```

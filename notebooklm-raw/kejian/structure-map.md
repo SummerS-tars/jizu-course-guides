@@ -134,10 +134,11 @@
 | 4 | Convoy/Chime、Strip-mining、Mask | 高 |
 | 5 | GPU、SIMT | 中（背景） |
 
-## 下一步（Phase 1 deep）
+## 下一步（Phase 1 deep → Phase 2 整合）
 
-- 按上表 Part 边界编写 `manifests/kejian{NN}-deep.json`（P0 章优先：5b、7b、08）。
-- 深采后在本文件追加「覆盖审计」列，并对照 `guides/计组-课件梳理索引.md` 更新 structure-map 列。
+- ✅ 12/12 `manifests/kejian{NN}-deep.json` 已编写（见 `kejian/README.md`）。
+- ✅ deep 采集完成：5b、7b、08（3/12）；其余章待 `run-remaining-deep.sh` 续跑。
+- 整合：`guides/计组-课件{NN}-学习指南.md` — 07b/05b/08 完整版；其余骨架待 deep raw。
 
 ## Raw 索引
 

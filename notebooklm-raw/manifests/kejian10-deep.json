@@ -1,0 +1,62 @@
+{
+  "module": "kejian10",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件10 向量体系结构 知识点深采（DLP、SIMD、GPU）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件11-向量体系结构",
+    "10_向量体系结构.pdf",
+    "笔记-week15-周一-计组H",
+    "笔记-week16-周三-计组H"
+  ],
+  "batches": [
+    {
+      "id": "kejian10-part1-dlp",
+      "layer": "L1",
+      "priority": "important",
+      "title": "Part1 DLP 背景",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 10 向量体系结构**（PDF：`10_向量体系结构.pdf`，NotebookLM `课件11-向量体系结构`）**Part 1：DLP 理论背景**，讲解：\n\n1. ILP 局限与 DLP 兴起动机\n2. SISD/SIMD/MIMD 对比与能耗效率\n3. 向量处理器历史要点（Cray-1）\n\n要求：中文；标注来源（课件10 / Week15-16 记录）。"
+    },
+    {
+      "id": "kejian10-part2-hardware",
+      "layer": "L2",
+      "priority": "important",
+      "title": "Part2 向量硬件 Lane",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 10** **Part 2：向量硬件架构**，讲解：\n\n1. 向量寄存器 (VRegs)、向量长度 VL\n2. 流水线功能部件、多车道 (Lane) 结构\n3. 向量启动时间 (Startup) 概念\n\n要求：中文；结构图说明；标注来源（课件10 / Week15 记录）。"
+    },
+    {
+      "id": "kejian10-part3-memory",
+      "layer": "L2",
+      "priority": "important",
+      "title": "Part3 交叉存储 Stride",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 10** **Part 3：存储系统支持**，讲解：\n\n1. 多体交叉存储器 (Interleaved Memory)\n2. 访存步幅 (Stride)、集中-分散 (Gather-Scatter)\n3. 存储体冲突对性能的影响\n\n要求：中文；标注来源（课件10 / Week15 记录）。"
+    },
+    {
+      "id": "kejian10-part4-convoy",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "Part4 Convoy Chime Strip",
+      "clear_conversation": true,
+      "prompt": "【单问·复习重点】请根据 **课件 10** **Part 4：向量执行优化**，讲解：\n\n1. 护航指令组 (Convoy)、钟鸣 (Chime) 度量\n2. **条带挖掘 (Strip-mining)** 处理变长向量\n3. 向量遮罩 (Mask) 处理 IF 语句\n4. **数值例**：给定向量长度与车道数，计算 Chime 或 strip 次数\n\n要求：中文；逐步手算；标注来源（课件10 / Week15-16 复习）。"
+    },
+    {
+      "id": "kejian10-part5-gpu",
+      "layer": "L1",
+      "priority": "optional",
+      "title": "Part5 GPU SIMT",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 10** **Part 5：GPU 与大规模并行**，讲解 GPU/SIMT 与向量处理器的对比、现代 AI 集群互连背景（NVLink 等）；标明期末背景知识。\n\n要求：中文；标注来源（课件10 / Week14-15 记录）。"
+    },
+    {
+      "id": "kejian10-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "课件10易错点",
+      "clear_conversation": true,
+      "prompt": "【单问】列出 **课件 10 向量体系结构** 最易混淆的 5 组概念，用对比表说明：\n\n- ILP vs DLP\n- SIMD vs SIMT\n- Stride vs 连续访存\n- Chime vs CPI\n- Strip-mining vs 向量长度 VL\n\n要求：中文；标注来源（课件10 / Week15-16 复习）。"
+    }
+  ]
+}

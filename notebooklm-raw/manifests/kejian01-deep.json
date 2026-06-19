@@ -1,0 +1,63 @@
+{
+  "module": "kejian01",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件01 计算机系统概述 知识点深采（冯·诺依曼、层次结构、性能评价）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件01-计算机系统概述",
+    "1_计算机系统概述.pdf",
+    "笔记-week01-周一-计组H",
+    "笔记-week04-周一-计组H",
+    "笔记-week16-周三-计组H"
+  ],
+  "batches": [
+    {
+      "id": "kejian01-partA-intro",
+      "layer": "L1",
+      "priority": "optional",
+      "title": "PartA 导论与系统思维",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 01 计算机系统概述**（PDF：`1_计算机系统概述.pdf`，NotebookLM `课件01-计算机系统概述`）**Part A：导论与系统思维**（Slide 1–9），讲解：\n\n1. 课程定位、系统思维案例（C 表达式结果差异、程序性能差异）\n2. 计算机发展简史要点（分代、IAS、IBM 360、ARM）\n\n要求：中文；类比；标注来源（课件01 / Week1 记录）；补充 Slide 5–6 负数比较 false 的补码原因。"
+    },
+    {
+      "id": "kejian01-partB-vonneumann",
+      "layer": "L1",
+      "priority": "important",
+      "title": "PartB 冯·诺依曼结构",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 01** **Part B：硬件基础与冯·诺依曼结构**（Slide 9–12），讲解：\n\n1. 计算机系统基本组成（硬件/软件）\n2. 冯·诺依曼五大部件与「存储程序」思想\n3. 各部件数据/控制流交互（取指→译码→执行循环）\n\n要求：中文；文字描述结构图；标注来源（课件01 / 唐朔飞第1章 / P&H第1章）。"
+    },
+    {
+      "id": "kejian01-partC-hierarchy",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "PartC 层次结构与 ISA",
+      "clear_conversation": true,
+      "prompt": "【单问·期末核心】请根据 **课件 01** **Part C：系统层次结构与 ISA**（Slide 13–14, 16），讲解：\n\n1. 计算机系统层次结构（应用→OS→ISA→微结构→逻辑电路→器件）\n2. **ISA** 与微体系结构的界限（哪些属 ISA、哪些属实现）\n3. ABI/API 概念与软硬件契约\n\n要求：中文；层次图说明；标注来源（课件01 / Week1 / Week10 记录）。"
+    },
+    {
+      "id": "kejian01-partD-compile",
+      "layer": "L2",
+      "priority": "important",
+      "title": "PartD 编译与执行流",
+      "clear_conversation": true,
+      "prompt": "【单问】请根据 **课件 01** **Part D：程序编译与执行流**（Slide 14–15），以 `hello.c` 为例讲解：\n\n1. 预处理→编译→汇编→链接各阶段产物\n2. 可执行文件加载到内存、CPU 开始执行的过程\n\n要求：中文；流程图式说明；标注来源（课件01 / Week4 记录）。"
+    },
+    {
+      "id": "kejian01-partE-performance",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "PartE 性能评价公式",
+      "clear_conversation": true,
+      "prompt": "【单问·期末核心】请根据 **课件 01** **Part E：性能评价与量化分析**（Slide 17–20），讲解：\n\n1. 响应时间 vs 吞吐率\n2. CPU 性能公式：$T = IC \\times CPI \\times T_{clock}$\n3. **数值例**：给定 IC、CPI、时钟频率，计算执行时间；比较两台机器性能\n4. 编程/编译/ISA/实现各因素对 IC/CPI/时钟周期的影响\n\n要求：中文；逐步手算；标注来源（课件01 / Week1 / Week8 / Week15 记录）。"
+    },
+    {
+      "id": "kejian01-mistakes",
+      "layer": "L3",
+      "priority": "important",
+      "title": "课件01易错点",
+      "clear_conversation": true,
+      "prompt": "【单问】列出 **课件 01 计算机系统概述** 最易混淆的 5 组概念，用对比表说明：\n\n- 响应时间 vs 吞吐率\n- ISA vs 微体系结构\n- ABI vs API\n- CPI vs 时钟周期\n- 编译 vs 汇编 vs 链接\n\n要求：中文；标注来源（课件01 / Week1 / Week16 复习）。"
+    }
+  ]
+}

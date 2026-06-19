@@ -1,0 +1,67 @@
+{
+  "module": "kejian01",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/kejian01-deep.json",
+  "run_dir": "notebooklm-raw/kejian01/runs/20260619-223616",
+  "started_at": "2026-06-19T14:36:16.553557+00:00",
+  "finished_at": "2026-06-19T15:02:05.648116+00:00",
+  "batches_total": 6,
+  "batches_completed": 0,
+  "batches_ok": 0,
+  "batches_skipped": 0,
+  "batches_failed": 6,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "kejian01-partB-vonneumann",
+      "layer": "L1",
+      "status": "error",
+      "error_kind": "unknown",
+      "error": "",
+      "elapsed_seconds": 217.12
+    },
+    {
+      "id": "kejian01-partC-hierarchy",
+      "layer": "L2",
+      "status": "error",
+      "error_kind": "unknown",
+      "error": "",
+      "elapsed_seconds": 217.05
+    },
+    {
+      "id": "kejian01-partD-compile",
+      "layer": "L2",
+      "status": "error",
+      "error_kind": "unknown",
+      "error": "",
+      "elapsed_seconds": 217.05
+    },
+    {
+      "id": "kejian01-partE-performance",
+      "layer": "L2+L3",
+      "status": "error",
+      "error_kind": "unknown",
+      "error": "",
+      "elapsed_seconds": 217.04
+    },
+    {
+      "id": "kejian01-mistakes",
+      "layer": "L3",
+      "status": "error",
+      "error_kind": "unknown",
+      "error": "",
+      "elapsed_seconds": 216.91
+    },
+    {
+      "id": "kejian01-partA-intro",
+      "layer": "L1",
+      "status": "error",
+      "error_kind": "unknown",
+      "error": "",
+      "elapsed_seconds": 218.09
+    }
+  ],
+  "status": "failed",
+  "total_elapsed_seconds": 222.76,
+  "total_retry_count": 0
+}
