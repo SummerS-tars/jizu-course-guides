@@ -1,0 +1,66 @@
+{
+  "module": "part8-week16",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "Week 16：期末复习指导课（Tomasulo/Cache/VM/一致性/互连/中断DMA）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "笔记-week16-周",
+    "笔记-week15-周",
+    "笔记-week08-周",
+    "笔记-week10-周",
+    "笔记-week13-周",
+    "报告-Lab4-朱文凯",
+    "报告-Lab5-朱文凯",
+    "报告-Lab6-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "L0-w16-review-scope",
+      "layer": "L0",
+      "priority": "critical",
+      "title": "Week16 期末复习定位与策略",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅根据 Week 16 期末复习指导课（2026-06-15/17）记录，说明：开卷期末考占成绩比例、复习应侧重「组成」还是「体系结构」、老师划定的几大复习板块是什么、推荐的 3–4 天复习节奏是什么？\n\n依据：笔记-week16-周一-计组、笔记-week16-周三-计组、Week 15 复习课。\n要求：中文；条目式；标注来源；不要展开具体算法细节。"
+    },
+    {
+      "id": "w16-tomasulo",
+      "layer": "L3",
+      "priority": "critical",
+      "title": "Tomasulo 动态调度（必考）",
+      "clear_conversation": true,
+      "prompt": "【单问·必考】请仅讲解：Tomasulo 算法如何通过保留站实现寄存器重命名；RAW/WAR/WAW 三类相关各自如何处理；考试时填写「发射-执行-写回」时序表、保留站字段（Busy/Op/Vj/Vk/Qj/Qk）和寄存器 Qi 的分析思路。\n\n依据：Week 16 周一复习课、Week 8 ILP 课程记录、课件06-指令级并行。\n要求：中文；给一条简短浮点指令序列作分析示例；标注来源；鼓励 mermaid 或表格。"
+    },
+    {
+      "id": "w16-cache-amat",
+      "layer": "L3",
+      "priority": "critical",
+      "title": "Cache 与 AMAT 计算",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：AMAT 公式；直接映射/组相联/全相联的直觉对比；全相联 Cache 在 LFU 替换下如何模拟给定访问序列（含 freq 计数与 LRU 退化规则）。\n\n依据：Week 16 复习课、Week 12 课程记录、课件07-层次结构存储系统。\n要求：中文；给 AMAT 数值例；标注来源。"
+    },
+    {
+      "id": "w16-vm-tlb",
+      "layer": "L3",
+      "priority": "critical",
+      "title": "虚拟内存与 TLB Reach",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅讲解：TLB Reach 的定义与计算；4KiB 页 vs 2MiB 大页对顺序扫描 1GiB 数组时 TLB miss 次数的影响；大页的三类潜在缺点（内部碎片、OS 复杂度、不减少 Cache 行访问）。\n\n依据：Week 16 复习课、Week 10–11 课程记录、报告-Lab5-朱文凯。\n要求：中文；给出 64 项 DTLB 的 reach 与 miss 估算；标注来源。"
+    },
+    {
+      "id": "w16-coherence-fence",
+      "layer": "L3",
+      "priority": "critical",
+      "title": "一致性、连贯性与 MESI",
+      "clear_conversation": true,
+      "prompt": "【单问·核心】请仅对比：缓存一致性 vs 存储连贯性各自解决什么问题；MESI 四状态含义；自旋锁场景下为何要在加锁/解锁前后使用 Fence；AMO/LR-SC 的原子性直觉。\n\n依据：Week 16 复习课、Week 13–14 课程记录、课件08-线程级并行。\n要求：中文；MESI 状态表或简图；标注来源。"
+    },
+    {
+      "id": "w16-interconnect-dma",
+      "layer": "L3",
+      "priority": "important",
+      "title": "互连网络、中断与 DMA",
+      "clear_conversation": true,
+      "prompt": "【单问】请仅讲解：互连网络拓扑的节点度、直径、对剖带宽、平均延迟（单向环、双向环、2D 网格的曼哈顿距离直觉）；中断处理「关-开-关-开」流程；DMA 为何需要、与中断如何配合、周期挪用概念。\n\n依据：Week 16 复习课、Week 15 I/O 课、课件07-互连网络、报告-Lab6-朱文凯。\n要求：中文；互连网络给一个 n 节点环的平均延迟表达式；标注来源。"
+    }
+  ]
+}

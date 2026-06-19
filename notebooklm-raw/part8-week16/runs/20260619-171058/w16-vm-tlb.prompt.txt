@@ -1,0 +1,4 @@
+【单问·核心】请仅讲解：TLB Reach 的定义与计算；4KiB 页 vs 2MiB 大页对顺序扫描 1GiB 数组时 TLB miss 次数的影响；大页的三类潜在缺点（内部碎片、OS 复杂度、不减少 Cache 行访问）。
+
+依据：Week 16 复习课、Week 10–11 课程记录、报告-Lab5-朱文凯。
+要求：中文；给出 64 项 DTLB 的 reach 与 miss 估算；标注来源。

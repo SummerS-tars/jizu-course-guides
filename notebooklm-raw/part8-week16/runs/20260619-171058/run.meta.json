@@ -1,0 +1,67 @@
+{
+  "module": "part8-week16",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/part8-week16.json",
+  "run_dir": "notebooklm-raw/part8-week16/runs/20260619-171058",
+  "started_at": "2026-06-19T09:10:58.978338+00:00",
+  "finished_at": "2026-06-19T09:16:21.578169+00:00",
+  "batches_total": 6,
+  "batches_completed": 6,
+  "batches_ok": 6,
+  "batches_skipped": 0,
+  "batches_failed": 0,
+  "batches_pending": 0,
+  "batches": [
+    {
+      "id": "L0-w16-review-scope",
+      "layer": "L0",
+      "status": "ok",
+      "elapsed_seconds": 45.1,
+      "retry_count": 0,
+      "conversation_id": "b7b5c8b8-9fbe-43a7-b554-713a3d1b61ed"
+    },
+    {
+      "id": "w16-tomasulo",
+      "layer": "L3",
+      "status": "ok",
+      "elapsed_seconds": 49.59,
+      "retry_count": 0,
+      "conversation_id": "44f44635-7695-40bc-9fb7-05c2412d7ab8"
+    },
+    {
+      "id": "w16-cache-amat",
+      "layer": "L3",
+      "status": "ok",
+      "elapsed_seconds": 48.03,
+      "retry_count": 0,
+      "conversation_id": "99c31957-51d0-45d0-9391-bce5dd284d1e"
+    },
+    {
+      "id": "w16-vm-tlb",
+      "layer": "L3",
+      "status": "ok",
+      "elapsed_seconds": 41.61,
+      "retry_count": 0,
+      "conversation_id": "1fc8c527-fafb-4815-9e5b-6dad71970b0c"
+    },
+    {
+      "id": "w16-coherence-fence",
+      "layer": "L3",
+      "status": "ok",
+      "elapsed_seconds": 43.25,
+      "retry_count": 0,
+      "conversation_id": "10a51246-14bf-4e03-9a02-a914bd667d7d"
+    },
+    {
+      "id": "w16-interconnect-dma",
+      "layer": "L3",
+      "status": "ok",
+      "elapsed_seconds": 46.2,
+      "retry_count": 0,
+      "conversation_id": "d1420d6b-3401-4ba9-acbe-ff451a4c316d"
+    }
+  ],
+  "status": "completed",
+  "total_elapsed_seconds": 322.6,
+  "total_retry_count": 0
+}
