@@ -66,10 +66,10 @@ flowchart LR
 
 1. 对齐本地 `2_计算机组成与体系结构H/` 与 NotebookLM source list
 2. **Lab 来源核对**（计组特有，期末前必做）：
-   - Wiki 10 页是否已 `source add`（见 `guides/计组课程-15周内容梳理.md` §7.1）
+   - Wiki 10 页是否已 `source add`（见 `guides/计组课程-16周内容梳理.md` §7.1）
    - `26-Arch/Doc/Lab{1..6}/report.md` 是否已导入
    - 课件 `4_Lab/*.pdf` 与 Wiki 要求是否一致
-3. 更新 `guides/计组课程-15周内容梳理.md` 进度
+3. 更新 `guides/计组课程-16周内容梳理.md` 进度
 4. 标注缺失周次 / 缺失 Lab 来源
 
 ## Phase 1：采集
@@ -152,7 +152,7 @@ notebooklm-raw/<module>/runs/latest → 最近 completed run
 
 ## Phase 5：定稿
 
-跑 `docs/checklist.md`，更新 `guides/计组课程-15周内容梳理.md`，用户确认。
+跑 `docs/checklist.md`，更新 `guides/计组课程-16周内容梳理.md`，用户确认。
 
 ## 环境与排错
 

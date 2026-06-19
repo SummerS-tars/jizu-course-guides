@@ -18,5 +18,6 @@ python $NLM notebooklm-raw/manifests/<module>.json --delay 8
 | `part5-week12` | ✅ 初版指南 | `guides/计组-Week12-学习指南.md` |
 | `part6-week13-14` | ✅ 初版指南 | `guides/计组-Week13-14-学习指南.md` |
 | `part7-week15` | ✅ 初版指南 | `guides/计组-Week15-学习指南.md` |
+| `part8-week16` | ✅ 初版指南 | `guides/计组-Week16-学习指南.md` |
 
 模板：`.cursor/skills/jizu-course-notebooklm/templates/manifest-template.json`
