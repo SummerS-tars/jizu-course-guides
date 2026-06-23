@@ -8,6 +8,7 @@
 > **原始采集**：`notebooklm-raw/part2-week4-6/runs/20260616-151745/`（5 批）
 > **知识图谱**：`notebooklm-raw/part2-week4-6/knowledge-graph.md`
 > **整合日期**：2026-06-16（初版）
+> **术语格式**：术语表及正文**首次出现**时，专业名词采用 **中文（English）**；英文缩写采用 **缩写（English full name，中文）**，便于对照英文课件、教材与开卷试题。
 
 ---
 
@@ -22,6 +23,17 @@
 | **隐含位** | 规格化浮点尾数最高位 1 不存，精度多 1 位 |
 | **CPI** | 每条指令平均时钟周期数 |
 | **FSM** | 有限状态机；多周期 CPU 的控制核心 |
+
+### 高频缩写速查
+
+| 缩写 | 解释 |
+|------|------|
+| **CPI** | Cycles Per Instruction，每条指令平均时钟周期数 |
+| **FSM** | Finite State Machine，有限状态机 |
+| **CPU** | Central Processing Unit，中央处理器 |
+| **ALU** | Arithmetic Logic Unit，算术逻辑单元 |
+| **PC** | Program Counter，程序计数器 |
+| **RF** | Register File，寄存器堆 |
 
 ---
 

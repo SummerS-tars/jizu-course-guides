@@ -9,6 +9,7 @@
 > **知识图谱**：`notebooklm-raw/part8-week16/knowledge-graph.md`
 > **课程记录**：`week16-周一-计组H.md`、`week16-周三-计组H.md`
 > **整合日期**：2026-06-19（初版）
+> **术语格式**：术语表及正文**首次出现**时，专业名词采用 **中文（English）**；英文缩写采用 **缩写（English full name，中文）**，便于对照英文课件、教材与开卷试题。
 
 ---
 
@@ -23,6 +24,21 @@
 | **连贯性** | 不同地址的访存谁先谁后对多核可见 |
 | **Fence** | 强制内存操作顺序的栅栏指令 |
 | **周期挪用** | DMA 抢一个总线周期传一字再还给 CPU |
+
+### 高频缩写速查
+
+| 缩写 | 解释 |
+|------|------|
+| **ILP** | Instruction-Level Parallelism，指令级并行 |
+| **RS** | Reservation Station，保留站 |
+| **CDB** | Common Data Bus，公共数据总线 |
+| **ROB** | Reorder Buffer，重排序缓冲区 |
+| **TLB** | Translation Lookaside Buffer，地址转换后备缓冲 |
+| **AMAT** | Average Memory Access Time，平均访存时间 |
+| **MESI** | Modified-Exclusive-Shared-Invalid，四态缓存一致性协议 |
+| **DMA** | Direct Memory Access，直接内存访问 |
+| **NoC / PCIe** | Network-on-Chip / Peripheral Component Interconnect Express，片上网络 / 高速外设互连 |
+| **RAID** | Redundant Array of Independent Disks，独立磁盘冗余阵列 |
 
 ---
 

@@ -8,6 +8,7 @@
 > **原始采集**：`notebooklm-raw/part1-week1-3/runs/20260616-150636/`（6 批）
 > **知识图谱**：`notebooklm-raw/part1-week1-3/knowledge-graph.md`
 > **生成日期**：2026-06-16（初版）
+> **术语格式**：术语表及正文**首次出现**时，专业名词采用 **中文（English）**；英文缩写采用 **缩写（English full name，中文）**，便于对照英文课件、教材与开卷试题。
 
 ---
 
@@ -25,6 +26,20 @@
 | **转发 (Forwarding)** | 不等 WB，直接从 EX/MEM 或 MEM/WB 把结果前递给后续指令 |
 
 （来源：w13-mistakes-bridge、w2-datapath-controls）
+
+### 高频缩写速查
+
+| 缩写 | 解释 |
+|------|------|
+| **CPU** | Central Processing Unit，中央处理器 |
+| **ALU** | Arithmetic Logic Unit，算术逻辑单元 |
+| **CU** | Control Unit，控制器 |
+| **ISA** | Instruction Set Architecture，指令集体系结构 |
+| **PC** | Program Counter，程序计数器 |
+| **RF** | Register File，寄存器堆 |
+| **IM / DM** | Instruction Memory / Data Memory，指令存储器 / 数据存储器 |
+| **RISC / CISC** | Reduced / Complex Instruction Set Computer，精简 / 复杂指令集计算机 |
+| **RISC-V / MIPS** | 两类教学常用 ISA；本课程 Lab 以 RISC-V 为准，MIPS 多作课件对照 |
 
 ---
 

@@ -8,6 +8,7 @@
 > **原始采集**：`notebooklm-raw/part5-week12/runs/20260616-152241/`（5 批）
 > **知识图谱**：`notebooklm-raw/part5-week12/knowledge-graph.md`
 > **整合日期**：2026-06-16（初版）
+> **术语格式**：术语表及正文**首次出现**时，专业名词采用 **中文（English）**；英文缩写采用 **缩写（English full name，中文）**，便于对照英文课件、教材与开卷试题。
 
 ---
 
@@ -23,6 +24,17 @@
 | **一致性 (Coherence)** | 多核对**同一地址**的读写顺序要「说得通」 |
 | **连贯性 (Consistency)** | **不同地址**之间，程序员看到的全局访存顺序 |
 | **TLP** | 多核/多线程并行，区别于单核 ILP |
+
+### 高频缩写速查
+
+| 缩写 | 解释 |
+|------|------|
+| **AMAT** | Average Memory Access Time，平均访存时间 |
+| **TLP** | Thread-Level Parallelism，线程级并行 |
+| **UMA** | Uniform Memory Access，均匀访存 |
+| **NUMA** | Non-Uniform Memory Access，非均匀访存 |
+| **MSI / MESI** | Modified-Shared-Invalid / Modified-Exclusive-Shared-Invalid，缓存一致性状态协议 |
+| **MMIO** | Memory-Mapped I/O，内存映射输入输出 |
 
 ---
 

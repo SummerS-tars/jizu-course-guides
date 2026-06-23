@@ -8,6 +8,7 @@
 > **原始采集**：`notebooklm-raw/part3-week7-9/runs/20260616-151218/`（6 批）
 > **知识图谱**：`notebooklm-raw/part3-week7-9/knowledge-graph.md`
 > **整合日期**：2026-06-16（初版）
+> **术语格式**：术语表及正文**首次出现**时，专业名词采用 **中文（English）**；英文缩写采用 **缩写（English full name，中文）**，便于对照英文课件、教材与开卷试题。
 
 ---
 
@@ -24,6 +25,19 @@
 | **CDB** | 公共数据总线，结果产生后广播给所有等待者 |
 | **ROB** | 重排序缓冲区，乱序执行但按序提交 |
 | **BTB** | 分支目标缓冲，取指阶段就预测跳转地址 |
+
+### 高频缩写速查
+
+| 缩写 | 解释 |
+|------|------|
+| **ILP** | Instruction-Level Parallelism，指令级并行 |
+| **CPI / IPC** | Cycles Per Instruction / Instructions Per Cycle，每指令周期数 / 每周期指令数 |
+| **RS** | Reservation Station，保留站 |
+| **CDB** | Common Data Bus，公共数据总线 |
+| **ROB** | Reorder Buffer，重排序缓冲区 |
+| **BTB** | Branch Target Buffer，分支目标缓冲 |
+| **BHT** | Branch History Table，分支历史表 |
+| **CSR** | Control and Status Register，控制状态寄存器 |
 
 ---
 

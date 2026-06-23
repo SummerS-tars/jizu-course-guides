@@ -8,6 +8,7 @@
 > **原始采集**：`notebooklm-raw/part7-week15/runs/20260616-150120/`（5 批）
 > **知识图谱**：`notebooklm-raw/part7-week15/knowledge-graph.md`
 > **整合日期**：2026-06-16（初版）
+> **术语格式**：术语表及正文**首次出现**时，专业名词采用 **中文（English）**；英文缩写采用 **缩写（English full name，中文）**，便于对照英文课件、教材与开卷试题。
 
 ---
 
@@ -23,6 +24,17 @@
 | **AMAT** | 平均访存时间，Cache 量化核心 |
 | **MMIO** | 把外设寄存器映射进地址空间 |
 | **WARL** | 写任意值、读回合法值（CSR 典型） |
+
+### 高频缩写速查
+
+| 缩写 | 解释 |
+|------|------|
+| **RAID** | Redundant Array of Independent Disks，独立磁盘冗余阵列 |
+| **DMA** | Direct Memory Access，直接内存访问 |
+| **MMIO** | Memory-Mapped I/O，内存映射输入输出 |
+| **AMAT** | Average Memory Access Time，平均访存时间 |
+| **PCIe** | Peripheral Component Interconnect Express，高速外设互连总线 |
+| **CSR** | Control and Status Register，控制状态寄存器 |
 
 ---
 
