@@ -400,12 +400,16 @@ sequenceDiagram
 
 ## 4. 易混淆概念
 
-| 对比组 | 正确理解 |
-|--------|----------|
-| 体系结构 vs 组成 | 前者程序员可见（ISA）；后者硬件实现细节 |
-| 响应时间 vs 吞吐率 | 单任务耗时 vs 单位时间完成任务数；流水提高吞吐但不缩短单指令延迟 |
-| ISA vs 微体系结构 | 契约接口 vs 具体电路（同一 ISA 可有不同实现） |
-| 大端 vs 小端 | MSB 在低地址 vs LSB 在低地址（Week 4 数据表示会再用） |
+这些概念容易混，是因为它们常出现在同一张图或同一个实验里。复习时先问“这是软件可见的规则，还是硬件内部实现”，再问“它影响的是单条指令延迟、整体吞吐，还是可见状态”。
+
+| 对比组 | 为什么容易混 | 判断依据 |
+|--------|--------------|----------|
+| 体系结构 vs 组成 | 都在描述“计算机长什么样”。 | **体系结构** 是程序员可见约定，例如 ISA（Instruction Set Architecture，指令集体系结构）、寄存器、寻址方式；**组成/微体系结构** 是实现这些约定的电路，例如单周期通路、流水寄存器、转发网络。 |
+| 响应时间 vs 吞吐率 | 流水线常让人误以为“每条指令更快”。 | 响应时间是单个任务从开始到结束的耗时；吞吐率是单位时间完成多少任务。五级流水主要提高吞吐率，不保证单条指令延迟缩短。 |
+| ISA vs 微体系结构 | 同一门课会同时讲 RISC-V 和 CPU 数据通路。 | ISA 规定 `lw/add/beq` 等指令语义；微体系结构决定用单周期、多周期还是五级流水来实现。同一 RISC-V 程序可在不同 CPU 上运行。 |
+| CISC vs RISC | 容易被简化成“复杂 vs 简单”的口号。 | CISC（Complex Instruction Set Computer，复杂指令集计算机）倾向复杂指令和强兼容；RISC（Reduced Instruction Set Computer，精简指令集计算机）倾向固定、规则、Load/Store，便于流水。 |
+| RAW vs 结构冒险 vs 控制冒险 | 都会导致流水线不能直接推进。 | RAW（Read After Write，写后读相关）是数据还没写回；结构冒险是同一硬件资源被争用；控制冒险是分支/跳转导致 PC 路径不确定。 |
+| 大端 vs 小端 | 都是把多字节数据放进连续地址。 | 大端把 MSB（Most Significant Byte，最高有效字节）放低地址；小端把 LSB（Least Significant Byte，最低有效字节）放低地址。Week 4 数据表示和 Lab2 字节访问会再用。 |
 
 （来源：w13-mistakes-bridge）
 
@@ -413,9 +417,9 @@ sequenceDiagram
 
 ## 5. 与后续模块衔接
 
-- **Week 4**：回溯 ISA 定义的数据类型（有符号整数、浮点）在内存中的编码与对齐
-- **Week 7**：流水线专题；冯·诺依曼「指令数据同存」带来结构冒险 → 哈佛架构（I/D Cache 分离）缓解
-- **Lab4+**：在 Lab1–3 CPU 上叠加 CSR、MMU、异常——前三周通路是后续一切的基础
+- **Week 4 数据表示**：回溯 ISA 定义的数据类型如何在寄存器和内存中编码，例如有符号整数、浮点数、大小端与对齐。Lab2 的 `LB/LH/LW` 符号扩展会在这里得到理论解释。
+- **Week 7 流水线专题**：把 Week 1 的 IF/ID/EX/MEM/WB 预览正式展开，系统讨论 RAW、结构冒险、控制冒险、转发、停顿与冲刷。冯·诺依曼“指令数据同存”的抽象在实现上可能导致取指和访存争资源，后续用 I/D Cache 分离缓解。
+- **存储系统与 Lab4+**：在 Lab1–3 CPU 上叠加 CSR（Control and Status Register，控制状态寄存器）、MMU（Memory Management Unit，内存管理单元）、异常与 TLB。前三周通路决定“正常指令怎么提交”，后面模块则处理 Cache miss、地址翻译和异常时如何保持精确状态。
 
 ---
 
@@ -423,11 +427,13 @@ sequenceDiagram
 
 读完本章你应能：
 
-1. 画出冯·诺依曼五大部件及 IF（取指）→WB（写回）数据流
-2. 说出 RegWrite、ALUSrc、MemtoReg、Branch 各控制什么
-3. 解释为何单周期 CPU 主频受 `lw` 限制
-4. 对比 CISC 与 RISC 在访存、指令长度上的差异
-5. 说明 Lab1 转发与 Lab3 冲刷分别解决哪类冒险
+1. 画出冯·诺依曼五大部件，并说明存储程序为什么能让 CPU 自动逐条执行。
+2. 沿 IF（Instruction Fetch，取指）→ID（Instruction Decode，译码）→EX（Execute，执行）→MEM（Memory Access，访存）→WB（Write Back，写回）说出一条指令的数据流。
+3. 给定 `add/lw/sw/beq`，能判断 RegWrite、ALUSrc、MemtoReg、Branch、MemWrite 的取值和原因。
+4. 解释为何单周期 CPU 主频受 `lw` 限制，并区分关键路径与指令出现频率。
+5. 对比 CISC（Complex Instruction Set Computer）与 RISC（Reduced Instruction Set Computer）在指令长度、访存规则、译码复杂度上的差异。
+6. 说明 RV32I（RISC-V 32-bit Integer base ISA）六种格式中 rs1/rs2/rd 固定位置对译码硬件有什么好处。
+7. 判断 Lab1 转发/停顿、Lab2 valid/dataOk/strobe、Lab3 冲刷/Difftest Skip 分别在解决什么问题。
 
 ---
 
@@ -435,15 +441,19 @@ sequenceDiagram
 
 > **追问 1**：单周期 CPU 中，执行 `add` 与 `lw` 时 RegWrite、MemtoReg、ALUSrc 应各取何值？
 >
-> **答**：`add` → RegWrite=1, ALUSrc=0, MemtoReg=0；`lw` → RegWrite=1, ALUSrc=1, MemtoReg=1。区别在 ALUSrc（立即数偏移 vs 第二寄存器）和 MemtoReg（写回来自 DM 而非 ALU）。
+> **答**：题目场景是比较 R 型寄存器运算和 Load 指令在同一条单周期通路中的选路。判断依据是：是否写 rd、ALU 第二操作数来自哪里、写回数据来自哪里。`add rd, rs1, rs2` 写 rd，所以 RegWrite=1；第二操作数来自 rs2，所以 ALUSrc=0；写回 ALU 结果，所以 MemtoReg=0。`lw rd, offset(rs1)` 也写 rd，所以 RegWrite=1；ALU 要用立即数 offset 算地址，所以 ALUSrc=1；写回来自 DM（Data Memory，数据存储器），所以 MemtoReg=1。
 
 > **追问 2**：Lab1 中 load-use 冒险为何有时转发不够、必须停顿？
 >
-> **答**：`lw` 的有效数据在 MEM 段才从 DM 读出，最早 WB 初才进 RF。若下一条在 EX 就要读该寄存器，EX/MEM 段尚无结果可转发，只能阻塞 1 拍（见 §3 时序图）。
+> **答**：题目场景是 `lw t0, 0(t1)` 后面紧跟 `add t2, t0, t3`，后一条在 EX 阶段立刻需要 `t0`。判断依据是结果是否已经产生：ALU 指令的结果在 EX 末已有，通常能从 EX/MEM 转发；但 `lw` 的有效数据要到 MEM 段末尾才从 DM 读出，下一条进入 EX 时还没有可转发的数据。结论是必须停顿 1 拍，保持 PC 和 IF/ID，并向后续流水级插入气泡，等数据可用后再转发或写回。
 
 > **追问 3**：RISC-V 坚持 Load/Store 架构，对 Lab2 实现 `sw` 的 S 型立即数编码有什么影响？
 >
-> **答**：`sw` 不能走 R 型「rs2 在固定 bit 段」的格式，必须用 S 型把 imm 拆成 imm[11:5] 与 imm[4:0]，使 rs1/rs2 位域与 R/I 型对齐，译码与寄存器读端口可复用。
+> **答**：题目场景是实现 `sw rs2, imm(rs1)`：它既要读 rs1 算地址，又要读 rs2 作为待写数据，还要携带偏移立即数。判断依据是 RV32I 希望 rs1/rs2 字段尽量固定，方便 ID 阶段复用寄存器读端口。因此 S 型把 imm 拆成 imm[11:5] 与 imm[4:0]，把中间位置留给 rs2、rs1、funct3。结论是 Lab2 译码时不能把 S 型当作“没有 rd 的 R 型”，而要专门拼接立即数，同时保留固定位置读取 rs1/rs2。
+
+> **追问 4**：Lab3 访问 MMIO 地址时，为什么 Difftest 不能总是逐条严格对比？
+>
+> **答**：题目场景是 CPU 用普通 Load/Store 访问 UART、Timer 等 MMIO（Memory-Mapped I/O，内存映射输入输出）地址。判断依据是这些地址背后不是普通内存，而是外设寄存器，读写可能清中断、推进设备状态或返回实时值；参考模型未必模拟同样外设副作用。结论是 Difftest（Differential Testing，差分测试）遇到约定 MMIO 地址时需要 Skip 或特殊同步，否则错误可能来自“参考模型与外设环境不同”，不一定是 CPU 数据通路错。
 
 ---
 
