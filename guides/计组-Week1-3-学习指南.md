@@ -345,56 +345,15 @@ flowchart TB
 
 ---
 
-## 3. Lab1–3 与课堂对照
+## 3. 相关 Lab 指引
 
-Lab1–3 不是课外附加题，而是把前三周概念压到 RTL 实现里验证：Lab1 验证 IF→WB 五级流水能否稳定推进，Lab2 验证 Load/Store 语义和总线握手，Lab3 验证分支跳转会如何改变 PC 并清掉错误路径。读 Lab 表时要把“实现要点”理解成“为了维持 ISA 语义，硬件必须额外处理什么情况”。
+前三周只保留 Lab1–3 的定位引用；完整实验讲解、个人实现、代码路径与调试坑见 [`计组-Lab1-6-整合指南.md`](计组-Lab1-6-整合指南.md)。
 
-| 来源 | 位置 | 说明 |
-|------|------|------|
-| **Lab Wiki** | [26-Arch Wiki](https://github.com/26-Arch/26-Arch/wiki/) Lab-1 ~ Lab-3 | 实验要求、上板、调试 |
-| **课件** | `4_Lab/Lab1–3*.pdf` | 实验讲义与验收标准 |
-| **个人报告** | `26-Arch/Doc/Lab{1..3}/report.md` | 实现要点与踩坑记录 |
-
-| 实验 | 验证的课堂知识 | 实现要点 |
-|------|---------------|----------|
-| **Lab1** 五级流水与转发 | IF（Instruction Fetch，取指）–WB（Write Back，写回）架构、RAW（Read After Write，写后读相关）、转发、停顿 | **转发**：如果前序 ALU 结果已经在 EX/MEM 或 MEM/WB 流水寄存器中，就旁路给后续 EX 使用；**停顿**：如果结果尚未产生（典型 load-use），保持 PC 和 IF/ID，向 ID/EX 插入气泡，避免后续指令读到旧值。 |
-| **Lab2** Load/Store | Load/Store（取数/存数）语义、总线握手、对齐 | `LB/LH/LW` 需要按访问宽度做字节选择与符号/零扩展；`valid` 表示 CPU 发起一次总线请求，`dataOk` 表示数据阶段完成，流水线要在等待期间冻结相关阶段；`strobe` 是写字节使能，决定 `SB/SH/SW` 到底写哪些 byte。 |
-| **Lab3** 分支与跳转 | B/J 型语义、控制冒险、MMIO（Memory-Mapped I/O，内存映射输入输出） | **冲刷（Flush）**：EX 判定跳转/分支成立后，IF/ID、ID/EX 中已经取到的顺序路径指令必须变成无效气泡；**Difftest Skip（差分测试跳过）**：对 UART/Timer 等 MMIO 地址，参考模型未必有同样外设副作用，需要跳过或特殊处理该次状态对比。 |
-
-（来源：lab13-crossref）
-
-#### 3.1 Lab1：转发和停顿分别解决什么
-
-**转发（Forwarding / Bypassing）** 解决的是“结果已经算出来，只是还没写回 RF（Register File，寄存器堆）”的问题。比如 `add` 的 ALU 结果在 EX 末已经可用，下一条指令在 EX 需要它时，可以从 EX/MEM 或 MEM/WB 直接送过去。
-
-**停顿（Stall）** 解决的是“结果还没产生”的问题。最典型的是 **load-use 冒险**：`lw` 的数据要到 **MEM 末 / WB 初** 才从数据存储器返回，下一条若在 EX 就要用该寄存器，EX/MEM 转发也来不及——必须 **插 1 拍气泡**（或等效阻塞 PC、IF/ID，并让 ID/EX 无效）。
-
-下面的时序图要回答“为什么 `lw` 后紧跟使用者时，单靠转发不够”。看图时注意 `add` 进入 EX 的时刻早于 `lw` 数据可用的时刻，因此要停一拍。
-
-```mermaid
-sequenceDiagram
-    participant lw as lw t0,0(t1)
-    participant add as add t2,t0,t3
-    lw->>lw: IF ID EX MEM WB
-    add->>add:   IF ID EX(需t0,尚无)
-    Note over add: 停顿1拍后 EX 才能转发/WB 写回
-```
-
-#### 3.2 Lab2：valid/dataOk 与 strobe 不是孤立信号
-
-`valid`/`dataOk` 是总线握手的最小直觉：CPU 把一次访存请求送出去时拉起 `valid`，外部存储系统在数据可用或写入完成时返回 `dataOk`。在 `dataOk` 到来前，相关流水级不能继续消耗错误数据，因此 `mem_wait` 往往要和 Lab1 的停顿逻辑合并考虑。
-
-`strobe` 是按字节写使能，解决“32 位数据总线上只写 1 字节或 2 字节时，哪些 byte 真的改写”的问题。`SB` 只打开 1 个 byte lane，`SH` 打开 2 个，`SW` 打开 4 个；同时地址低位决定打开哪几个位置。Load 指令则要反过来根据地址低位选出对应字节/半字，再做符号扩展或零扩展。
-
-#### 3.3 Lab3：冲刷和 Difftest Skip 都是在守住“可见状态”
-
-分支跳转的难点不在于算目标地址，而在于流水线已经提前取了顺序路径指令。若 EX（Execute，执行）阶段才知道分支成立，IF/ID 和 ID/EX 中的错误路径指令就不能继续提交，所以要 **冲刷（Flush）** 成无效气泡，避免它们写寄存器或写内存。
-
-**MMIO（Memory-Mapped I/O，内存映射输入输出）** 把外设寄存器映射到普通地址空间，CPU 用 Load/Store 访问它们。但外设读写可能有副作用，参考模型和真实外设状态未必同步；因此遇到约定的 MMIO 地址时，Difftest（Differential Testing，差分测试）通常需要 Skip 或特殊同步，判断标准是“这条指令的架构状态是否能被参考模型可靠复现”。
-
-> **易错提醒：** 调试常考点包括 load-use（转发不够须停顿 1 拍）、`mem_wait` 与停顿叠加、分支错误路径必须冲刷、MMIO 地址访问不能机械地做普通 Difftest 对比。
-
-> **直观理解**：转发解决「结果已在流水线里、只是还没写回 RF」；load-use 是「下一条等得太急，结果根本还没产生」——二者不要混为一谈。
+| Lab | 本指南相关概念 | 详情 |
+|-----|----------------|------|
+| **Lab1** 五级流水与转发/阻塞 | IF–WB 流水、RAW、Forwarding、load-use Stall | 见 `计组-Lab1-6-整合指南.md` Part Lab1 |
+| **Lab2** Load/Store | Load/Store 架构、访存握手、字节使能、符号/零扩展 | 见 `计组-Lab1-6-整合指南.md` Part Lab2 |
+| **Lab3** 分支/跳转与 MMIO | B/J 型指令、控制冒险、Flush、Difftest Skip | 见 `计组-Lab1-6-整合指南.md` Part Lab3 |
 
 ---
 
