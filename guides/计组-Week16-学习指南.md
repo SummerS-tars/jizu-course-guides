@@ -17,13 +17,13 @@
 
 | 术语 | 大白话 |
 |------|--------|
-| **TLB Reach** | TLB 一次能「罩住」的虚拟地址范围 = 项数 × 页大小 |
-| **保留站 (RS)** | Tomasulo 里暂存未执行指令的「工位」，带 Tag |
+| **TLB Reach (Translation Lookaside Buffer Reach)** | TLB 一次能「罩住」的虚拟地址范围 = 项数 × 页大小 |
+| **保留站 RS (Reservation Station)** | Tomasulo 里暂存未执行指令的「工位」，带 Tag |
 | **Qi** | 寄存器状态表：该寄存器的最新结果在哪个 RS 上 |
-| **CDB** | 公共数据总线，功能单元写回结果时广播 |
+| **CDB (Common Data Bus)** | 公共数据总线，功能单元写回结果时广播 |
 | **连贯性** | 不同地址的访存谁先谁后对多核可见 |
 | **Fence** | 强制内存操作顺序的栅栏指令 |
-| **周期挪用** | DMA 抢一个总线周期传一字再还给 CPU |
+| **周期挪用** | DMA（Direct Memory Access，直接内存访问）抢一个总线周期传一字再还给 CPU |
 
 ### 高频缩写速查
 

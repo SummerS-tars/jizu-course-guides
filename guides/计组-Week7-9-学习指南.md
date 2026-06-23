@@ -20,11 +20,11 @@
 | **RAW / WAR / WAW** | 写后读（真相关）/ 读后写 / 写后写（后两者多为「假相关」） |
 | **转发 (Forwarding)** | 结果还没写回寄存器，就从流水段寄存器旁路送到 ALU |
 | **气泡 (Bubble)** | 插入空拍，相当于 NOP，用于阻塞或冲刷 |
-| **ILP** | 指令级并行——多条指令重叠执行 |
-| **保留站 (RS)** | 功能部件前的指令缓冲，等操作数就绪再发射 |
-| **CDB** | 公共数据总线，结果产生后广播给所有等待者 |
-| **ROB** | 重排序缓冲区，乱序执行但按序提交 |
-| **BTB** | 分支目标缓冲，取指阶段就预测跳转地址 |
+| **ILP (Instruction-Level Parallelism)** | 指令级并行——多条指令重叠执行 |
+| **保留站 RS (Reservation Station)** | 功能部件前的指令缓冲，等操作数就绪再发射 |
+| **CDB (Common Data Bus)** | 公共数据总线，结果产生后广播给所有等待者 |
+| **ROB (Reorder Buffer)** | 重排序缓冲区，乱序执行但按序提交 |
+| **BTB (Branch Target Buffer)** | 分支目标缓冲，取指阶段就预测跳转地址 |
 
 ### 高频缩写速查
 
@@ -38,6 +38,7 @@
 | **BTB** | Branch Target Buffer，分支目标缓冲 |
 | **BHT** | Branch History Table，分支历史表 |
 | **CSR** | Control and Status Register，控制状态寄存器 |
+| **IF / ID / EX / MEM / WB** | Instruction Fetch / Instruction Decode / Execute / Memory Access / Write Back，取指 / 译码或读寄存器 / 执行 / 访存 / 写回 |
 
 ---
 
@@ -105,6 +106,8 @@ flowchart LR
 
 - **转发**：从 EX/MEM 或 MEM/WB 旁路到 ALU，消除大部分 R 型 RAW，不必等 WB。（来源：w7-pipeline-hazards）
 - **阻塞**：Load 结果下一拍才能用——**Load-Use 冒险**无法转发，须保持 PC/IF/ID、清空 ID/EX 插气泡。（来源：w7-pipeline-hazards）
+
+这里的 IF/ID、ID/EX、EX/MEM、MEM/WB 是相邻流水段寄存器名称，分别连接取指-译码、译码-执行、执行-访存、访存-写回阶段；图节点中的 EX/MEM 也按这个含义读。
 
 **分支预测入门**：
 

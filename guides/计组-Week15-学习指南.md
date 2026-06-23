@@ -20,9 +20,9 @@
 | **响应时间** | 从发请求到拿到结果的等待（ms） |
 | **寻道时间** | 磁头移到目标磁道，磁盘最大瓶颈 |
 | **旋转延迟** | 等盘片转到目标扇区，约半圈时间 |
-| **RAID** | 多盘组队：提速和/或容错 |
-| **AMAT** | 平均访存时间，Cache 量化核心 |
-| **MMIO** | 把外设寄存器映射进地址空间 |
+| **RAID (Redundant Array of Independent Disks)** | 多盘组队：提速和/或容错 |
+| **AMAT (Average Memory Access Time)** | 平均访存时间，Cache 量化核心 |
+| **MMIO (Memory-Mapped I/O)** | 内存映射输入输出：把外设寄存器映射进地址空间 |
 | **WARL** | 写任意值、读回合法值（CSR 典型） |
 
 ### 高频缩写速查
