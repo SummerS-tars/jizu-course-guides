@@ -98,3 +98,81 @@ python $NLM notebooklm-raw/manifests/kejian04-supplement-machine-representation.
 1. 在 `guides/计组-课件04-学习指南.md` 覆盖索引中显式加入“第二讲：程序的机器级表示”。
 2. 扩展 Part C 为“程序的机器级表示与 MIPS 例子”，拆出 MIPS 字段、程序/内存/寄存器映射、链接装入与边界说明。
 3. 在 Part D 保留寻址题，但明确 MIPS `beq/lw` 是第二讲例题的一部分，RISC-V Lab 是迁移口径。
+
+---
+
+## 6. v2 拆小补采记录（2026-06-24）
+
+原补采 run：
+
+`notebooklm-raw/kejian04-supplement-machine-representation/runs/diagnostic-20260624-1553-first/`
+
+其中前两个 batch 已成功，并已整合到 `guides/计组-课件04-学习指南.md` Part C：
+
+| batch | 主题 | 结果 | 指南回写 |
+|-------|------|------|----------|
+| `kejian04-supp-mips-isa-example` | MIPS ISA 作为机器级表示例子 | 成功 | Part C.2 |
+| `kejian04-supp-mips-fields` | MIPS R/I/J 字段与编码例 | 成功 | Part C.3/C.4 |
+| `kejian04-supp-program-memory-register` | 程序、机器码、指令/数据内存、寄存器状态链路 | 失败：`unknown` | 未回写，改由 v2 拆小尝试 |
+
+为避免原 `kejian04-supp-program-memory-register` 综合 prompt 过大导致 unknown 失败，已新增更细粒度 manifest：
+
+`notebooklm-raw/manifests/kejian04-supplement-machine-representation-v2.json`
+
+v2 将剩余问题拆为 4 个单问 batch：
+
+| batch | 主题 | 结果 |
+|-------|------|------|
+| `kejian04-supp-program-to-instructions` | 程序/高级语言/汇编/机器码之间的一条链路 | **失败**：`unknown`，`--retries 1` 后仍为空错误 |
+| `kejian04-supp-register-vs-memory` | MIPS 中寄存器、内存与 load/store 搬运 | 未运行：fail-fast 在第 1 个 batch 后停止 |
+| `kejian04-supp-mips-vs-riscv-boundary` | MIPS 示例与 RISC-V/Lab 主线边界 | 未运行：fail-fast 在第 1 个 batch 后停止 |
+| `kejian04-supp-question-types` | 第二讲常见考法/题型 | 未运行：fail-fast 在第 1 个 batch 后停止 |
+
+执行记录：
+
+```bash
+python3 .cursor/skills/jizu-course-notebooklm/scripts/nlm-collect.py \
+  notebooklm-raw/manifests/kejian04-supplement-machine-representation-v2.json \
+  --dry-run --delay 10 --nlm-timeout 240 --retries 0 \
+  --proxy http://127.0.0.1:7897
+
+python3 .cursor/skills/jizu-course-notebooklm/scripts/nlm-collect.py \
+  notebooklm-raw/manifests/kejian04-supplement-machine-representation-v2.json \
+  --delay 10 --nlm-timeout 240 --retries 1 --fail-fast \
+  --proxy http://127.0.0.1:7897
+```
+
+失败 run：
+
+`notebooklm-raw/kejian04-supplement-machine-representation-v2/runs/20260624-161029/`
+
+本次 v2 未产生任何成功 `*.answer.md`，因此只回写了原补采前两个成功 batch 能支撑的内容：MIPS 作为机器级表示教学例子、MIPS R/I/J 字段表与 `add $t0, $s1, $s2` 编码例。指南中以下内容仍应视为待补采：程序→汇编→机器码完整链路、寄存器 vs 内存状态、load/store 搬运、MIPS 与 RISC-V 迁移边界、常见题型。
+
+### 6.1 failure report：脚本层 vs NotebookLM 层
+
+本次排查没有发现 prompt 过长、source citation 解析或落盘逻辑能解释失败。`nlm-collect.py` 的日志路径显示：
+
+1. `sync-auth.py` 在采集开始时返回“认证 OK”。
+2. `notebooklm use e87c0462-b512-40df-8d6a-a0f5d4d30c81` 成功。
+3. `notebooklm clear` 成功。
+4. 失败发生在 `NotebookLMClient.chat.ask(notebook_id, prompt, conversation_id=None)` 调用内部；异常字符串为空，`classify_error("")` 被归类为 `unknown`。
+
+随后做了最小低风险 NotebookLM 层诊断（未做 WSL 浏览器登录，未大规模重复请求）：
+
+| 诊断 | 结果 | 判断 |
+|------|------|------|
+| `sync-auth.py --status` | Windows/WSL `storage_state.json` 均存在且 mtime 一致；曾显示 `auth: valid` | 文件同步本身存在，但不能证明 NotebookLM token fetch 稳定可用 |
+| `notebooklm auth check --test --json` | `token_fetch: false`，`error: "Token fetch failed: "` | NotebookLM 认证 token/RPC 前置阶段异常，且错误信息为空 |
+| `notebooklm -vv source list --json` | cookie 提取成功，停在 `Fetching CSRF and session tokens from NotebookLM` 后返回空 `ERROR` | source 列表尚未进入 source 解析层，失败更靠前 |
+| `notebooklm -vv ask "请只回答：OK" --json` | 同样停在 token/session fetch 后返回空 `ERROR` | 与 prompt 内容、回答长度、citation 解析无关 |
+
+综合判断：当前失败主要在 **NotebookLM token/session 获取或 NotebookLM 后端访问层**，不是 `nlm-collect.py` 的 batch 调度/落盘层，也不像是 v2 prompt 本身过大。由于 `sync-auth.py --status` 与 `notebooklm auth check --test --json` 的结果出现不一致，建议下一步按 SOP 由用户在 Windows 侧重新登录 NotebookLM，再在 WSL 执行：
+
+```bash
+cd ~/service/openclaw/workspace/skills/notebooklm-integration
+python3 scripts/sync-auth.py --force
+python3 scripts/sync-auth.py --check
+notebooklm auth check --test --json
+```
+
+只有当 `token_fetch: true` 且极简 `notebooklm ask "请只回答：OK" --json` 成功后，再继续用 v2 manifest 从 `kejian04-supp-program-to-instructions` 起补采；否则继续重试 batch 只会消耗请求次数。

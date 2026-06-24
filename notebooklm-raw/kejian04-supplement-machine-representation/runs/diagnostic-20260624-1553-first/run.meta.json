@@ -1,0 +1,43 @@
+{
+  "module": "kejian04-supplement-machine-representation",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/kejian04-supplement-machine-representation.json",
+  "run_dir": "notebooklm-raw/kejian04-supplement-machine-representation/runs/diagnostic-20260624-1553-first",
+  "started_at": "2026-06-24T07:52:58.504358+00:00",
+  "finished_at": "2026-06-24T07:58:05.912817+00:00",
+  "batches_total": 5,
+  "batches_completed": 2,
+  "batches_ok": 2,
+  "batches_skipped": 0,
+  "batches_failed": 1,
+  "batches_pending": 2,
+  "batches": [
+    {
+      "id": "kejian04-supp-mips-isa-example",
+      "layer": "L1",
+      "status": "ok",
+      "elapsed_seconds": 49.1,
+      "retry_count": 0,
+      "conversation_id": "b18de0d4-ac85-4e10-8f15-f416f578dc06"
+    },
+    {
+      "id": "kejian04-supp-mips-fields",
+      "layer": "L2+L3",
+      "status": "ok",
+      "elapsed_seconds": 46.67,
+      "retry_count": 0,
+      "conversation_id": "e60a15d0-a712-41e0-8588-9a4caadfd508"
+    },
+    {
+      "id": "kejian04-supp-program-memory-register",
+      "layer": "L2+L3",
+      "status": "error",
+      "error_kind": "unknown",
+      "error": "",
+      "elapsed_seconds": 70.12
+    }
+  ],
+  "status": "partial",
+  "total_elapsed_seconds": 76.69,
+  "total_retry_count": 0
+}

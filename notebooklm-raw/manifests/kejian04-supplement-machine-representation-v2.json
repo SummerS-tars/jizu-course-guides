@@ -1,0 +1,48 @@
+{
+  "module": "kejian04-supplement-machine-representation-v2",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件04 指令系统补采 v2：拆小第二讲程序的机器级表示问题，避免综合 prompt 失败",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件04-指令系统",
+    "4_指令系统.pdf",
+    "笔记-week03-周一-计组H",
+    "笔记-week03-周二-计组H",
+    "报告-Lab2-朱文凯",
+    "报告-Lab3-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "kejian04-supp-program-to-instructions",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "程序到汇编与机器码链路",
+      "clear_conversation": true,
+      "prompt": "【单问·课件04补采】只说明课件04第二讲中“一段程序如何对应到汇编指令和机器码”。\n\n请按“高级语言语句 → 汇编指令 → 机器码字段/位串 → 指令存储”这一条链路写，中文，尽量短。可用一个 MIPS 小例子，但不要展开链接器或 RISC-V 六种格式。请标注来源（课件04 / Week3 记录）。"
+    },
+    {
+      "id": "kejian04-supp-register-vs-memory",
+      "layer": "L2",
+      "priority": "critical",
+      "title": "MIPS 寄存器与内存状态",
+      "clear_conversation": true,
+      "prompt": "【单问·课件04补采】只说明课件04第二讲的 MIPS 程序模型中，寄存器和内存分别承载什么状态。\n\n请聚焦：寄存器保存临时操作数/结果，内存保存指令和数据，load/store 如何在二者之间搬运。中文，给一个很小的 lw/sw 或算术例子。请标注来源（课件04 / Week3 记录）。"
+    },
+    {
+      "id": "kejian04-supp-mips-vs-riscv-boundary",
+      "layer": "L2",
+      "priority": "important",
+      "title": "MIPS 示例与 RISC-V 主线边界",
+      "clear_conversation": true,
+      "prompt": "【单问·课件04补采】只说明课件04中的 MIPS 示例与本课程 RISC-V/Lab 主线的边界。\n\n请用简短对比说明：哪些思想可迁移（load/store、寄存器-内存分工、指令字段），哪些细节不能混用（寄存器名、位域、立即数/分支偏移口径）。中文。请标注来源（课件04 / Week3 / Lab2-3）。"
+    },
+    {
+      "id": "kejian04-supp-question-types",
+      "layer": "L3",
+      "priority": "important",
+      "title": "程序机器级表示常见题型",
+      "clear_conversation": true,
+      "prompt": "【单问·课件04补采】只整理课件04第二讲“程序的机器级表示”的常见考法。\n\n请列 4 类题型：汇编/机器码字段识别、load/store 有效地址、程序片段的寄存器/内存变化、MIPS 与 RISC-V 口径区分。每类给题面特征、解题步骤、易错点。中文，简洁，标注来源（课件04 / Week3）。"
+    }
+  ]
+}

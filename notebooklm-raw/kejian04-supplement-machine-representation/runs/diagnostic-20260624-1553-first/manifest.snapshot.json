@@ -1,0 +1,56 @@
+{
+  "module": "kejian04-supplement-machine-representation",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "课件04 指令系统补采：第二讲程序的机器级表示（MIPS ISA 示例、程序到机器码/内存/寄存器映射）",
+  "workflow": "v3-one-question-per-chat",
+  "sources_hint": [
+    "课件04-指令系统",
+    "4_指令系统.pdf",
+    "笔记-week03-周一-计组H",
+    "笔记-week03-周二-计组H",
+    "报告-Lab2-朱文凯",
+    "报告-Lab3-朱文凯"
+  ],
+  "batches": [
+    {
+      "id": "kejian04-supp-mips-isa-example",
+      "layer": "L1",
+      "priority": "critical",
+      "title": "MIPS ISA 作为机器级表示例子",
+      "clear_conversation": true,
+      "prompt": "【单问·补采】请仅根据 **课件04 指令系统**（PDF：`4_指令系统.pdf`，NotebookLM `课件04-指令系统`）第二讲 **程序的机器级表示**，说明：为什么课件用 **MIPS ISA** 作为“程序如何被机器表示”的教学例子？\n\n要求：中文；按课件第二讲原意组织；说明 MIPS 例子与第一讲 ISA 设计部分的衔接；标注来源（课件04 / Week3 记录）；不要展开 RISC-V 六种格式细节。"
+    },
+    {
+      "id": "kejian04-supp-mips-fields",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "MIPS 汇编到机器码字段",
+      "clear_conversation": true,
+      "prompt": "【单问·补采·核心】请仅讲解 **MIPS 汇编指令如何映射到机器码字段**：R 型、I 型、J 型的 opcode、rs、rt、rd、shamt、funct、immediate/address 字段分别承担什么语义。\n\n依据：课件04 第二讲“程序的机器级表示 / MIPS 指令格式”。\n要求：中文；给字段表；至少给一个逐步编码或反解的小例子；标注来源（课件04 / Week3 记录）；不要同时讲 RISC-V 位域。"
+    },
+    {
+      "id": "kejian04-supp-program-memory-register",
+      "layer": "L2+L3",
+      "priority": "critical",
+      "title": "程序到指令序列与内存寄存器映射",
+      "clear_conversation": true,
+      "prompt": "【单问·补采·核心】请仅讲解：一个高级语言片段在课件04第二讲中如何被理解为 **汇编指令序列、机器码、指令内存、数据内存和寄存器状态** 的映射关系。\n\n要求：中文；按“源程序 → 汇编 → 机器码 → 指令存储/数据访问 → 寄存器变化”组织；可使用 MIPS 的 load/store、算术、分支作为例子；标注来源（课件04 / Week3 记录）；不要展开链接器内部实现。"
+    },
+    {
+      "id": "kejian04-supp-mips-vs-riscv-boundary",
+      "layer": "L2",
+      "priority": "important",
+      "title": "MIPS 课件例子与 RISC-V Lab 边界",
+      "clear_conversation": true,
+      "prompt": "【单问·补采】请仅说明：课件04第二讲中的 **MIPS 机器级表示例子** 与本课程 Lab2-3 的 **RISC-V 主线** 应如何区分和迁移。\n\n要求：中文；用对比表说明寄存器命名、指令格式、立即数/分支偏移、load/store 思想、寻址思想哪些相同、哪些不能混用；标注来源（课件04 / Week3 / Lab2-3 报告）。"
+    },
+    {
+      "id": "kejian04-supp-question-types",
+      "layer": "L3",
+      "priority": "important",
+      "title": "第二讲常见题型与例题",
+      "clear_conversation": true,
+      "prompt": "【单问·补采】请仅整理 **课件04第二讲：程序的机器级表示** 的常见题型/例题：MIPS 指令字段识别、汇编到机器码、load/store 有效地址、branch 目标地址、程序片段对应的寄存器/内存变化、链接/装入地址概念。\n\n要求：中文；每类题给“题面特征 → 解题步骤 → 易错点”；至少包含 2 个小例题；标注来源（课件04 / Week3 记录）；不要同时讲完整 RISC-V 六格式。"
+    }
+  ]
+}

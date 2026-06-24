@@ -1,0 +1,31 @@
+[15:52:58] 模块: kejian04-supplement-machine-representation | 批次数: 1 | 输出: /home/thesumst/development/jizu/notebooklm-raw/kejian04-supplement-machine-representation/runs/diagnostic-20260624-1553-first
+[15:52:58] 同步认证…
+[15:52:59] 认证 OK
+[15:52:59] 选定 Notebook: e87c0462-b512-40df-8d6a-a0f5d4d30c81
+[15:53:05] --- batch 1/1: [L1] kejian04-supp-mips-isa-example ---
+[15:53:05] 清空会话上下文 (notebooklm clear)
+[15:53:05] 提问 (212 字, nlm_timeout=240.0s)…
+[15:53:54] 完成 kejian04-supp-mips-isa-example (49.1s)
+[15:53:54] 采集结束: status=partial | ok=1 skipped=0 failed=0/5 | 重试 0 次 | 耗时 55.75s
+[15:54:12] 模块: kejian04-supplement-machine-representation | 批次数: 1 | 输出: /home/thesumst/development/jizu/notebooklm-raw/kejian04-supplement-machine-representation/runs/diagnostic-20260624-1553-first
+[15:54:12] 同步认证…
+[15:54:13] 认证 OK
+[15:54:13] 选定 Notebook: e87c0462-b512-40df-8d6a-a0f5d4d30c81
+[15:54:20] --- batch 1/1: [L2+L3] kejian04-supp-mips-fields ---
+[15:54:20] 清空会话上下文 (notebooklm clear)
+[15:54:20] 提问 (212 字, nlm_timeout=240.0s)…
+[15:55:06] 完成 kejian04-supp-mips-fields (46.7s)
+[15:55:06] 采集结束: status=partial | ok=2 skipped=0 failed=0/5 | 重试 0 次 | 耗时 54.7s
+[15:56:49] 模块: kejian04-supplement-machine-representation | 批次数: 1 | 输出: /home/thesumst/development/jizu/notebooklm-raw/kejian04-supplement-machine-representation/runs/diagnostic-20260624-1553-first
+[15:56:49] 同步认证…
+[15:56:50] 认证 OK
+[15:56:50] 选定 Notebook: e87c0462-b512-40df-8d6a-a0f5d4d30c81
+[15:56:55] --- batch 1/1: [L2+L3] kejian04-supp-program-memory-register ---
+[15:56:55] 清空会话上下文 (notebooklm clear)
+[15:56:55] 提问 (190 字, nlm_timeout=240.0s)…
+[15:57:24] 尝试 1 失败 [unknown]:
+[15:57:24] 重试 1/1，等待 15s…
+[15:57:37] 提问 (190 字, nlm_timeout=240.0s)…
+[15:58:05] 尝试 2 失败 [unknown]:
+[15:58:05] 失败 kejian04-supp-program-memory-register (70.1s) [unknown]:
+[15:58:05] 采集结束: status=partial | ok=2 skipped=0 failed=1/5 | 重试 0 次 | 耗时 76.69s | 待重跑: kejian04-supp-program-memory-register

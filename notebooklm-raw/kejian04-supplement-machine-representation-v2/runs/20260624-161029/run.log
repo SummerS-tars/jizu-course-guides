@@ -1,0 +1,13 @@
+[16:10:29] 模块: kejian04-supplement-machine-representation-v2 | 批次数: 4 | 输出: /home/thesumst/development/jizu/notebooklm-raw/kejian04-supplement-machine-representation-v2/runs/20260624-161029
+[16:10:29] 同步认证…
+[16:10:30] 认证 OK
+[16:10:30] 选定 Notebook: e87c0462-b512-40df-8d6a-a0f5d4d30c81
+[16:10:36] --- batch 1/4: [L2] kejian04-supp-program-to-instructions ---
+[16:10:36] 清空会话上下文 (notebooklm clear)
+[16:10:36] 提问 (152 字, nlm_timeout=240.0s)…
+[16:11:05] 尝试 1 失败 [unknown]:
+[16:11:05] 重试 1/1，等待 15s…
+[16:11:20] 提问 (152 字, nlm_timeout=240.0s)…
+[16:11:48] 尝试 2 失败 [unknown]:
+[16:11:48] 失败 kejian04-supp-program-to-instructions (71.8s) [unknown]:
+[16:11:48] 运行中止:

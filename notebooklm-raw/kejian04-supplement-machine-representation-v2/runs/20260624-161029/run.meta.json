@@ -1,0 +1,26 @@
+{
+  "module": "kejian04-supplement-machine-representation-v2",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "manifest": "notebooklm-raw/manifests/kejian04-supplement-machine-representation-v2.json",
+  "run_dir": "notebooklm-raw/kejian04-supplement-machine-representation-v2/runs/20260624-161029",
+  "started_at": "2026-06-24T08:10:29.267846+00:00",
+  "finished_at": "2026-06-24T08:11:48.600147+00:00",
+  "batches_total": 4,
+  "batches_completed": 0,
+  "batches_ok": 0,
+  "batches_skipped": 0,
+  "batches_failed": 1,
+  "batches_pending": 3,
+  "batches": [
+    {
+      "id": "kejian04-supp-program-to-instructions",
+      "layer": "L2",
+      "status": "error",
+      "error_kind": "unknown",
+      "error": "",
+      "elapsed_seconds": 71.84
+    }
+  ],
+  "status": "failed",
+  "error": ""
+}
