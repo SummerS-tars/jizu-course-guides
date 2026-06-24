@@ -1,11 +1,11 @@
 {
   "module": "weekX-Y",
-  "notebook_id": "505bdb1c-0034-4e14-89df-0b14bf3fc723",
-  "description": "Week X-Y：<主题>（单问单答，每 batch 新对话）",
+  "notebook_id": "e87c0462-b512-40df-8d6a-a0f5d4d30c81",
+  "description": "Week X-Y：<主题>（计组 H，单问单答，每 batch 新对话）",
   "workflow": "v3-one-question-per-chat",
   "sources_hint": [
-    "笔记-week0X-周五-AI",
-    "课件0N-*.pdf"
+    "笔记-week0X-周一-计组",
+    "课件NN-*.pdf"
   ],
   "batches": [
     {
@@ -14,7 +14,7 @@
       "priority": "critical",
       "title": "模块在课程中的位置",
       "clear_conversation": true,
-      "prompt": "【单问】请仅回答：Week X 和 Week Y 在 AI(H) 课程中分别解决什么核心问题？与前后周如何衔接？\n\n依据：Week X/Y 课程记录、课件 NN。\n要求：中文；3-5 段；每点标注来源；不要展开具体公式。"
+      "prompt": "【单问】请仅回答：Week X 和 Week Y 在计算机组成与体系结构(H)课程中分别解决什么核心问题？与前后周如何衔接？\n\n依据：Week X/Y 课程记录、课件 NN。\n要求：中文；3-5 段；每点标注来源；不要展开具体公式。"
     },
     {
       "id": "wX-topic-example",
@@ -30,7 +30,7 @@
       "priority": "important",
       "title": "与前后周衔接",
       "clear_conversation": true,
-      "prompt": "【单问】请仅说明：Week X-Y 知识与 Week 1-(X-1) 及 Project 的衔接关系。\n\n要求：中文；标注来源。"
+      "prompt": "【单问】请仅说明：Week X-Y 知识与 Week 1-(X-1) 及 Lab/课件主线的衔接关系。\n\n要求：中文；标注来源。"
     },
     {
       "id": "wXY-mistakes",
