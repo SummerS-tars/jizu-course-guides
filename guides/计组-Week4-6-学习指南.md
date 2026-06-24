@@ -203,9 +203,11 @@ flowchart LR
 ```mermaid
 flowchart LR
     subgraph W1["存储字 4-7"]
+        direction LR
         A4["4"] --> A5["5"] --> A6["6<br/>int byte0"] --> A7["7<br/>int byte1"]
     end
     subgraph W2["存储字 8-11"]
+        direction LR
         A8["8<br/>int byte2"] --> A9["9<br/>int byte3"] --> A10["10"] --> A11["11"]
     end
 ```
